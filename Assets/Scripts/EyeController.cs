@@ -24,26 +24,28 @@ public class EyeController : MonoBehaviour
 
         if (Input.GetButton(buttonName))
         {
-            if (IsClosed)
+            if (!IsClosed)
             {
-                IsClosed = false;
+                IsClosed = true;
                 ObjectManager.instance.ManageObjects();
             }
+
+            openEye.SetActive(false);
             
-            openEye.SetActive(true);
 
 
 
         }
         else
         {
-            if (!IsClosed)
+
+            if (IsClosed)
             {
-                IsClosed = true;
+                IsClosed = false;
                 ObjectManager.instance.ManageObjects();
             }
-            
-            openEye.SetActive(false);
+
+            openEye.SetActive(true);
         }
 
     }

@@ -45,7 +45,6 @@ public class PlayerLadderMovement : MonoBehaviour
         }
         else
         {
-            rb.gravityScale = 1.1f;
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)

@@ -20,6 +20,7 @@ public class PlayerAnimationController : MonoBehaviour
     }
     private void Update()
     {
+        anim.speed = 1;
         float axis = Input.GetAxis("Horizontal");
         if(axis > 0)
         {
@@ -40,22 +41,38 @@ public class PlayerAnimationController : MonoBehaviour
         }
 
         #region Jumping and Falling
-        if (rb.velocity.y == 0)
+        if (plm.IsClimbing)
         {
-            if (lastTrigger != "Ground")
+
+
+            if (lastTrigger != "Ladder")
             {
-                anim.SetTrigger("Ground");
-                lastTrigger = "Ground";
+                anim.SetTrigger("Ladder");
+                lastTrigger = "Ladder";
             }
+            if (rb.velocity.y == 0)
+            {
+                anim.speed = 0;
+            }
+            else if (rb.velocity.y < 0)
+            {
+                anim.speed = -1;
+            }
+            else
+            {
+                anim.speed = 1;
+            }
+
         }
         else
         {
-            if (plm.IsClimbing)
+
+            if (rb.velocity.y == 0)
             {
-                if (lastTrigger != "Ladder")
+                if (lastTrigger != "Ground")
                 {
-                    anim.SetTrigger("Ladder");
-                    lastTrigger = "Ladder";
+                    anim.SetTrigger("Ground");
+                    lastTrigger = "Ground";
                 }
             }
             else
@@ -77,7 +94,9 @@ public class PlayerAnimationController : MonoBehaviour
                     }
                 }
             }
+            
         }
+        
         
         #endregion
     }

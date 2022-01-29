@@ -33,6 +33,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform groundCheck;
     [SerializeField] private Vector2 groundCheckSize;
     [SerializeField] private LayerMask groundLayer;
+    [SerializeField] private PlayerLadderMovement plm;
     private Rigidbody2D rb;
 
     public bool Grounded { get => grounded; set => grounded = value; }
@@ -40,12 +41,13 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        plm = GetComponent<PlayerLadderMovement>();
     }
 
     void Update()
     {
         moveInput = Input.GetAxis("Horizontal");
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump") )
         {
             OnJump();
         }
@@ -61,13 +63,16 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         #region Movement
-        float targetSpeed = moveInput * moveSpeed;
-        float speedDif = targetSpeed - rb.velocity.x;
+        if (!plm.IsClimbing)
+        {
+            float targetSpeed = moveInput * moveSpeed;
+            float speedDif = targetSpeed - rb.velocity.x;
 
-        float accelRate = (Mathf.Abs(targetSpeed) > 0.01f) ? acceleration : decceleration;
-        float movement = Mathf.Pow(Mathf.Abs(speedDif) * accelRate, velPower) * Mathf.Sign(speedDif);
+            float accelRate = (Mathf.Abs(targetSpeed) > 0.01f) ? acceleration : decceleration;
+            float movement = Mathf.Pow(Mathf.Abs(speedDif) * accelRate, velPower) * Mathf.Sign(speedDif);
 
-        rb.AddForce(movement* Vector2.right);
+            rb.AddForce(movement * Vector2.right);
+        }
         #endregion
 
         #region Friction
@@ -84,6 +89,7 @@ public class PlayerMovement : MonoBehaviour
         {
             Grounded = true;
             isJumping = false;
+            if(rb.velocity.y < 0)plm.IsClimbing = false;
             lastGroundedTime = jumpCoyoteTime;
         }
         else { Grounded = false; }
@@ -93,7 +99,7 @@ public class PlayerMovement : MonoBehaviour
 
 
         #region Jump
-        if (lastGroundedTime > 0 && lastJumpTime > 0 && !isJumping)
+        if (lastGroundedTime > 0 && lastJumpTime > 0 && !isJumping && !plm.IsLadder)
         {
             Jump();
         }
@@ -105,14 +111,18 @@ public class PlayerMovement : MonoBehaviour
         #endregion
 
         #region Jump Gravity
-        if (rb.velocity.y < 0)
+        if (!plm.IsLadder)
         {
-            rb.gravityScale = 1.1f * fallGravityMultiplier;
+            if (rb.velocity.y < 0)
+            {
+                rb.gravityScale = 1.1f * fallGravityMultiplier;
+            }
+            else
+            {
+                rb.gravityScale = 1.1f;
+            }
         }
-        else
-        {
-            rb.gravityScale = 1.1f;
-        }
+        
         #endregion
 
 

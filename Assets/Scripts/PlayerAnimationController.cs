@@ -8,6 +8,7 @@ public class PlayerAnimationController : MonoBehaviour
     SpriteRenderer sr;
     Rigidbody2D rb;
     PlayerMovement pm;
+    [SerializeField] private PlayerLadderMovement plm;
     private string lastTrigger = "None";
     private void Start()
     {
@@ -15,6 +16,7 @@ public class PlayerAnimationController : MonoBehaviour
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         pm = GetComponent<PlayerMovement>();
+        plm = GetComponent<PlayerLadderMovement>();
     }
     private void Update()
     {
@@ -23,7 +25,7 @@ public class PlayerAnimationController : MonoBehaviour
         {
             sr.flipX = true;
         }
-        else
+        if (axis < 0)
         {
             sr.flipX = false;
         }
@@ -46,22 +48,37 @@ public class PlayerAnimationController : MonoBehaviour
                 lastTrigger = "Ground";
             }
         }
-        else if(rb.velocity.y < 0)
-        {
-            if (lastTrigger != "Fall")
-            {
-                anim.SetTrigger("Fall");
-                lastTrigger = "Fall";
-            }
-        }
         else
         {
-            if (lastTrigger != "Jump")
+            if (plm.IsClimbing)
             {
-                anim.SetTrigger("Jump");
-                lastTrigger = "Jump";
+                if (lastTrigger != "Ladder")
+                {
+                    anim.SetTrigger("Ladder");
+                    lastTrigger = "Ladder";
+                }
+            }
+            else
+            {
+                if (rb.velocity.y < 0)
+                {
+                    if (lastTrigger != "Fall")
+                    {
+                        anim.SetTrigger("Fall");
+                        lastTrigger = "Fall";
+                    }
+                }
+                else
+                {
+                    if (lastTrigger != "Jump")
+                    {
+                        anim.SetTrigger("Jump");
+                        lastTrigger = "Jump";
+                    }
+                }
             }
         }
+        
         #endregion
     }
     public void ChangeToJumpUp()

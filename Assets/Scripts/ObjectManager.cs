@@ -26,8 +26,8 @@ public class ObjectManager : MonoBehaviour
         TurnObjects(LeftContainer, false);
         TurnObjects(RightContainer, false);
         TurnObjects(BothContainer, false);
-        print("el ojo izquierdo esta cerrado? " + leftEye.IsClosed);
-        print("el ojo derecho esta cerrado? " + rightEye.IsClosed);
+        //print("el ojo izquierdo esta cerrado? " + leftEye.IsClosed);
+        //print("el ojo derecho esta cerrado? " + rightEye.IsClosed);
         if (leftEye.IsClosed)
         {
             if (rightEye.IsClosed)
@@ -47,6 +47,8 @@ public class ObjectManager : MonoBehaviour
             }
             else
             {
+                TurnObjects(LeftContainer, true);
+                TurnObjects(RightContainer, true);
                 TurnObjects(BothContainer, true);
             }
         }

@@ -29,10 +29,14 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float lastJumpTime;
 
     [Header("Checks")]
+    [SerializeField] private bool grounded;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private Vector2 groundCheckSize;
     [SerializeField] private LayerMask groundLayer;
     private Rigidbody2D rb;
+
+    public bool Grounded { get => grounded; set => grounded = value; }
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -78,9 +82,11 @@ public class PlayerMovement : MonoBehaviour
         #region Grounded
         if (Physics2D.OverlapBox(groundCheck.position, groundCheckSize, 0, groundLayer))
         {
+            Grounded = true;
             isJumping = false;
             lastGroundedTime = jumpCoyoteTime;
         }
+        else { Grounded = false; }
 
 
         #endregion

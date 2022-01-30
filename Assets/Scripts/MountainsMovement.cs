@@ -57,8 +57,8 @@ public class MountainsMovement : MonoBehaviour
             {
                 instantiatedMountain.gameObject.SetActive(true);
                 instantiatedMountain2.gameObject.SetActive(true);
-                instantiatedMountain.GetComponent<SpriteRenderer>().color = new Color(1f, 0f, 0f);
-                instantiatedMountain2.GetComponent<SpriteRenderer>().color = new Color(1f, 0f, 0f);
+                instantiatedMountain.GetComponent<SpriteRenderer>().color = new Color(1f, 0.37f, 0f);
+                instantiatedMountain2.GetComponent<SpriteRenderer>().color = new Color(1f, 0.37f, 0f);
             }
             else
             {

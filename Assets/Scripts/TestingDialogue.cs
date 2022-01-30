@@ -10,9 +10,14 @@ public class TestingDialogue : MonoBehaviour
     //public DialogueManager dialogueManager;
     public TMP_Text playerText;
     public GameObject playerTextContianer;
+    public Image playerImage;
     public TMP_Text npcText;
     public GameObject npcTextContianer;
+    public Image npcImage;
     public string[] dialogos;
+
+    public List<Sprite> playerImages;
+
     bool isTalking;
     int i;
     public PlayerAnimationController playerani;
@@ -26,6 +31,7 @@ public class TestingDialogue : MonoBehaviour
     private bool isTextAnimated = false;
     private Coroutine textAnimation;
     private string currentSpeaker;
+    private Sprite currentSpearkerImage;
 
     // Start is called before the first frame update
     void Start()
@@ -74,12 +80,11 @@ public class TestingDialogue : MonoBehaviour
                     StopCoroutine(textAnimation);
                     if (currentSpeaker == "Player")
                     {
-                        playerText.text = dialogos[i].Split(' ')[1];
-
+                        playerText.text = dialogos[i].Split(' ')[2];
                     }
                     else
                     {
-                        npcText.text = dialogos[i].Split(' ')[1];
+                        npcText.text = dialogos[i].Split(' ')[2];
                     }
                     isTextAnimated = false;
                 }
@@ -106,17 +111,39 @@ public class TestingDialogue : MonoBehaviour
     private void ChangeDialogueLine(string line)
     {
         string speaker = line.Split(' ')[0];
-        string dialogue = line.Split(' ')[1];
+        string sprite = line.Split(' ')[1];
+        string dialogue = line.Split(' ')[2];
         currentSpeaker = speaker;
+
+        switch (sprite)
+        {
+            case "Red":
+                currentSpearkerImage = playerImages[0];
+                break;
+            case "Blue":
+                currentSpearkerImage = playerImages[1];
+                break;
+            case "Pink":
+                currentSpearkerImage = playerImages[2];
+                break;
+            case "Grey":
+                currentSpearkerImage = playerImages[3];
+                break;
+            default:
+                break;
+        }
+
         if (currentSpeaker == "Player")
         {
             npcTextContianer.SetActive(false);
+            playerImage.sprite = currentSpearkerImage;
             playerTextContianer.SetActive(true);
             textAnimation = StartCoroutine(_TextAnimation(dialogue, playerText));
         }
         else
         {
             playerTextContianer.SetActive(false);
+            npcImage.sprite = currentSpearkerImage;
             npcTextContianer.SetActive(true);
             textAnimation = StartCoroutine(_TextAnimation(dialogue, npcText));
         }

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7459498722855311396}
   - component: {fileID: 6595454108344797636}
   - component: {fileID: 7459498722855311397}
+  - component: {fileID: 3999548871532595576}
   m_Layer: 0
   m_Name: door
   m_TagString: Untagged
@@ -140,3 +141,34 @@ MonoBehaviour:
   openDoor: {fileID: -4099374940933993338, guid: 0fc2770c6f7fa884dbe0754626683668, type: 3}
   whiteNoise: {fileID: 0}
   PP: {fileID: 0}
+--- !u!114 &3999548871532595576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7459498722855311416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31419b622136eb243b89940e1ca9067d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerText: {fileID: 0}
+  playerTextContianer: {fileID: 0}
+  playerImage: {fileID: 0}
+  npcText: {fileID: 0}
+  npcTextContianer: {fileID: 0}
+  npcImage: {fileID: 0}
+  dialogos: []
+  playerImages:
+  - {fileID: -260145991059401588, guid: 9b17646bbf4917a45970a1c7554c0400, type: 3}
+  - {fileID: 673343004760119611, guid: 4c8ca350f1e053d4cbc29b0d7db9c6cb, type: 3}
+  - {fileID: 4787506646941699313, guid: d78783fd119089d42a2b0cab3deca19d, type: 3}
+  - {fileID: -3499100056842025508, guid: c0cbc9ea402c4b547b04289fd6092080, type: 3}
+  playerani: {fileID: 0}
+  playermov: {fileID: 0}
+  rigidbody2D: {fileID: 0}
+  anim: {fileID: 0}
+  eyeder: {fileID: 0}
+  eyeizq: {fileID: 0}
+  areEyes: 0

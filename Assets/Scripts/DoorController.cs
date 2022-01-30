@@ -33,14 +33,18 @@ public class DoorController : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            if (enabled) print("pasaste");
-            PP.SetActive(false);
-            whiteNoise.DOFade(1f, 1f).OnComplete(() => 
+            if (enabled)
             {
-                string levelName = SceneManager.GetActiveScene().name;
-                string index = levelName.Substring(levelName.Length - 1, 1);
-                SceneManager.LoadScene("Level " + (int.Parse(index) + 1));
-            });
+                PP.SetActive(false);
+                whiteNoise.DOFade(1f, 1f).OnComplete(() =>
+                {
+                    string levelName = SceneManager.GetActiveScene().name;
+                    string index = levelName.Substring(levelName.Length - 1, 1);
+                    SceneManager.LoadScene("Level " + (int.Parse(index) + 1));
+                });
+            }
+                //print("pasaste");
+            
         }
             
     }

@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Grid
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_Name: Grid2
+  m_Shader: {fileID: -6465566751694194690, guid: 453bc4e99e3f2e949aa8065e86d1ca32, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -19,26 +19,23 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _AlphaTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
+    - Texture2D_6314067c5eff45f0a1520ea8e73c4d4e:
         m_Texture: {fileID: 2800000, guid: 0e8b8561db28c54468e25e96c71823c0, type: 3}
-        m_Scale: {x: 2.26, y: 3.07}
-        m_Offset: {x: 0, y: 0.82764494}
-    - _MaskTex:
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _NormalMap:
+    - unity_LightmapsInd:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _EnableExternalAlpha: 0
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
+    - Color_46c8bb7d8cf544c1a6bc3c628348f795: {r: 1, g: 0, b: 0.970881, a: 1}
   m_BuildTextureStacks: []

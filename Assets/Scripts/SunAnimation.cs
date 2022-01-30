@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
 
-public class Animation : MonoBehaviour
+public class SunAnimation : MonoBehaviour
 {
     Material material;
     bool isAnimated = false;
@@ -12,7 +12,7 @@ public class Animation : MonoBehaviour
     int num = 0;
     private void Start()
     {
-        material = gameObject.GetComponent<Image>().material;
+        material = gameObject.GetComponent<SpriteRenderer>().material;
         material.SetFloat("_TransparencyA", -0.6f);
         material.SetFloat("_TransparencyB", 0.6f);
     }

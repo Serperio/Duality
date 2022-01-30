@@ -41,7 +41,7 @@ public class MenuController : MonoBehaviour
                 {
                     case 1:
                         //Pasar a primer nivel
-                        whiteNoise.DOFade(1, 1).OnPlay(()=>PP.SetActive(false)).OnComplete(()=>whiteNoise.DOFade(0,1).OnPlay(()=>SceneManager.LoadScene("Level 1")));
+                        whiteNoise.DOFade(1, 1).OnPlay(()=>PP.SetActive(false)).OnComplete(()=>SceneManager.LoadScene("Level 1"));
                         break;
                     case 2:
                         //Mostrar creditos

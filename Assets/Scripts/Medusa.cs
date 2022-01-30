@@ -49,8 +49,7 @@ public class Medusa : MonoBehaviour
     }
 
     private void CheckEyes()
-    {
-        
+    {      
         if (!playerRightEye.IsClosed || !playerleftEye.IsClosed)
         {
             Debug.Log("moriste");

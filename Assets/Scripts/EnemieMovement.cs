@@ -60,7 +60,10 @@ public class EnemieMovement : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
-        
+        if (collision.gameObject.tag == "ChangeDir")
+        {
+            director *= -1;
+        }
         if (collision.gameObject.tag == "Player")
         {
             print("moristes :c");

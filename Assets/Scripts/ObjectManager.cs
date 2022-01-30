@@ -37,6 +37,7 @@ public class ObjectManager : MonoBehaviour
             else
             {
                 TurnObjects(RightContainer, true);
+                TurnObjects(BothContainer, true);
             }
         }
         else
@@ -44,11 +45,12 @@ public class ObjectManager : MonoBehaviour
             if (rightEye.IsClosed)
             {
                 TurnObjects(LeftContainer, true);
+                TurnObjects(BothContainer, true);
             }
             else
             {
-                TurnObjects(LeftContainer, true);
-                TurnObjects(RightContainer, true);
+                //TurnObjects(LeftContainer, true);
+                //TurnObjects(RightContainer, true);
                 TurnObjects(BothContainer, true);
             }
         }

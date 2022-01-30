@@ -26,7 +26,13 @@ public class LevelManager : MonoBehaviour
     public void ResetLevel()
     {
         PP.SetActive(false);
-        whiteNoise.DOFade(1f, 1f).OnComplete(() =>
+        whiteNoise.DOFade(1f, 1f).OnPlay(()=> {
+            if (AudioManager.Instance.gameObject != null)
+            {
+                print("audio");
+                AudioManager.Instance.Play(1);
+            }
+        }).OnComplete(() =>
         {
         string levelName = SceneManager.GetActiveScene().name;
         SceneManager.LoadScene(levelName);

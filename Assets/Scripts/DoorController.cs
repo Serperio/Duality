@@ -45,8 +45,8 @@ public class DoorController : MonoBehaviour
             Sequence sequence = DOTween.Sequence();
             sequence.AppendInterval(.3f).Append(DOTween.To(() => temp, x => temp = x, 1, 0.2f).OnPlay(() => 
             {
-                AudioManager.Instance.PlayMusic("A");
-                AudioManager.Instance.PlayMusic("B");
+                //AudioManager.Instance.PlayMusic("A");
+                //AudioManager.Instance.PlayMusic("B");
                 PP.SetActive(true); 
             }));
         }
@@ -69,7 +69,15 @@ public class DoorController : MonoBehaviour
                 {
                     string levelName = SceneManager.GetActiveScene().name;
                     string index = levelName.Split(' ')[1];
-                    SceneManager.LoadScene("Level " + (int.Parse(index) + 1));
+                    if(int.Parse(index) + 1 == 14)
+                    {
+                        SceneManager.LoadScene("Tittle Scene");
+                    }
+                    else
+                    {
+                        SceneManager.LoadScene("Level " + (int.Parse(index) + 1));
+                    }
+                    
                 });
             }
                 //print("pasaste");

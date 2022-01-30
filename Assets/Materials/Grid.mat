@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Grid2
+  m_Name: Grid
   m_Shader: {fileID: -6465566751694194690, guid: 453bc4e99e3f2e949aa8065e86d1ca32, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -58,4 +58,5 @@ Material:
     m_Colors:
     - Color_46c8bb7d8cf544c1a6bc3c628348f795: {r: 1, g: 0, b: 0.92636013, a: 1}
     - Vector4_6d3c3527e3bf419c9fcef9fa8067e302: {r: 2, g: 1, b: 0, a: 0.88}
+    - _Color: {r: 1, g: 0, b: 1, a: 1}
   m_BuildTextureStacks: []

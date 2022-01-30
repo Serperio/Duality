@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.Rendering.PostProcessing;
 using DG.Tweening;
 using UnityEngine.Rendering;
+using UnityEngine.SceneManagement;
 
 public class DoorController : MonoBehaviour
 {
@@ -13,10 +14,14 @@ public class DoorController : MonoBehaviour
     [SerializeField] private SpriteRenderer whiteNoise;
     [SerializeField]  private GameObject PP;
 
+    private float temp;
+
     private void Start()
     {
         PP.SetActive(false);
-        whiteNoise.DOFade(0, 1).OnComplete(() => PP.SetActive(true));
+        whiteNoise.DOFade(0, 1);
+        Sequence sequence = DOTween.Sequence();
+        sequence.AppendInterval(.5f).Append(DOTween.To(() => temp, x => temp = x, 1, 0.2f).OnPlay(() => PP.SetActive(true)));
         print(enabled);
         if(enabled == true)
         {
@@ -32,7 +37,9 @@ public class DoorController : MonoBehaviour
             PP.SetActive(false);
             whiteNoise.DOFade(1f, 1f).OnComplete(() => 
             {
-                whiteNoise.DOFade(0f, 1f).OnComplete(() => PP.SetActive(true));
+                string levelName = SceneManager.GetActiveScene().name;
+                string index = levelName.Substring(levelName.Length - 1, 1);
+                SceneManager.LoadScene("Level" + (int.Parse(index) + 1));
             });
         }
             

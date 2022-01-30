@@ -110,6 +110,8 @@ Shader "UI/Vertical Transparency"
                     half4 color;
                     if (IN.texcoord.y <= 0.45)
                         color = (tex2D(_MainTex, IN.texcoord) + _TextureSampleAdd) * IN.color * _ColorB;
+                    else if (IN.texcoord.y <= 0.55)
+                        color = (tex2D(_MainTex, IN.texcoord) + _TextureSampleAdd) * IN.color * _ColorB * _ColorA;
                     else
                         color = (tex2D(_MainTex, IN.texcoord) + _TextureSampleAdd) * IN.color * _ColorA;
 

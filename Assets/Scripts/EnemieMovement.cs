@@ -10,7 +10,7 @@ public class EnemieMovement : MonoBehaviour
     [SerializeField] private int director;
     [SerializeField] private int speed;
     [SerializeField] private EyeController eye; //Si =1, aparece con ojo derecho abierto, si=0, con el ojo izquierdo, cuando estan ambos abiertos no afecta 
-    [SerializeField] private Vector2 initPos;
+    [SerializeField] private Vector3 initPos;
     [SerializeField] private int initdir;
     private Rigidbody2D rb;
     private Collider2D collider;
@@ -67,6 +67,7 @@ public class EnemieMovement : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             print("moristes :c");
+            LevelManager.instance.ResetLevel();
         }
     }
 }

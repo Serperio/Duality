@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
+using UnityEngine.Rendering;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -36,10 +39,17 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private PlayerLadderMovement plm;
     private Rigidbody2D rb;
 
+    [Header("Reset")]
+    [SerializeField] private float maxTime;
+    [SerializeField] private float timeToReset;
+
+    
     public bool Grounded { get => grounded; set => grounded = value; }
 
     void Start()
     {
+        timeToReset = 0;
+        maxTime = 3;
         rb = GetComponent<Rigidbody2D>();
         plm = GetComponent<PlayerLadderMovement>();
     }
@@ -47,6 +57,11 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         moveInput = Input.GetAxis("Horizontal");
+        if (Input.GetKey(KeyCode.Space))
+        {
+            timeToReset += Time.deltaTime;
+
+        }
         if (Input.GetButtonDown("Jump") && rb.velocity.y <= 0)
         {
             OnJump();
@@ -122,7 +137,22 @@ public class PlayerMovement : MonoBehaviour
                 rb.gravityScale = 1.1f;
             }
         }
-        
+
+        #endregion
+
+        #region Falling
+        if(transform.position.y <= -30)
+        {
+            LevelManager.instance.ResetLevel();
+        }
+        #endregion
+
+        #region Reset
+        if(timeToReset >= maxTime)
+        {
+            timeToReset = 0;
+            LevelManager.instance.ResetLevel();
+        }
         #endregion
 
 

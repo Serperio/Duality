@@ -11,8 +11,8 @@ public class DoorController : MonoBehaviour
     [SerializeField] private bool enabled;
     [SerializeField] private Sprite closedDoor;
     [SerializeField] private Sprite openDoor;
-    [SerializeField] private SpriteRenderer whiteNoise;
-    [SerializeField]  private GameObject PP;
+    public SpriteRenderer whiteNoise;
+    public GameObject PP;
 
     private float temp;
 
@@ -39,7 +39,7 @@ public class DoorController : MonoBehaviour
                 whiteNoise.DOFade(1f, 1f).OnComplete(() =>
                 {
                     string levelName = SceneManager.GetActiveScene().name;
-                    string index = levelName.Substring(levelName.Length - 1, 1);
+                    string index = levelName.Split(' ')[1];
                     SceneManager.LoadScene("Level " + (int.Parse(index) + 1));
                 });
             }

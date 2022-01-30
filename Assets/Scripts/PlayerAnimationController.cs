@@ -12,6 +12,12 @@ public class PlayerAnimationController : MonoBehaviour
     [SerializeField] private LayerMask boxLayer;
     private string lastTrigger = "None";
     private int dir;
+
+    [Header("Animator")]
+    [SerializeField] private RuntimeAnimatorController purple;
+    [SerializeField] private RuntimeAnimatorController red;
+    [SerializeField] private RuntimeAnimatorController blue;
+    [SerializeField] private RuntimeAnimatorController gray;
     private void Start()
     {
         sr = GetComponent<SpriteRenderer>();
@@ -134,6 +140,24 @@ public class PlayerAnimationController : MonoBehaviour
         }
     }
 
+    public void ToPurple()
+    {
+        anim.runtimeAnimatorController = purple;
+    }
 
+    public void ToRed()
+    {
+        anim.runtimeAnimatorController = red;
+    }
+
+    public void ToBlue()
+    {
+        anim.runtimeAnimatorController = blue;
+    }
+
+    public void ToGray()
+    {
+        anim.runtimeAnimatorController = gray;
+    }
 
 }

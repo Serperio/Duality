@@ -11,6 +11,7 @@ public class DoorController : MonoBehaviour
     [SerializeField] private bool enabled;
     [SerializeField] private Sprite closedDoor;
     [SerializeField] private Sprite openDoor;
+    [SerializeField] private bool dialogue = false;
     public SpriteRenderer whiteNoise;
     public GameObject PP;
 
@@ -23,7 +24,10 @@ public class DoorController : MonoBehaviour
         startGame = transform;
         dialogueManager = gameObject.GetComponent<TestingDialogue>();
         PP.SetActive(false);
-        dialogueManager.StratDialogue();
+        if (dialogue)
+        {
+            dialogueManager.StratDialogue();
+        }
         
         print(enabled);
         if(enabled == true)

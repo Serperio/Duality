@@ -5,9 +5,11 @@ using UnityEngine;
 public class EyeController : MonoBehaviour
 {
     [SerializeField] private bool isLeft;
-    [SerializeField] private GameObject openEye;
+    [SerializeField] public GameObject openEye;
     [SerializeField] private bool isClosed = false;
+    
     private string buttonName = "Fire2";
+    
 
     public bool IsClosed { get => isClosed; set => isClosed = value; }
 
@@ -16,12 +18,10 @@ public class EyeController : MonoBehaviour
         if (isLeft)
         {
             buttonName = "Fire1";
-
         }
     }
     void Update()
     {
-
         if (Input.GetButton(buttonName))
         {
             if (!IsClosed)
@@ -29,23 +29,14 @@ public class EyeController : MonoBehaviour
                 IsClosed = true;
                 ObjectManager.instance.ManageObjects();
             }
-
-            openEye.SetActive(false);
-            
-
-
-
         }
         else
         {
-
             if (IsClosed)
             {
                 IsClosed = false;
                 ObjectManager.instance.ManageObjects();
             }
-
-            openEye.SetActive(true);
         }
 
     }

@@ -43,7 +43,12 @@ public class DoorController : MonoBehaviour
         {
             whiteNoise.DOFade(0, 1).OnPlay(() => startGame = false);
             Sequence sequence = DOTween.Sequence();
-            sequence.AppendInterval(.3f).Append(DOTween.To(() => temp, x => temp = x, 1, 0.2f).OnPlay(() => PP.SetActive(true)));
+            sequence.AppendInterval(.3f).Append(DOTween.To(() => temp, x => temp = x, 1, 0.2f).OnPlay(() => 
+            {
+                AudioManager.Instance.PlayMusic("A");
+                AudioManager.Instance.PlayMusic("B");
+                PP.SetActive(true); 
+            }));
         }
     }
 

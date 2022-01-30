@@ -1,12 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class AudioManager : MonoBehaviour
 {
 	// Audio players components.
 	public AudioSource EffectsSource;
-	public AudioSource MusicSource;
+	public AudioSource MusicSourceA;
+	public AudioSource MusicSourceB;
+
+	[SerializeField] private AudioClip musicA;
+	[SerializeField] private AudioClip musicB;
 
 	// Random pitch adjustment range.
 	public float LowPitchRange = .95f;
@@ -40,16 +45,45 @@ public class AudioManager : MonoBehaviour
 		EffectsSource.Play();
 	}
 
-	public void MuteMusic()
+	public void MuteMusic(string type)
 	{
-		MusicSource.Stop();
+		if (type == "A")
+        {
+			DOTween.To(() => MusicSourceA.volume, x => MusicSourceA.volume = x, 0f, 0.5f);
+        }
+        else
+        {
+			DOTween.To(() => MusicSourceB.volume, x => MusicSourceB.volume = x, 0f, 0.5f);
+		}
+	}
+
+	public void UnmuteMusic(string type)
+	{
+		if (type == "A")
+		{
+			DOTween.To(() => MusicSourceA.volume, x => MusicSourceA.volume = x, 1f, 0.5f);
+			//MusicSourceA.volume = 1;
+		}
+		else
+		{
+			DOTween.To(() => MusicSourceB.volume, x => MusicSourceB.volume = x, 1f, 0.5f);
+			//MusicSourceB.volume = 1;
+		}
 	}
 
 	// Play a single clip through the music source.
-	public void PlayMusic(AudioClip clip)
+	public void PlayMusic(string type)
 	{
-		MusicSource.clip = clip;
-		MusicSource.Play();
+		if (type == "A")
+		{
+			MusicSourceA.clip = musicA;
+			MusicSourceA.Play();
+        }
+        else
+        {
+			MusicSourceB.clip = musicB;
+			MusicSourceB.Play();
+		}
 	}
 
 	// Play a random clip from an array, and randomize the pitch slightly.

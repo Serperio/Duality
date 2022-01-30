@@ -24,6 +24,8 @@ public class EyesController : MonoBehaviour
         {
             rightSpriteRenderer.sprite = eyesSprites[0];
             leftSpriteRenderer.sprite = eyesSprites[0];
+            AudioManager.Instance.MuteMusic("A");
+            AudioManager.Instance.MuteMusic("B");
         }
         else
         {
@@ -31,17 +33,22 @@ public class EyesController : MonoBehaviour
             {
                 rightSpriteRenderer.sprite = eyesSprites[0];
                 leftSpriteRenderer.sprite = eyesSprites[2];
-
+                AudioManager.Instance.UnmuteMusic("A");
+                AudioManager.Instance.MuteMusic("B");
             }
             else if (leftEye.IsClosed)
             {
                 leftSpriteRenderer.sprite = eyesSprites[0];
                 rightSpriteRenderer.sprite = eyesSprites[1];
+                AudioManager.Instance.MuteMusic("A");
+                AudioManager.Instance.UnmuteMusic("B");
             }
             else
             {
                 leftSpriteRenderer.sprite = eyesSprites[3];
                 rightSpriteRenderer.sprite = eyesSprites[3];
+                AudioManager.Instance.UnmuteMusic("A");
+                AudioManager.Instance.UnmuteMusic("B");
             }
         }
     }

@@ -12,6 +12,9 @@ public class AudioManager : MonoBehaviour
 	public float LowPitchRange = .95f;
 	public float HighPitchRange = 1.05f;
 
+
+	[SerializeField] private AudioClip[] SFXList;
+
 	// Singleton instance.
 	public static AudioManager Instance = null;
 
@@ -34,9 +37,9 @@ public class AudioManager : MonoBehaviour
 	}
 
 	// Play a single clip through the sound effects source.
-	public void Play(AudioClip clip)
+	public void Play(int clipNumber)
 	{
-		EffectsSource.clip = clip;
+		EffectsSource.clip = SFXList[clipNumber];
 		EffectsSource.Play();
 	}
 

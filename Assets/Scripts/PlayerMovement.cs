@@ -159,6 +159,11 @@ public class PlayerMovement : MonoBehaviour
     }
     private void Jump()
     {
+        if (AudioManager.Instance.gameObject != null)
+        {
+            print("audio");
+            AudioManager.Instance.Play(2);
+        }
         rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         lastGroundedTime = 0;
         lastJumpTime = 0;

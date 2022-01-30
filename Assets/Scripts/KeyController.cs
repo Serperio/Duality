@@ -9,6 +9,11 @@ public class KeyController : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            if (AudioManager.Instance.gameObject != null)
+            {
+                print("audio");
+                AudioManager.Instance.Play(3);
+            }
             door.OpenDoor();
             Destroy(this.gameObject);
         }

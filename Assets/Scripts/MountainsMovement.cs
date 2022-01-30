@@ -11,6 +11,8 @@ public class MountainsMovement : MonoBehaviour
     [SerializeField] private EyeController rigthEye;
     [SerializeField] private EyeController leftEye;
 
+    [SerializeField] private bool changeColor = false;
+
     GameObject instantiatedMountain;
     GameObject instantiatedMountain2;
 
@@ -42,32 +44,35 @@ public class MountainsMovement : MonoBehaviour
             instantiatedMountain2 = Instantiate(mountain, new Vector3(166f, 5f, 10f), mountain.transform.rotation);
         }
 
-        if (rigthEye.IsClosed)
+        if (changeColor)
         {
-            instantiatedMountain.gameObject.SetActive(true);
-            instantiatedMountain2.gameObject.SetActive(true);
-            instantiatedMountain.GetComponent<SpriteRenderer>().color = new Color(0f, 0f, 1f);
-            instantiatedMountain2.GetComponent<SpriteRenderer>().color = new Color(0f, 0f, 1f);
-        }
-        else if (leftEye.IsClosed)
-        {
-            instantiatedMountain.gameObject.SetActive(true);
-            instantiatedMountain2.gameObject.SetActive(true);
-            instantiatedMountain.GetComponent<SpriteRenderer>().color = new Color(1f, 0f, 0f);
-            instantiatedMountain2.GetComponent<SpriteRenderer>().color = new Color(1f, 0f, 0f);
-        }
-        else
-        {
-            instantiatedMountain.gameObject.SetActive(true);
-            instantiatedMountain2.gameObject.SetActive(true);
-            instantiatedMountain.GetComponent<SpriteRenderer>().color = new Color(1f, 0f, 1f);
-            instantiatedMountain2.GetComponent<SpriteRenderer>().color = new Color(1f, 0f, 1f);
-        }
+            if (rigthEye.IsClosed)
+            {
+                instantiatedMountain.gameObject.SetActive(true);
+                instantiatedMountain2.gameObject.SetActive(true);
+                instantiatedMountain.GetComponent<SpriteRenderer>().color = new Color(0f, 0f, 1f);
+                instantiatedMountain2.GetComponent<SpriteRenderer>().color = new Color(0f, 0f, 1f);
+            }
+            else if (leftEye.IsClosed)
+            {
+                instantiatedMountain.gameObject.SetActive(true);
+                instantiatedMountain2.gameObject.SetActive(true);
+                instantiatedMountain.GetComponent<SpriteRenderer>().color = new Color(1f, 0f, 0f);
+                instantiatedMountain2.GetComponent<SpriteRenderer>().color = new Color(1f, 0f, 0f);
+            }
+            else
+            {
+                instantiatedMountain.gameObject.SetActive(true);
+                instantiatedMountain2.gameObject.SetActive(true);
+                instantiatedMountain.GetComponent<SpriteRenderer>().color = new Color(1f, 0f, 1f);
+                instantiatedMountain2.GetComponent<SpriteRenderer>().color = new Color(1f, 0f, 1f);
+            }
 
-        if (leftEye.IsClosed && rigthEye.IsClosed)
-        {
-            instantiatedMountain.gameObject.SetActive(false);
-            instantiatedMountain2.gameObject.SetActive(false);
+            if (leftEye.IsClosed && rigthEye.IsClosed)
+            {
+                instantiatedMountain.gameObject.SetActive(false);
+                instantiatedMountain2.gameObject.SetActive(false);
+            }
         }
     }
 }

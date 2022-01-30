@@ -1,16 +1,25 @@
 fileFormatVersion: 2
-guid: 2f8e36b4140e4aa4f99b98da5a66c0b7
+guid: 2b87dc9ef0fc5654581717fb0bc392e1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1917229883824812413
-    second: rbye_jump-Sheet_0
+      213: -6258912424317043543
+    second: rbye_push_0
   - first:
-      213: 180324218824714187
-    second: rbye_jump-Sheet_1
+      213: 5771649695393592640
+    second: rbye_push_1
   - first:
-      213: -6670827329542794414
-    second: rbye_jump-Sheet_2
+      213: -7542801452718701182
+    second: rbye_push_2
+  - first:
+      213: -3682368355274862249
+    second: rbye_push_3
+  - first:
+      213: -3026888019477357666
+    second: rbye_push_4
+  - first:
+      213: -4814689208118098486
+    second: rbye_push_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +50,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -53,7 +62,7 @@ TextureImporter:
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 0
+  alignment: 9
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
@@ -100,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: rbye_jump-Sheet_0
+      name: rbye_push_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 70
-        width: 41
-        height: 35
+        y: 74
+        width: 42
+        height: 37
       alignment: 9
       pivot: {x: 0.4, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -114,20 +123,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 38ecbdd1491a465e0800000000000000
-      internalID: -1917229883824812413
+      spriteID: 9acbd4caf40e329a0800000000000000
+      internalID: -6258912424317043543
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rbye_jump-Sheet_1
+      name: rbye_push_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 35
-        width: 41
-        height: 35
+        x: 42
+        y: 74
+        width: 42
+        height: 37
       alignment: 9
       pivot: {x: 0.4, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -135,20 +144,62 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc7627febe3a08200800000000000000
-      internalID: 180324218824714187
+      spriteID: 0453de581d4091050800000000000000
+      internalID: 5771649695393592640
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rbye_jump-Sheet_2
+      name: rbye_push_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 37
+        width: 42
+        height: 37
+      alignment: 9
+      pivot: {x: 0.4, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 285c66fca06925790800000000000000
+      internalID: -7542801452718701182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rbye_push_3
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 37
+        width: 42
+        height: 37
+      alignment: 9
+      pivot: {x: 0.4, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 751d3bbad7995ecc0800000000000000
+      internalID: -3682368355274862249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rbye_push_4
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 41
-        height: 35
+        width: 42
+        height: 37
       alignment: 9
       pivot: {x: 0.4, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,8 +207,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25352a823e57c63a0800000000000000
-      internalID: -6670827329542794414
+      spriteID: e9b9a2822655ef5d0800000000000000
+      internalID: -3026888019477357666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rbye_push_5
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 0
+        width: 42
+        height: 37
+      alignment: 9
+      pivot: {x: 0.4, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac5c63eaca9ce2db0800000000000000
+      internalID: -4814689208118098486
       vertices: []
       indices: 
       edges: []

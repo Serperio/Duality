@@ -566,6 +566,8 @@ MonoBehaviour:
   enabled: 0
   closedDoor: {fileID: -6274664143807865834, guid: 0fc2770c6f7fa884dbe0754626683668, type: 3}
   openDoor: {fileID: -4099374940933993338, guid: 0fc2770c6f7fa884dbe0754626683668, type: 3}
+  whiteNoise: {fileID: 0}
+  bloom: {fileID: 0}
 --- !u!61 &117131569
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -811,8 +813,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.027011937, y: -0.056407534}
-  m_Size: {x: 0.13202113, y: 0.22718602}
+  m_Offset: {x: -0.0016379338, y: -0.056407537}
+  m_Size: {x: 0.13432783, y: 0.22718605}
   m_Direction: 0
 --- !u!50 &286256715
 Rigidbody2D:

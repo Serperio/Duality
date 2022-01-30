@@ -438,6 +438,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.3529412
       objectReference: {fileID: 0}
+    - target: {fileID: 895344704995538585, guid: 6abb46c354302ee459816c89ee0630f2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6e9b598bae582944497fb9fdaf0f839b, type: 2}
     - target: {fileID: 895344704995538591, guid: 6abb46c354302ee459816c89ee0630f2, type: 3}
       propertyPath: m_Name
       value: Ladder (1)
@@ -1208,6 +1212,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 895344704995538585, guid: 6abb46c354302ee459816c89ee0630f2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7e915cf264bc12f40830021494f4a835, type: 2}
     - target: {fileID: 895344704995538591, guid: 6abb46c354302ee459816c89ee0630f2, type: 3}
       propertyPath: m_Name
       value: Ladder (1)

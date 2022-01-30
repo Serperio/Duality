@@ -292,13 +292,13 @@
                 "m_Node": {
                     "m_Id": "a804d5019615421db9d00927181e851f"
                 },
-                "m_SlotId": 3
+                "m_SlotId": 4
             },
             "m_InputSlot": {
                 "m_Node": {
                     "m_Id": "07cf536d9882440291369b5ace1aa4f5"
                 },
-                "m_SlotId": 1
+                "m_SlotId": 2
             }
         },
         {
@@ -326,7 +326,7 @@
                 "m_Node": {
                     "m_Id": "07cf536d9882440291369b5ace1aa4f5"
                 },
-                "m_SlotId": 2
+                "m_SlotId": 1
             }
         },
         {

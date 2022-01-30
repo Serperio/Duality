@@ -119,7 +119,7 @@ Shader "UI/Vertical Transparency"
 
                         for (int i = 0; i < 30; i++)
                         {
-                            if (IN.texcoord.y <= (-i * .07) + 1.5 - _TransparencyA && IN.texcoord.y >= (-i * .07) + 1.47 - _TransparencyA)
+                            if (IN.texcoord.y <= (-i * .1) + 1.8 - _TransparencyA && IN.texcoord.y >= (-i * .1) + 1.77 - _TransparencyA)
                                 color.a = 0;
                         }
 
@@ -129,7 +129,7 @@ Shader "UI/Vertical Transparency"
 
                         for (int i = 0; i < 20; i++)
                         {
-                            if (IN.texcoord.y <= (-i * .07) + 1.5 + _TransparencyB && IN.texcoord.y >= (-i * .07) + 1.47 + _TransparencyB)
+                            if (IN.texcoord.y <= (-i * .1) + 1.8 + _TransparencyB && IN.texcoord.y >= (-i * .1) + 1.77 + _TransparencyB)
                                 color.a = 0;
                         }
 

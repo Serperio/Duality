@@ -1302,6 +1302,10 @@ PrefabInstance:
       propertyPath: rigthEye
       value: 
       objectReference: {fileID: 464874553}
+    - target: {fileID: 4508250873317155205, guid: 46a81d7af602e04478acb6301705bb7e, type: 3}
+      propertyPath: changeColor
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4508250873936569571, guid: 46a81d7af602e04478acb6301705bb7e, type: 3}
       propertyPath: leftEye
       value: 
@@ -1310,6 +1314,10 @@ PrefabInstance:
       propertyPath: rigthEye
       value: 
       objectReference: {fileID: 464874553}
+    - target: {fileID: 4508250873936569571, guid: 46a81d7af602e04478acb6301705bb7e, type: 3}
+      propertyPath: changeColor
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8061355423823255077, guid: 46a81d7af602e04478acb6301705bb7e, type: 3}
       propertyPath: m_Name
       value: Background
@@ -1414,7 +1422,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &981885281
 SpriteRenderer:
   m_ObjectHideFlags: 0

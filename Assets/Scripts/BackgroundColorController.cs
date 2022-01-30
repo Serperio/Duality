@@ -27,7 +27,7 @@ public class BackgroundColorController : MonoBehaviour
             else if (leftEye.IsClosed)
             {
                 grid.gameObject.SetActive(true);
-                grid.material.SetColor("_Color", new Color(1f, 0f, 0f));
+                grid.material.SetColor("_Color", new Color(1f, 0.18f, 0f));
 
                 sun.gameObject.SetActive(true);
                 sun.material.SetColor("_ColorA", new Color(1f, 0f, 0f));

@@ -9,7 +9,9 @@ public class PlayerAnimationController : MonoBehaviour
     Rigidbody2D rb;
     PlayerMovement pm;
     [SerializeField] private PlayerLadderMovement plm;
+    [SerializeField] private LayerMask boxLayer;
     private string lastTrigger = "None";
+    private int dir;
     private void Start()
     {
         sr = GetComponent<SpriteRenderer>();
@@ -25,10 +27,12 @@ public class PlayerAnimationController : MonoBehaviour
         if(axis > 0)
         {
             sr.flipX = true;
+            dir = 1;
         }
         if (axis < 0)
         {
             sr.flipX = false;
+            dir = -1;
         }
 
         if (Mathf.Abs(axis) >= 0.01f)
@@ -100,11 +104,36 @@ public class PlayerAnimationController : MonoBehaviour
         
         #endregion
     }
+
+    private void FixedUpdate()
+    {
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.right*dir, 10, boxLayer, 0);
+
+        if(hit.collider != null)
+        {
+            print(hit.collider.gameObject.name);
+        }
+        Debug.DrawRay(transform.position, Vector2.right * dir*5, Color.red);
+
+    }
     public void ChangeToJumpUp()
     {
         anim.SetTrigger("JumpUp");
     }
-  
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Box")
+        {
+            print(collision.gameObject.transform.position.y);
+            if (anim.GetBool("Running"))
+            {
+                print("2do print");
+                anim.SetTrigger("Push");
+            }
+        }
+    }
+
 
 
 }

@@ -51,11 +51,11 @@ public class EnemieMovement : MonoBehaviour
 
         if(transform.position.x < leftWall.position.x || transform.position.x > rightWall.position.x)
         {
-            print("llega");
+            
             director *= -1;
         }
         speed = speed * director;
-        print(speed);
+        
         rb.velocity = new Vector2(speed * Time.fixedDeltaTime, rb.velocity.y);
     }
     void OnCollisionEnter2D(Collision2D collision)

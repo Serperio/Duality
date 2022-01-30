@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using DG.Tweening;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class MenuController : MonoBehaviour
@@ -8,6 +10,8 @@ public class MenuController : MonoBehaviour
 
     [SerializeField]private int index = 1;
     [SerializeField] private GameObject credits;
+    [SerializeField] private SpriteRenderer whiteNoise;
+    [SerializeField] private GameObject PP;
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.DownArrow))
@@ -37,6 +41,7 @@ public class MenuController : MonoBehaviour
                 {
                     case 1:
                         //Pasar a primer nivel
+                        whiteNoise.DOFade(1, 1).OnPlay(()=>PP.SetActive(false)).OnComplete(()=>whiteNoise.DOFade(0,1).OnPlay(()=>SceneManager.LoadScene("Level 1")));
                         break;
                     case 2:
                         //Mostrar creditos

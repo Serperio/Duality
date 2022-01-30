@@ -11,10 +11,12 @@ public class DoorController : MonoBehaviour
     [SerializeField] private Sprite closedDoor;
     [SerializeField] private Sprite openDoor;
     [SerializeField] private SpriteRenderer whiteNoise;
-    [SerializeField]  private GameObject bloom;
+    [SerializeField]  private GameObject PP;
 
     private void Start()
     {
+        PP.SetActive(false);
+        whiteNoise.DOFade(0, 1).OnComplete(() => PP.SetActive(true));
         print(enabled);
         if(enabled == true)
         {
@@ -27,10 +29,10 @@ public class DoorController : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             if (enabled) print("pasaste");
-            bloom.SetActive(false);
+            PP.SetActive(false);
             whiteNoise.DOFade(1f, 1f).OnComplete(() => 
             {
-                whiteNoise.DOFade(0f, 1f).OnComplete(() => bloom.SetActive(true));
+                whiteNoise.DOFade(0f, 1f).OnComplete(() => PP.SetActive(true));
             });
         }
             

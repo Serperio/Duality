@@ -39,7 +39,7 @@ public class DoorController : MonoBehaviour
             {
                 string levelName = SceneManager.GetActiveScene().name;
                 string index = levelName.Substring(levelName.Length - 1, 1);
-                SceneManager.LoadScene("Level" + (int.Parse(index) + 1));
+                SceneManager.LoadScene("Level " + (int.Parse(index) + 1));
             });
         }
             

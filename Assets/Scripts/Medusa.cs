@@ -13,7 +13,7 @@ public class Medusa : MonoBehaviour
     [SerializeField] private Light2D medusaLeftEye;
 
 
-    private int randomNumber;
+    private float counter = 0;
     private bool isPowerActived = false;
 
     void Start()
@@ -26,15 +26,23 @@ public class Medusa : MonoBehaviour
     {
         if (!isPowerActived)
         {
-            randomNumber = Random.Range(0, 2000);
+            counter += Time.deltaTime;
 
-            if (randomNumber == 300)
+            if (counter >= 5)
             {
+                counter = 0;
                 Debug.Log("Entre");
-                DOTween.To(() => medusaRightEye.pointLightOuterRadius, x => medusaRightEye.pointLightOuterRadius = x, 10f, 1f).OnPlay(() => isPowerActived = true).OnComplete(() =>
+                DOTween.To(() => medusaRightEye.pointLightOuterRadius, x => medusaRightEye.pointLightOuterRadius = x, 10f, 1f).OnComplete(() =>
                 {                  
-                    DOTween.To(() => medusaRightEye.pointLightOuterRadius, x => medusaRightEye.pointLightOuterRadius = x, 0f, 1f).OnComplete(() => isPowerActived = false);
+                    DOTween.To(() => medusaRightEye.pointLightOuterRadius, x => medusaRightEye.pointLightOuterRadius = x, 0f, 1f);
+
                 });
+                Sequence medusa = DOTween.Sequence();
+                int num = 0;
+                medusa.AppendInterval(1).Append(DOTween.To(() => num, x => num = x, 1, 0.2f).OnPlay(() => isPowerActived = true));
+                medusa = DOTween.Sequence();
+                num = 0;
+                medusa.AppendInterval(1.5f).Append(DOTween.To(() => num, x => num = x, 1, 0.2f).OnPlay(() => isPowerActived = false));
                 DOTween.To(() => medusaLeftEye.pointLightOuterRadius, x => medusaLeftEye.pointLightOuterRadius = x, 10f, 1f).OnComplete(() =>
                 {
                     DOTween.To(() => medusaLeftEye.pointLightOuterRadius, x => medusaLeftEye.pointLightOuterRadius = x, 0f, 1f);
@@ -52,7 +60,7 @@ public class Medusa : MonoBehaviour
     {      
         if (!playerRightEye.IsClosed || !playerleftEye.IsClosed)
         {
-            Debug.Log("moriste");
+            LevelManager.instance.ResetLevel();
         }
     }
 }

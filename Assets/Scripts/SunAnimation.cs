@@ -15,23 +15,23 @@ public class SunAnimation : MonoBehaviour
     private void Start()
     {
         material = gameObject.GetComponent<SpriteRenderer>().material;
-        material.SetFloat("_TransparencyA", -0.6f);
-        material.SetFloat("_TransparencyB", 0.6f);
+        material.SetFloat("_TransparencyA", -0.8f);
+        material.SetFloat("_TransparencyB", 0.8f);
     }
 
     private void Update()
     {
         if (!isAnimated)
         {
-            DOTween.To(() => material.GetFloat("_TransparencyA"), x => material.SetFloat("_TransparencyA", x), 0.6f, time).OnPlay(() =>
+            DOTween.To(() => material.GetFloat("_TransparencyA"), x => material.SetFloat("_TransparencyA", x), 0.8f, time).OnPlay(() =>
             {
                 material.SetFloat("_Phase", 1);
                 isAnimated = true;
-            }).OnComplete(() => material.SetFloat("_TransparencyA", -0.6f)).SetEase(Ease.Linear);
+            }).OnComplete(() => material.SetFloat("_TransparencyA", -0.8f)).SetEase(Ease.Linear);
 
             sequence = DOTween.Sequence();
             sequence.AppendInterval(time - 3f)
-                .Append(DOTween.To(() => material.GetFloat("_TransparencyB"), x => material.SetFloat("_TransparencyB", x), -0.6f, time)).OnComplete(() => material.SetFloat("_TransparencyB", 0.6f)).SetEase(Ease.Linear);
+                .Append(DOTween.To(() => material.GetFloat("_TransparencyB"), x => material.SetFloat("_TransparencyB", x), -0.8f, time)).OnComplete(() => material.SetFloat("_TransparencyB", 0.8f)).SetEase(Ease.Linear);
 
             sequence = DOTween.Sequence();
             sequence.AppendInterval(time - 1.5f).Append(DOTween.To(() => num, x => num = x, 1, 0.2f).OnPlay(() => material.SetFloat("_Phase", 0)));

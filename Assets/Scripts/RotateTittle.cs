@@ -11,14 +11,6 @@ public class RotateTittle : MonoBehaviour
     }
     private void Update()
     {
-        amount+=Time.deltaTime/10;
-        print(transform.localRotation.eulerAngles.y);
-        if (transform.localRotation.eulerAngles.y > 90 && transform.localRotation.eulerAngles.y < 270)
-        {
-            amount = 270;
-            print("more");
-        }
-        if (transform.localRotation.eulerAngles.y > 360) amount = 0;
-        transform.Rotate(transform.rotation.x, amount, transform.rotation.z, Space.World);
+        transform.Rotate(Vector3.up * 15 * Time.deltaTime);
     }
 }

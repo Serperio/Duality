@@ -1,25 +1,16 @@
 fileFormatVersion: 2
-guid: 9b17646bbf4917a45970a1c7554c0400
+guid: 23dca81d1efe06945b892befd02bc7d0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -260145991059401588
-    second: brbye-iddleB-Sheet_0
+      213: 6988299777712878979
+    second: rbye_fallD-Sheet-export_0
   - first:
-      213: 6277995178403610636
-    second: brbye-iddleB-Sheet_1
+      213: 8053633107387927967
+    second: rbye_fallD-Sheet-export_1
   - first:
-      213: -766144690513449298
-    second: brbye-iddleB-Sheet_2
-  - first:
-      213: -3351278891431695119
-    second: brbye-iddleB-Sheet_3
-  - first:
-      213: 4252370232838032704
-    second: brbye-iddleB-Sheet_4
-  - first:
-      213: -8286399956850674235
-    second: brbye-iddleB-Sheet_5
+      213: -7249519225802750952
+    second: rbye_fallD-Sheet-export_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -109,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: brbye-iddleB-Sheet_0
+      name: rbye_fallD-Sheet-export_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 74
-        width: 31
-        height: 37
+        y: 66
+        width: 44
+        height: 33
       alignment: 9
       pivot: {x: 0.35, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -123,41 +114,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8499257996c36cf0800000000000000
-      internalID: -260145991059401588
+      spriteID: 385748a4f9d6bf060800000000000000
+      internalID: 6988299777712878979
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: brbye-iddleB-Sheet_1
-      rect:
-        serializedVersion: 2
-        x: 31
-        y: 74
-        width: 31
-        height: 37
-      alignment: 9
-      pivot: {x: 0.35, y: 0.4}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c00cc5e3a5bef1750800000000000000
-      internalID: 6277995178403610636
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: brbye-iddleB-Sheet_2
+      name: rbye_fallD-Sheet-export_1
       rect:
         serializedVersion: 2
         x: 0
-        y: 37
-        width: 31
-        height: 37
+        y: 33
+        width: 44
+        height: 33
       alignment: 9
       pivot: {x: 0.35, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,41 +135,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eaee463967b1e55f0800000000000000
-      internalID: -766144690513449298
+      spriteID: f9dce2524a044cf60800000000000000
+      internalID: 8053633107387927967
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: brbye-iddleB-Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 31
-        y: 37
-        width: 31
-        height: 37
-      alignment: 9
-      pivot: {x: 0.35, y: 0.4}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1fce2f4aa9ddd71d0800000000000000
-      internalID: -3351278891431695119
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: brbye-iddleB-Sheet_4
+      name: rbye_fallD-Sheet-export_2
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 31
-        height: 37
+        width: 44
+        height: 33
       alignment: 9
       pivot: {x: 0.35, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -207,29 +156,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04d81cd5234730b30800000000000000
-      internalID: 4252370232838032704
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: brbye-iddleB-Sheet_5
-      rect:
-        serializedVersion: 2
-        x: 31
-        y: 0
-        width: 31
-        height: 37
-      alignment: 9
-      pivot: {x: 0.35, y: 0.4}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5c57a19742bc00d80800000000000000
-      internalID: -8286399956850674235
+      spriteID: 81489a97ca8846b90800000000000000
+      internalID: -7249519225802750952
       vertices: []
       indices: 
       edges: []

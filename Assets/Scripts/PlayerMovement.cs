@@ -47,7 +47,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         moveInput = Input.GetAxis("Horizontal");
-        if (Input.GetButtonDown("Jump") )
+        if (Input.GetButtonDown("Jump") && rb.velocity.y <= 0)
         {
             OnJump();
         }

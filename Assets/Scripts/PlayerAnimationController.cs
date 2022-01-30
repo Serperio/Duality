@@ -107,13 +107,13 @@ public class PlayerAnimationController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.right*dir, 10, boxLayer, 0);
+        //RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.right*dir, 10, boxLayer, 0);
 
-        if(hit.collider != null)
-        {
-            print(hit.collider.gameObject.name);
-        }
-        Debug.DrawRay(transform.position, Vector2.right * dir*5, Color.red);
+        //if(hit.collider != null)
+        //{
+        //    print(hit.collider.gameObject.name);
+        //}
+        //Debug.DrawRay(transform.position, Vector2.right * dir*5, Color.red);
 
     }
     public void ChangeToJumpUp()

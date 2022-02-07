@@ -342,7 +342,7 @@ MonoBehaviour:
   LowPitchRange: 0.95
   HighPitchRange: 1.05
   SFXList:
-  - {fileID: 8300000, guid: 242c0a0954dc96d41a19f65c9ea95745, type: 3}
+  - {fileID: 8300000, guid: 38ef8e316bccb1e47a0224a0ccab4d88, type: 3}
   - {fileID: 8300000, guid: 8227780f8f5bd554b98698b8b95ce405, type: 3}
   - {fileID: 8300000, guid: f605c894aa573c14f84a5ad5b3ea74cb, type: 3}
   - {fileID: 8300000, guid: 02f3cf0dd9873c940a5f9b78f55be541, type: 3}

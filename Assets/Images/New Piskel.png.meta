@@ -1,25 +1,16 @@
 fileFormatVersion: 2
-guid: 1b4a5ce86e7ac594497b8a99505544cb
+guid: cd6c876b91be19e43af9f88f7e944a7b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7734974677454779894
-    second: el_poderoso_cerbero_con_una_cabeza_0
+      213: -2510476293373519475
+    second: New Piskel_0
   - first:
-      213: 6682507333755321482
-    second: el_poderoso_cerbero_con_una_cabeza_1
+      213: 627625725489826318
+    second: New Piskel_1
   - first:
-      213: -8783899218208325315
-    second: el_poderoso_cerbero_con_una_cabeza_2
-  - first:
-      213: -588058901627175180
-    second: el_poderoso_cerbero_con_una_cabeza_3
-  - first:
-      213: -7204864748674092680
-    second: el_poderoso_cerbero_con_una_cabeza_4
-  - first:
-      213: 5947049433081185298
-    second: el_poderoso_cerbero_con_una_cabeza_5
+      213: 6338068570567419226
+    second: New Piskel_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -109,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: el_poderoso_cerbero_con_una_cabeza_0
+      name: New Piskel_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 88
-        width: 48
-        height: 44
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -123,20 +114,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f5755ccc76285b60800000000000000
-      internalID: 7734974677454779894
+      spriteID: d899e6cbc1ff82dd0800000000000000
+      internalID: -2510476293373519475
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: el_poderoso_cerbero_con_una_cabeza_1
+      name: New Piskel_1
       rect:
         serializedVersion: 2
-        x: 48
-        y: 88
-        width: 48
-        height: 44
+        x: 32
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,62 +135,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a8cbd6db3090dbc50800000000000000
-      internalID: 6682507333755321482
+      spriteID: e0ac7b3a546c5b800800000000000000
+      internalID: 627625725489826318
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: el_poderoso_cerbero_con_una_cabeza_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 44
-        width: 48
-        height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d318cdb3332591680800000000000000
-      internalID: -8783899218208325315
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: el_poderoso_cerbero_con_una_cabeza_3
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 44
-        width: 48
-        height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4fe718d6b8bc6d7f0800000000000000
-      internalID: -588058901627175180
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: el_poderoso_cerbero_con_una_cabeza_4
+      name: New Piskel_2
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 48
-        height: 44
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -207,29 +156,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 871fb802fad230c90800000000000000
-      internalID: -7204864748674092680
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: el_poderoso_cerbero_con_una_cabeza_5
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 0
-        width: 48
-        height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2140e7853f9288250800000000000000
-      internalID: 5947049433081185298
+      spriteID: a552dbec8c755f750800000000000000
+      internalID: 6338068570567419226
       vertices: []
       indices: 
       edges: []

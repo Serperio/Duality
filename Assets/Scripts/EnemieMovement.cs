@@ -9,12 +9,21 @@ public class EnemieMovement : MonoBehaviour
     [SerializeField] private Transform rightWall;
     [SerializeField] private int director;
     [SerializeField] private int speed;
+
     [SerializeField] private EyeController eye; //Si =1, aparece con ojo derecho abierto, si=0, con el ojo izquierdo, cuando estan ambos abiertos no afecta 
-    [SerializeField] private Vector3 initPos;
-    [SerializeField] private int initdir;
+
+    private bool canChange = true;
+    private float canChangeCounter = 0;
+    private float initPos;
+    private int initDir;
+    private float leftPos;
+    private float rightPos;
+
+
+
     private Rigidbody2D rb;
     private Collider2D collider;
-    private SpriteRenderer spriteRenderer;
+    private SpriteRenderer sr;
     private bool respawn;
 
     
@@ -22,40 +31,56 @@ public class EnemieMovement : MonoBehaviour
     void Start()
     {
         respawn = true;
-        initPos = transform.position;
+        initDir = director;
+        initPos = transform.localPosition.x;
+        leftPos = leftWall.transform.TransformPoint(Vector3.zero).x;
+        rightPos = rightWall.transform.TransformPoint(Vector3.zero).x;
         rb = gameObject.GetComponent<Rigidbody2D>();
         collider = GetComponent<Collider2D>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        sr = GetComponent<SpriteRenderer>();
     }
 
-    // Update is called once per frame
     private void FixedUpdate()
     {
-        if (eye.IsClosed)
+        if(eye != null)
         {
-            collider.enabled = false;
-            spriteRenderer.enabled = false;
-            respawn = true;
+            if (eye.IsClosed)
+            {
+                collider.enabled = false;
+                sr.enabled = false;
+                respawn = true;
 
+            }
+            else if (respawn)
+            {
+                //director = initDir;
+                //speed = Mathf.Abs(speed);
+                collider.enabled = true;
+                //transform.position = new Vector3(initPos, transform.position.y, transform.position.z);
+                sr.enabled = true;
+                respawn = false;
+            }
         }
-        else if(respawn)
-        {
-            director = initdir;
-            speed = Mathf.Abs(speed);
-            collider.enabled = true;
-            transform.position = initPos;
-            spriteRenderer.enabled = true;
-            respawn = false;
-        }
-       
-
-        if(transform.position.x < leftWall.position.x || transform.position.x > rightWall.position.x)
-        {
-            
-            director *= -1;
-        }
-        speed = speed * director;
         
+
+
+
+
+        if (transform.position.x < leftPos)
+        {
+            print("menor");
+            director = 1;
+        }
+
+        if (transform.position.x > rightPos)
+        {
+            print("mayor");
+            director = -1;
+        }
+
+        if (rb.velocity.x > 0) sr.flipX = true;
+        else sr.flipX = false;
+        speed = Mathf.Abs(speed) * director;
         rb.velocity = new Vector2(speed * Time.fixedDeltaTime, rb.velocity.y);
     }
     void OnCollisionEnter2D(Collision2D collision)

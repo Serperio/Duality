@@ -5,12 +5,13 @@ using UnityEngine;
 public class RotateTittle : MonoBehaviour
 {
     float amount;
+    [SerializeField] private float speed;
     private void Start()
     {
         amount  = transform.localRotation.eulerAngles.y;
     }
     private void Update()
     {
-        transform.Rotate(Vector3.up * 15 * Time.deltaTime);
+        transform.Rotate(Vector3.up * speed * Time.deltaTime);
     }
 }

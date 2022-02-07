@@ -29,7 +29,7 @@ public class DoorController : MonoBehaviour
             dialogueManager.StratDialogue();
         }
         
-        print(enabled);
+        //print(enabled);
         if(enabled == true)
         {
             print("inicia encendido");

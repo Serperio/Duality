@@ -77,7 +77,7 @@ public class PlayerAnimationController : MonoBehaviour
         else
         {
 
-            if (rb.velocity.y == 0)
+            if (Mathf.Abs(rb.velocity.y) <= 0.1f)
             {
                 if (lastTrigger != "Ground")
                 {

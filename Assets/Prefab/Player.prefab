@@ -45,8 +45,7 @@ GameObject:
   - component: {fileID: 301307114612703231}
   - component: {fileID: 301307114612703230}
   - component: {fileID: 301307114612703224}
-  - component: {fileID: 301307114612703227}
-  - component: {fileID: 311753707}
+  - component: {fileID: 1849400443}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -153,20 +152,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ade76f71d596e1048bc0100f237ea748, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 16
-  acceleration: 13
-  decceleration: 16
-  velPower: 0.96
-  frictionAmount: 0.22
-  jumpForce: 20
-  jumpCutMultiplier: 0.4
-  jumpCoyoteTime: 0.15
-  jumpBufferTime: 0.1
-  fallGravityMultiplier: 2
+  runMaxSpeed: 20
+  runAcceleration: 5
+  runDecceleration: 10
+  accelerationInAir: 0.65
+  deccelerationInAir: 0.65
+  conserveMomentum: 1
+  jumpHeight: 6
+  jumpTimeToApex: 0.3
+  jumpCutGravityMultiplier: 2
+  jumpHangGravityMultiplier: 0.864
+  jumpHangTimeTreshold: 1
+  jumpHangAccelerationMultiplier: 1.1
+  jumpHangMaxSpeedMultiplier: 1.3
   isJumping: 0
+  isJumpFalling: 0
+  isJumpCut: 0
   jumpInputReleased: 0
   lastGroundedTime: 0
   lastJumpTime: 0
+  fallGravityMultiplier: 1.5
+  maxFallSpeed: 25
+  fastFallGravityMultiplier: 2
+  maxFastFallSpeed: 30
   grounded: 0
   groundCheck: {fileID: 301307112896598149}
   groundCheckSize: {x: 0.1, y: 0.1}
@@ -176,6 +184,8 @@ MonoBehaviour:
   plm: {fileID: 0}
   maxTime: 0
   timeToReset: 0
+  jumpCoyoteTime: 0.08
+  jumpBufferTime: 0.1
 --- !u!114 &301307114612703231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -229,8 +239,8 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!70 &301307114612703227
-CapsuleCollider2D:
+--- !u!61 &1849400443
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -242,23 +252,7 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.007162269, y: -0.05}
-  m_Size: {x: 0.09282395, y: 0.19199093}
-  m_Direction: 0
---- !u!61 &311753707
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 301307114612703222}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.0052458383, y: -0.052286334}
+  m_Offset: {x: -0.007832985, y: -0.051444232}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.35, y: 0.4}
@@ -269,5 +263,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.0960818, y: 0.18434264}
+  m_Size: {x: 0.10993602, y: 0.1863454}
   m_EdgeRadius: 0

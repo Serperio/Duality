@@ -41,7 +41,7 @@ public class PlayerAnimationController : MonoBehaviour
             dir = -1;
         }
 
-        if (Mathf.Abs(axis) >= 0.01f)
+        if (Mathf.Abs(axis) >= 0.2f)
         {
             anim.SetBool("Running",true);
         }

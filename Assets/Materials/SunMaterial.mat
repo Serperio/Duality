@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: WhitePlatforms
-  m_Shader: {fileID: -6465566751694194690, guid: 8170d55fba423834f977ad8f95c1d32a, type: 3}
+  m_Name: SunMaterial
+  m_Shader: {fileID: -6465566751694194690, guid: a9b379e1f75cb2e4da9f86c4b7f0933e, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -19,11 +19,15 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _MainText:
-        m_Texture: {fileID: 0}
+    - Texture2D_0ac6e3599af74325b7e8cfe11630fbd7:
+        m_Texture: {fileID: 2800000, guid: d1a3b0ce49ecd3f4c8fd9b5d057edf80, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _SampleTexture2DLOD_08b59e8b2b0c400eb4dfc6a7640a8c03_Texture_1:
+    - Texture2D_539bc8408e534c61b41556c358838aad:
+        m_Texture: {fileID: 2800000, guid: 6320494f419eac640aa4cfd0213998bf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -40,13 +44,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_4361a8add2314f6e80ecc8ea69011bd8: 0.9
-    - Vector1_696b706fb1464b85ae470c1c31702bbb: 1
-    - Vector1_cb2cd7e07f8f44b9b32e423fe5b70b00: 0.7
-    - _GlowIntensity: 2
-    - _Height: 0.9
-    - _Width: 0.8
+    - Vector1_b61219d8179c4251ae321164b598fefe: 0.1
     m_Colors:
-    - Color_4070e7e2bd5e4a2186ea72ccc175cecf: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 1, g: 1, b: 1, a: 0}
+    - Color_ae53710077714b9ba460c7cad573cc53: {r: 1, g: 1, b: 1, a: 0}
+    - Color_cfd7095f297f4dc79ce14a143f3f75a1: {r: 1, g: 1, b: 1, a: 0}
+    - Vector4_6d3c3527e3bf419c9fcef9fa8067e302: {r: 0.02, g: 0.75, b: 0, a: 0}
+    - _ColorA: {r: 1, g: 1, b: 1, a: 0}
+    - _ColorB: {r: 1, g: 1, b: 1, a: 0}
   m_BuildTextureStacks: []

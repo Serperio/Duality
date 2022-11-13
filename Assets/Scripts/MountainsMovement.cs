@@ -18,8 +18,8 @@ public class MountainsMovement : MonoBehaviour
 
     private void Start()
     {
-        instantiatedMountain = Instantiate(mountain, new Vector3(-30f, 5f, 10f), mountain.transform.rotation);
-        instantiatedMountain2 = Instantiate(mountain, new Vector3(104f, 5f, 10f), mountain.transform.rotation);
+        instantiatedMountain = Instantiate(mountain, new Vector3(-30f, 4.65f, 10f), mountain.transform.rotation);
+        instantiatedMountain2 = Instantiate(mountain, new Vector3(104f, 4.65f, 10f), mountain.transform.rotation);
     }
 
     private void Update()
@@ -31,7 +31,7 @@ public class MountainsMovement : MonoBehaviour
         if (instantiatedMountain.transform.position.x < -103)
         {
             Destroy(instantiatedMountain);
-            instantiatedMountain = Instantiate(mountain, new Vector3(166f, 5f, 10f), mountain.transform.rotation);
+            instantiatedMountain = Instantiate(mountain, new Vector3(166f, 4.65f, 10f), mountain.transform.rotation);
         }
 
         Vector3 position2 = instantiatedMountain2.transform.position;
@@ -41,7 +41,7 @@ public class MountainsMovement : MonoBehaviour
         if (instantiatedMountain2.transform.position.x < -103)
         {
             Destroy(instantiatedMountain2);
-            instantiatedMountain2 = Instantiate(mountain, new Vector3(166f, 5f, 10f), mountain.transform.rotation);
+            instantiatedMountain2 = Instantiate(mountain, new Vector3(166f, 4.65f, 10f), mountain.transform.rotation);
         }
 
         if (changeColor)

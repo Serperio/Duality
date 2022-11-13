@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Glow
-  m_Shader: {fileID: -6465566751694194690, guid: ec695a8c681aed64fb6324e44085c5b3, type: 3}
+  m_Name: Blue Glow
+  m_Shader: {fileID: -6465566751694194690, guid: 47b2b7fc0362cea45ae1d78abb5018aa, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -19,6 +19,10 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - Texture2D_89f0df7e6d564efebe1c9f6b483b2362:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -35,8 +39,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - Vector1_a7210841f249439fb3c429131c4f1100: 0.99
+    m_Floats: []
     m_Colors:
-    - Color_035e64a2504242beb910b9fd1076d651: {r: 20.860783, g: 0, b: 4.1503186, a: 1}
+    - Color_1ee1cedf154e4eedad07e2a7ef54f73a: {r: 0.3340157, g: 0.46091402, b: 0.509434, a: 0}
   m_BuildTextureStacks: []

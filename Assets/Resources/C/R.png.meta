@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: d78783fd119089d42a2b0cab3deca19d
+guid: b2334a076cd754741b72f4d0b08eceb8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4787506646941699313
-    second: brbye-iddleC-Sheet-export_0
+      213: 1072531525580389966
+    second: run1
   - first:
-      213: 949792519070495570
-    second: brbye-iddleC-Sheet-export_1
+      213: 6696440048206744893
+    second: run2
   - first:
-      213: 1346265783284710538
-    second: brbye-iddleC-Sheet-export_2
+      213: 4840066501879734161
+    second: run3
   - first:
-      213: -3553712085547312481
-    second: brbye-iddleC-Sheet-export_3
+      213: 8403814885345168568
+    second: run4
   - first:
-      213: -3826505617796848543
-    second: brbye-iddleC-Sheet-export_4
+      213: 2019362419502123783
+    second: run5
   - first:
-      213: -2392298096326521245
-    second: brbye-iddleC-Sheet-export_5
+      213: 7550001615125971934
+    second: run6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -109,127 +109,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: brbye-iddleC-Sheet-export_0
+      name: run1
       rect:
         serializedVersion: 2
         x: 0
         y: 74
-        width: 31
+        width: 42
         height: 37
       alignment: 9
-      pivot: {x: 0.35, y: 0.4}
+      pivot: {x: 0.4, y: 0.35}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1fc08ca1ee3a07240800000000000000
-      internalID: 4787506646941699313
+      spriteID: e4e70a07db562ee00800000000000000
+      internalID: 1072531525580389966
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: brbye-iddleC-Sheet-export_1
+      name: run2
       rect:
         serializedVersion: 2
-        x: 31
+        x: 42
         y: 74
-        width: 31
+        width: 42
         height: 37
       alignment: 9
-      pivot: {x: 0.35, y: 0.4}
+      pivot: {x: 0.4, y: 0.35}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 253358d83475e2d00800000000000000
-      internalID: 949792519070495570
+      spriteID: d3d001d9eb88eec50800000000000000
+      internalID: 6696440048206744893
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: brbye-iddleC-Sheet-export_2
+      name: run3
       rect:
         serializedVersion: 2
         x: 0
         y: 37
-        width: 31
+        width: 42
         height: 37
       alignment: 9
-      pivot: {x: 0.35, y: 0.4}
+      pivot: {x: 0.4, y: 0.35}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a8cb2f9d895eea210800000000000000
-      internalID: 1346265783284710538
+      spriteID: 19f1fc5f6de5b2340800000000000000
+      internalID: 4840066501879734161
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: brbye-iddleC-Sheet-export_3
+      name: run4
       rect:
         serializedVersion: 2
-        x: 31
+        x: 42
         y: 37
-        width: 31
+        width: 42
         height: 37
       alignment: 9
-      pivot: {x: 0.35, y: 0.4}
+      pivot: {x: 0.4, y: 0.35}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9a90f2cfadaeaec0800000000000000
-      internalID: -3553712085547312481
+      spriteID: 8bc8327ec1950a470800000000000000
+      internalID: 8403814885345168568
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: brbye-iddleC-Sheet-export_4
+      name: run5
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 31
+        width: 42
         height: 37
       alignment: 9
-      pivot: {x: 0.35, y: 0.4}
+      pivot: {x: 0.4, y: 0.35}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 164ae201a6585eac0800000000000000
-      internalID: -3826505617796848543
+      spriteID: 70b8237eb67360c10800000000000000
+      internalID: 2019362419502123783
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: brbye-iddleC-Sheet-export_5
+      name: run6
       rect:
         serializedVersion: 2
-        x: 31
+        x: 42
         y: 0
-        width: 31
+        width: 42
         height: 37
       alignment: 9
-      pivot: {x: 0.35, y: 0.4}
+      pivot: {x: 0.4, y: 0.35}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 36e4d9b6e89dcced0800000000000000
-      internalID: -2392298096326521245
+      spriteID: ed38533a77ef6c860800000000000000
+      internalID: 7550001615125971934
       vertices: []
       indices: 
       edges: []

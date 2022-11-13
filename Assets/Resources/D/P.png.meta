@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: c6336ad0362b2f3428417ec31c1dc04b
+guid: 9dec58657e41cd347b3ca826cf007440
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6270814157791057979
-    second: rbye-runD-spritesheet-export_0
+      213: -4094698239098248222
+    second: push1
   - first:
-      213: 9145863089744135445
-    second: rbye-runD-spritesheet-export_1
+      213: 5099897460101692837
+    second: push2
   - first:
-      213: 2085461606180338227
-    second: rbye-runD-spritesheet-export_2
+      213: -7932938658553573315
+    second: push3
   - first:
-      213: -1833926611266665299
-    second: rbye-runD-spritesheet-export_3
+      213: -74487224965027064
+    second: push4
   - first:
-      213: 5549096426969647032
-    second: rbye-runD-spritesheet-export_4
+      213: 4940569599492643157
+    second: push5
   - first:
-      213: 8580831206029144863
-    second: rbye-runD-spritesheet-export_5
+      213: -1980125543273299153
+    second: push6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -109,7 +109,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: rbye-runD-spritesheet-export_0
+      name: push1
       rect:
         serializedVersion: 2
         x: 0
@@ -117,20 +117,20 @@ TextureImporter:
         width: 42
         height: 37
       alignment: 9
-      pivot: {x: 0.35, y: 0.4}
+      pivot: {x: 0.4, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c7af586fb799f8a0800000000000000
-      internalID: -6270814157791057979
+      spriteID: 2e3a12c65a5bc27c0800000000000000
+      internalID: -4094698239098248222
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rbye-runD-spritesheet-export_1
+      name: push2
       rect:
         serializedVersion: 2
         x: 42
@@ -138,20 +138,20 @@ TextureImporter:
         width: 42
         height: 37
       alignment: 9
-      pivot: {x: 0.35, y: 0.4}
+      pivot: {x: 0.4, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5154e84f502acee70800000000000000
-      internalID: 9145863089744135445
+      spriteID: 5ad374438b976c640800000000000000
+      internalID: 5099897460101692837
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rbye-runD-spritesheet-export_2
+      name: push3
       rect:
         serializedVersion: 2
         x: 0
@@ -159,20 +159,20 @@ TextureImporter:
         width: 42
         height: 37
       alignment: 9
-      pivot: {x: 0.35, y: 0.4}
+      pivot: {x: 0.4, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 33a3815184c01fc10800000000000000
-      internalID: 2085461606180338227
+      spriteID: d3053ff025a88e190800000000000000
+      internalID: -7932938658553573315
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rbye-runD-spritesheet-export_3
+      name: push4
       rect:
         serializedVersion: 2
         x: 42
@@ -180,20 +180,20 @@ TextureImporter:
         width: 42
         height: 37
       alignment: 9
-      pivot: {x: 0.35, y: 0.4}
+      pivot: {x: 0.4, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da4805fa6759c86e0800000000000000
-      internalID: -1833926611266665299
+      spriteID: 80ba7a7734e57fef0800000000000000
+      internalID: -74487224965027064
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rbye-runD-spritesheet-export_4
+      name: push5
       rect:
         serializedVersion: 2
         x: 0
@@ -201,20 +201,20 @@ TextureImporter:
         width: 42
         height: 37
       alignment: 9
-      pivot: {x: 0.35, y: 0.4}
+      pivot: {x: 0.4, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b74ae9ccc9520d40800000000000000
-      internalID: 5549096426969647032
+      spriteID: 5595adddfdd609440800000000000000
+      internalID: 4940569599492643157
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rbye-runD-spritesheet-export_5
+      name: push6
       rect:
         serializedVersion: 2
         x: 42
@@ -222,14 +222,14 @@ TextureImporter:
         width: 42
         height: 37
       alignment: 9
-      pivot: {x: 0.35, y: 0.4}
+      pivot: {x: 0.4, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1334f8c48c351770800000000000000
-      internalID: 8580831206029144863
+      spriteID: f23848e3f4e2584e0800000000000000
+      internalID: -1980125543273299153
       vertices: []
       indices: 
       edges: []

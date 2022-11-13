@@ -1,25 +1,16 @@
 fileFormatVersion: 2
-guid: 2b87dc9ef0fc5654581717fb0bc392e1
+guid: f594d60cd83309948aaa4c2197ba765b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6258912424317043543
-    second: rbye_push_0
+      213: 4257498696528724803
+    second: fall1
   - first:
-      213: 5771649695393592640
-    second: rbye_push_1
+      213: -3237196405044167544
+    second: fall2
   - first:
-      213: -7542801452718701182
-    second: rbye_push_2
-  - first:
-      213: -3682368355274862249
-    second: rbye_push_3
-  - first:
-      213: -3026888019477357666
-    second: rbye_push_4
-  - first:
-      213: -4814689208118098486
-    second: rbye_push_5
+      213: -4683303416397022207
+    second: fall3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -62,7 +53,7 @@ TextureImporter:
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 9
+  alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
@@ -109,127 +100,64 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: rbye_push_0
+      name: fall1
       rect:
         serializedVersion: 2
         x: 0
-        y: 74
-        width: 42
-        height: 37
+        y: 66
+        width: 44
+        height: 33
       alignment: 9
-      pivot: {x: 0.4, y: 0.4}
+      pivot: {x: 0.35, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9acbd4caf40e329a0800000000000000
-      internalID: -6258912424317043543
+      spriteID: 343884ed18ca51b30800000000000000
+      internalID: 4257498696528724803
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rbye_push_1
-      rect:
-        serializedVersion: 2
-        x: 42
-        y: 74
-        width: 42
-        height: 37
-      alignment: 9
-      pivot: {x: 0.4, y: 0.4}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0453de581d4091050800000000000000
-      internalID: 5771649695393592640
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rbye_push_2
+      name: fall2
       rect:
         serializedVersion: 2
         x: 0
-        y: 37
-        width: 42
-        height: 37
+        y: 33
+        width: 44
+        height: 33
       alignment: 9
-      pivot: {x: 0.4, y: 0.4}
+      pivot: {x: 0.35, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 285c66fca06925790800000000000000
-      internalID: -7542801452718701182
+      spriteID: 88cbb21650b2313d0800000000000000
+      internalID: -3237196405044167544
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rbye_push_3
-      rect:
-        serializedVersion: 2
-        x: 42
-        y: 37
-        width: 42
-        height: 37
-      alignment: 9
-      pivot: {x: 0.4, y: 0.4}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 751d3bbad7995ecc0800000000000000
-      internalID: -3682368355274862249
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rbye_push_4
+      name: fall3
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 42
-        height: 37
+        width: 44
+        height: 33
       alignment: 9
-      pivot: {x: 0.4, y: 0.4}
+      pivot: {x: 0.35, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9b9a2822655ef5d0800000000000000
-      internalID: -3026888019477357666
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rbye_push_5
-      rect:
-        serializedVersion: 2
-        x: 42
-        y: 0
-        width: 42
-        height: 37
-      alignment: 9
-      pivot: {x: 0.4, y: 0.4}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ac5c63eaca9ce2db0800000000000000
-      internalID: -4814689208118098486
+      spriteID: 10c38422b50910fb0800000000000000
+      internalID: -4683303416397022207
       vertices: []
       indices: 
       edges: []

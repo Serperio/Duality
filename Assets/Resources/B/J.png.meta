@@ -4,13 +4,13 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -1917229883824812413
-    second: rbye_jump-Sheet_0
+    second: jump1
   - first:
       213: 180324218824714187
-    second: rbye_jump-Sheet_1
+    second: jump2
   - first:
       213: -6670827329542794414
-    second: rbye_jump-Sheet_2
+    second: jump3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: rbye_jump-Sheet_0
+      name: jump1
       rect:
         serializedVersion: 2
         x: 0
@@ -121,7 +121,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rbye_jump-Sheet_1
+      name: jump2
       rect:
         serializedVersion: 2
         x: 0
@@ -142,7 +142,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rbye_jump-Sheet_2
+      name: jump3
       rect:
         serializedVersion: 2
         x: 0

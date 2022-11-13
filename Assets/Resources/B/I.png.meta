@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: e07331e9520b590479c385022d283d2e
+guid: 9b17646bbf4917a45970a1c7554c0400
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4383091038120836144
-    second: rbye-runC-spritesheet-export_0
+      213: -260145991059401588
+    second: iddle1
   - first:
-      213: -8515333669022658508
-    second: rbye-runC-spritesheet-export_1
+      213: 6277995178403610636
+    second: iddle2
   - first:
-      213: -4833553846922841436
-    second: rbye-runC-spritesheet-export_2
+      213: -766144690513449298
+    second: iddle3
   - first:
-      213: 5150287973709774136
-    second: rbye-runC-spritesheet-export_3
+      213: -3351278891431695119
+    second: iddle4
   - first:
-      213: -5705197499120996227
-    second: rbye-runC-spritesheet-export_4
+      213: 4252370232838032704
+    second: iddle5
   - first:
-      213: 8504025008076930188
-    second: rbye-runC-spritesheet-export_5
+      213: -8286399956850674235
+    second: iddle6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -109,12 +109,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: rbye-runC-spritesheet-export_0
+      name: iddle1
       rect:
         serializedVersion: 2
         x: 0
         y: 74
-        width: 42
+        width: 31
         height: 37
       alignment: 9
       pivot: {x: 0.35, y: 0.4}
@@ -123,19 +123,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03cf369931ed3dc30800000000000000
-      internalID: 4383091038120836144
+      spriteID: c8499257996c36cf0800000000000000
+      internalID: -260145991059401588
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rbye-runC-spritesheet-export_1
+      name: iddle2
       rect:
         serializedVersion: 2
-        x: 42
+        x: 31
         y: 74
-        width: 42
+        width: 31
         height: 37
       alignment: 9
       pivot: {x: 0.35, y: 0.4}
@@ -144,19 +144,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4301bf9e42573d980800000000000000
-      internalID: -8515333669022658508
+      spriteID: c00cc5e3a5bef1750800000000000000
+      internalID: 6277995178403610636
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rbye-runC-spritesheet-export_2
+      name: iddle3
       rect:
         serializedVersion: 2
         x: 0
         y: 37
-        width: 42
+        width: 31
         height: 37
       alignment: 9
       pivot: {x: 0.35, y: 0.4}
@@ -165,19 +165,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a2f07fa264cbecb0800000000000000
-      internalID: -4833553846922841436
+      spriteID: eaee463967b1e55f0800000000000000
+      internalID: -766144690513449298
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rbye-runC-spritesheet-export_3
+      name: iddle4
       rect:
         serializedVersion: 2
-        x: 42
+        x: 31
         y: 37
-        width: 42
+        width: 31
         height: 37
       alignment: 9
       pivot: {x: 0.35, y: 0.4}
@@ -186,19 +186,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83dffebef9f797740800000000000000
-      internalID: 5150287973709774136
+      spriteID: 1fce2f4aa9ddd71d0800000000000000
+      internalID: -3351278891431695119
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rbye-runC-spritesheet-export_4
+      name: iddle5
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 42
+        width: 31
         height: 37
       alignment: 9
       pivot: {x: 0.35, y: 0.4}
@@ -207,19 +207,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d70327b1a1113d0b0800000000000000
-      internalID: -5705197499120996227
+      spriteID: 04d81cd5234730b30800000000000000
+      internalID: 4252370232838032704
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rbye-runC-spritesheet-export_5
+      name: iddle6
       rect:
         serializedVersion: 2
-        x: 42
+        x: 31
         y: 0
-        width: 42
+        width: 31
         height: 37
       alignment: 9
       pivot: {x: 0.35, y: 0.4}
@@ -228,8 +228,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8cb67740bd540670800000000000000
-      internalID: 8504025008076930188
+      spriteID: 5c57a19742bc00d80800000000000000
+      internalID: -8286399956850674235
       vertices: []
       indices: 
       edges: []

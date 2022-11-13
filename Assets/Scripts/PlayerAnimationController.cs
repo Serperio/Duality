@@ -18,6 +18,10 @@ public class PlayerAnimationController : MonoBehaviour
     [SerializeField] private RuntimeAnimatorController red;
     [SerializeField] private RuntimeAnimatorController blue;
     [SerializeField] private RuntimeAnimatorController gray;
+    [SerializeField] private SpriteSwap spriteSwaper;
+
+    private bool latePush = false;
+
     private void Start()
     {
         sr = GetComponent<SpriteRenderer>();
@@ -43,10 +47,14 @@ public class PlayerAnimationController : MonoBehaviour
 
         if (Mathf.Abs(axis) >= 0.2f)
         {
+            if (spriteSwaper.SpriteSheetName == "I")
+                spriteSwaper.SpriteSheetName = "R";
             anim.SetBool("Running",true);
         }
         else
         {
+            if (spriteSwaper.SpriteSheetName == "R" || spriteSwaper.SpriteSheetName == "P")
+                spriteSwaper.SpriteSheetName = "I";
             anim.SetBool("Running", false);
         }
 
@@ -57,6 +65,7 @@ public class PlayerAnimationController : MonoBehaviour
 
             if (lastTrigger != "Ladder")
             {
+                spriteSwaper.SpriteSheetName = "C";
                 anim.SetTrigger("Ladder");
                 lastTrigger = "Ladder";
             }
@@ -81,6 +90,8 @@ public class PlayerAnimationController : MonoBehaviour
             {
                 if (lastTrigger != "Ground")
                 {
+                    spriteSwaper.SpriteSheetName = "I";
+
                     anim.SetTrigger("Ground");
                     lastTrigger = "Ground";
                 }
@@ -91,6 +102,8 @@ public class PlayerAnimationController : MonoBehaviour
                 {
                     if (lastTrigger != "Fall")
                     {
+                        spriteSwaper.SpriteSheetName = "F";
+
                         anim.SetTrigger("Fall");
                         lastTrigger = "Fall";
                     }
@@ -99,6 +112,8 @@ public class PlayerAnimationController : MonoBehaviour
                 {
                     if (lastTrigger != "Jump")
                     {
+                        spriteSwaper.SpriteSheetName = "J";
+
                         anim.SetTrigger("Jump");
                         lastTrigger = "Jump";
                     }
@@ -106,9 +121,22 @@ public class PlayerAnimationController : MonoBehaviour
             }
             
         }
-        
-        
         #endregion
+
+        if (latePush)
+        {
+            if (lastTrigger == "Ground")
+            {
+                latePush = false;
+
+                if (anim.GetBool("Running"))
+                {
+                    print("2do print");
+                    spriteSwaper.SpriteSheetName = "P";
+                    anim.SetTrigger("Push");
+                }
+            }
+        }
     }
 
     private void FixedUpdate()
@@ -132,9 +160,16 @@ public class PlayerAnimationController : MonoBehaviour
         if(collision.gameObject.tag == "Box")
         {
             print(collision.gameObject.transform.position.y);
-            if (anim.GetBool("Running"))
+
+            if (lastTrigger != "Ground")
+            {
+                latePush = true;
+            }
+
+            if (anim.GetBool("Running") && lastTrigger == "Ground")
             {
                 print("2do print");
+                spriteSwaper.SpriteSheetName = "P";
                 anim.SetTrigger("Push");
             }
         }

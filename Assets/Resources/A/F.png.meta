@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: ac179d45536b1a44990ddc7aaed1bbbc
+guid: 3f5584be4a1486b41832588eae0d93c9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7847646522150290744
-    second: rbye_jumpD-Sheet-export_0
+      213: 4441418428315649698
+    second: fall1
   - first:
-      213: 6370761939100779770
-    second: rbye_jumpD-Sheet-export_1
+      213: 600857829865238417
+    second: fall2
   - first:
-      213: -7854955833288816571
-    second: rbye_jumpD-Sheet-export_2
+      213: -7888287247495374133
+    second: fall3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: rbye_jumpD-Sheet-export_0
+      name: fall1
       rect:
         serializedVersion: 2
         x: 0
-        y: 70
-        width: 41
-        height: 35
+        y: 66
+        width: 44
+        height: 33
       alignment: 9
       pivot: {x: 0.35, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -114,20 +114,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8caf664111f871390800000000000000
-      internalID: -7847646522150290744
+      spriteID: 2a6c0a6678613ad30800000000000000
+      internalID: 4441418428315649698
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rbye_jumpD-Sheet-export_1
+      name: fall2
       rect:
         serializedVersion: 2
         x: 0
-        y: 35
-        width: 41
-        height: 35
+        y: 33
+        width: 44
+        height: 33
       alignment: 9
       pivot: {x: 0.35, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -135,20 +135,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af44ea8da3e796850800000000000000
-      internalID: 6370761939100779770
+      spriteID: 19f21a5430da65800800000000000000
+      internalID: 600857829865238417
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rbye_jumpD-Sheet-export_2
+      name: fall3
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 41
-        height: 35
+        width: 44
+        height: 33
       alignment: 9
       pivot: {x: 0.35, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,8 +156,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 548007679479df290800000000000000
-      internalID: -7854955833288816571
+      spriteID: bca5bc6da8c278290800000000000000
+      internalID: -7888287247495374133
       vertices: []
       indices: 
       edges: []

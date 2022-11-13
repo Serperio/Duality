@@ -1,16 +1,25 @@
 fileFormatVersion: 2
-guid: 97a7e5cad7050b340b997831ce5989fc
+guid: c6336ad0362b2f3428417ec31c1dc04b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6427160159305126555
-    second: rbye_jumpC-Sheet-export_0
+      213: -6270814157791057979
+    second: run1
   - first:
-      213: 3621391708540808382
-    second: rbye_jumpC-Sheet-export_1
+      213: 9145863089744135445
+    second: run2
   - first:
-      213: -2261248395829788201
-    second: rbye_jumpC-Sheet-export_2
+      213: 2085461606180338227
+    second: run3
+  - first:
+      213: -1833926611266665299
+    second: run4
+  - first:
+      213: 5549096426969647032
+    second: run5
+  - first:
+      213: 8580831206029144863
+    second: run6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -100,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: rbye_jumpC-Sheet-export_0
+      name: run1
       rect:
         serializedVersion: 2
         x: 0
-        y: 70
-        width: 41
-        height: 35
+        y: 74
+        width: 42
+        height: 37
       alignment: 9
       pivot: {x: 0.35, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -114,20 +123,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b92dce1cc1cd13950800000000000000
-      internalID: 6427160159305126555
+      spriteID: 5c7af586fb799f8a0800000000000000
+      internalID: -6270814157791057979
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rbye_jumpC-Sheet-export_1
+      name: run2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 35
-        width: 41
-        height: 35
+        x: 42
+        y: 74
+        width: 42
+        height: 37
       alignment: 9
       pivot: {x: 0.35, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -135,20 +144,62 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ebcae1c6294c14230800000000000000
-      internalID: 3621391708540808382
+      spriteID: 5154e84f502acee70800000000000000
+      internalID: 9145863089744135445
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rbye_jumpC-Sheet-export_2
+      name: run3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 37
+        width: 42
+        height: 37
+      alignment: 9
+      pivot: {x: 0.35, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33a3815184c01fc10800000000000000
+      internalID: 2085461606180338227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run4
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 37
+        width: 42
+        height: 37
+      alignment: 9
+      pivot: {x: 0.35, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da4805fa6759c86e0800000000000000
+      internalID: -1833926611266665299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run5
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 41
-        height: 35
+        width: 42
+        height: 37
       alignment: 9
       pivot: {x: 0.35, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,8 +207,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d1c4a9809e6e90e0800000000000000
-      internalID: -2261248395829788201
+      spriteID: 8b74ae9ccc9520d40800000000000000
+      internalID: 5549096426969647032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run6
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 0
+        width: 42
+        height: 37
+      alignment: 9
+      pivot: {x: 0.35, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1334f8c48c351770800000000000000
+      internalID: 8580831206029144863
       vertices: []
       indices: 
       edges: []

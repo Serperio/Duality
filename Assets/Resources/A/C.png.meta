@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: c0cbc9ea402c4b547b04289fd6092080
+guid: b26e2950e245b9b418f73f8b832381f7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3499100056842025508
-    second: brbye-iddleD-Sheet-export_0
+      213: 871565913507150036
+    second: rbye_esc_0
   - first:
-      213: -7612858165986723811
-    second: brbye-iddleD-Sheet-export_1
+      213: -1585658739690352630
+    second: rbye_esc_1
   - first:
-      213: -3523540580781875505
-    second: brbye-iddleD-Sheet-export_2
+      213: 7701149954578644275
+    second: rbye_esc_2
   - first:
-      213: -8122321230155909093
-    second: brbye-iddleD-Sheet-export_3
+      213: -6859822404070777276
+    second: rbye_esc_3
   - first:
-      213: -3369624853142117825
-    second: brbye-iddleD-Sheet-export_4
+      213: -6304152788007467034
+    second: rbye_esc_4
   - first:
-      213: 3950471976719945630
-    second: brbye-iddleD-Sheet-export_5
+      213: -6738718979521060525
+    second: rbye_esc_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -109,127 +109,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: brbye-iddleD-Sheet-export_0
+      name: rbye_esc_0
       rect:
         serializedVersion: 2
         x: 0
         y: 74
-        width: 31
+        width: 21
         height: 37
-      alignment: 9
-      pivot: {x: 0.35, y: 0.4}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd5c16e8903b07fc0800000000000000
-      internalID: -3499100056842025508
+      spriteID: 4d8bee0a49c681c00800000000000000
+      internalID: 871565913507150036
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: brbye-iddleD-Sheet-export_1
+      name: rbye_esc_1
       rect:
         serializedVersion: 2
-        x: 31
+        x: 21
         y: 74
-        width: 31
+        width: 21
         height: 37
-      alignment: 9
-      pivot: {x: 0.35, y: 0.4}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d18fdea25d1b95690800000000000000
-      internalID: -7612858165986723811
+      spriteID: a0053c507cb9ef9e0800000000000000
+      internalID: -1585658739690352630
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: brbye-iddleD-Sheet-export_2
+      name: rbye_esc_2
       rect:
         serializedVersion: 2
         x: 0
         y: 37
-        width: 31
+        width: 21
         height: 37
-      alignment: 9
-      pivot: {x: 0.35, y: 0.4}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fce92d2a28ed91fc0800000000000000
-      internalID: -3523540580781875505
+      spriteID: 33dfcacc41bffda60800000000000000
+      internalID: 7701149954578644275
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: brbye-iddleD-Sheet-export_3
+      name: rbye_esc_3
       rect:
         serializedVersion: 2
-        x: 31
+        x: 21
         y: 37
-        width: 31
+        width: 21
         height: 37
-      alignment: 9
-      pivot: {x: 0.35, y: 0.4}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b1871f400e7b74f80800000000000000
-      internalID: -8122321230155909093
+      spriteID: 44e581f4ed30dc0a0800000000000000
+      internalID: -6859822404070777276
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: brbye-iddleD-Sheet-export_4
+      name: rbye_esc_4
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 31
+        width: 21
         height: 37
-      alignment: 9
-      pivot: {x: 0.35, y: 0.4}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f32e2229c00bc31d0800000000000000
-      internalID: -3369624853142117825
+      spriteID: 6e7c60da0762388a0800000000000000
+      internalID: -6304152788007467034
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: brbye-iddleD-Sheet-export_5
+      name: rbye_esc_5
       rect:
         serializedVersion: 2
-        x: 31
+        x: 21
         y: 0
-        width: 31
+        width: 21
         height: 37
-      alignment: 9
-      pivot: {x: 0.35, y: 0.4}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9f07831555e2d630800000000000000
-      internalID: 3950471976719945630
+      spriteID: 351e6789ac24b72a0800000000000000
+      internalID: -6738718979521060525
       vertices: []
       indices: 
       edges: []

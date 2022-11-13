@@ -16,7 +16,8 @@ public class BackgroundColorController : MonoBehaviour
         {
             if (leftEye.IsClosed && rigthEye.IsClosed)
             {
-                GameObject.Find("Player").GetComponent<PlayerAnimationController>().ToGray();
+                //GameObject.Find("Player").GetComponent<PlayerAnimationController>().ToGray();
+                GameObject.Find("Player").GetComponent<SpriteSwap>().Folder = "D";
                 grid.gameObject.SetActive(false);
                 sun.gameObject.SetActive(false);
             }
@@ -24,7 +25,8 @@ public class BackgroundColorController : MonoBehaviour
             {
                 if (rigthEye.IsClosed)
                 {
-                    GameObject.Find("Player").GetComponent<PlayerAnimationController>().ToBlue();
+                    //GameObject.Find("Player").GetComponent<PlayerAnimationController>().ToBlue();
+                    GameObject.Find("Player").GetComponent<SpriteSwap>().Folder = "C";
                     grid.gameObject.SetActive(true);
                     grid.material.SetColor("_Color", new Color(0f, 0f, 1f));
 
@@ -35,7 +37,8 @@ public class BackgroundColorController : MonoBehaviour
                 }
                 else if (leftEye.IsClosed)
                 {
-                    GameObject.Find("Player").GetComponent<PlayerAnimationController>().ToRed();
+                    //GameObject.Find("Player").GetComponent<PlayerAnimationController>().ToRed();
+                    GameObject.Find("Player").GetComponent<SpriteSwap>().Folder = "B";
                     grid.gameObject.SetActive(true);
                     grid.material.SetColor("_Color", new Color(1f, 0f, 0f));
 
@@ -45,7 +48,8 @@ public class BackgroundColorController : MonoBehaviour
                 }
                 else
                 {
-                    GameObject.Find("Player").GetComponent<PlayerAnimationController>().ToPurple();
+                    //GameObject.Find("Player").GetComponent<PlayerAnimationController>().ToPurple();
+                    GameObject.Find("Player").GetComponent<SpriteSwap>().Folder = "A";
                     grid.gameObject.SetActive(true);
                     grid.material.SetColor("_Color", new Color(1f, 0f, 1f));
 

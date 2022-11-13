@@ -1,16 +1,25 @@
 fileFormatVersion: 2
-guid: 1f97f84b8adeacd49b5b536f7198efa6
+guid: e07331e9520b590479c385022d283d2e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3512254577583692302
-    second: rbye_fall-Sheet_0
+      213: 4383091038120836144
+    second: run1
   - first:
-      213: -6891234817155973404
-    second: rbye_fall-Sheet_1
+      213: -8515333669022658508
+    second: run2
   - first:
-      213: 4390907728475096702
-    second: rbye_fall-Sheet_2
+      213: -4833553846922841436
+    second: run3
+  - first:
+      213: 5150287973709774136
+    second: run4
+  - first:
+      213: -5705197499120996227
+    second: run5
+  - first:
+      213: 8504025008076930188
+    second: run6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -100,64 +109,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: rbye_fall-Sheet_0
+      name: run1
       rect:
         serializedVersion: 2
         x: 0
-        y: 66
-        width: 44
-        height: 33
+        y: 74
+        width: 42
+        height: 37
       alignment: 9
-      pivot: {x: 0.35, y: 0.45}
+      pivot: {x: 0.35, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0a9d99fde80eb030800000000000000
-      internalID: 3512254577583692302
+      spriteID: 03cf369931ed3dc30800000000000000
+      internalID: 4383091038120836144
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rbye_fall-Sheet_1
+      name: run2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 33
-        width: 44
-        height: 33
+        x: 42
+        y: 74
+        width: 42
+        height: 37
       alignment: 9
-      pivot: {x: 0.35, y: 0.45}
+      pivot: {x: 0.35, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ee3d93f17a6d50a0800000000000000
-      internalID: -6891234817155973404
+      spriteID: 4301bf9e42573d980800000000000000
+      internalID: -8515333669022658508
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rbye_fall-Sheet_2
+      name: run3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 37
+        width: 42
+        height: 37
+      alignment: 9
+      pivot: {x: 0.35, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a2f07fa264cbecb0800000000000000
+      internalID: -4833553846922841436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run4
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 37
+        width: 42
+        height: 37
+      alignment: 9
+      pivot: {x: 0.35, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83dffebef9f797740800000000000000
+      internalID: 5150287973709774136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run5
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 44
-        height: 33
+        width: 42
+        height: 37
       alignment: 9
-      pivot: {x: 0.35, y: 0.45}
+      pivot: {x: 0.35, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e768645a053afec30800000000000000
-      internalID: 4390907728475096702
+      spriteID: d70327b1a1113d0b0800000000000000
+      internalID: -5705197499120996227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run6
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 0
+        width: 42
+        height: 37
+      alignment: 9
+      pivot: {x: 0.35, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8cb67740bd540670800000000000000
+      internalID: 8504025008076930188
       vertices: []
       indices: 
       edges: []

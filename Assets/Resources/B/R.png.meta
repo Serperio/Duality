@@ -1,16 +1,25 @@
 fileFormatVersion: 2
-guid: 23dca81d1efe06945b892befd02bc7d0
+guid: 6078c2aa5d5ac3844a6e25863a603fb3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6988299777712878979
-    second: rbye_fallD-Sheet-export_0
+      213: -4103920576162786736
+    second: run1
   - first:
-      213: 8053633107387927967
-    second: rbye_fallD-Sheet-export_1
+      213: -6413730145271521316
+    second: run2
   - first:
-      213: -7249519225802750952
-    second: rbye_fallD-Sheet-export_2
+      213: 796946652888867937
+    second: run3
+  - first:
+      213: 6608303235307579520
+    second: run4
+  - first:
+      213: -8968444460157446487
+    second: run5
+  - first:
+      213: 87389358561533240
+    second: run6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -100,64 +109,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: rbye_fallD-Sheet-export_0
+      name: run1
       rect:
         serializedVersion: 2
         x: 0
-        y: 66
-        width: 44
-        height: 33
+        y: 74
+        width: 42
+        height: 37
       alignment: 9
-      pivot: {x: 0.35, y: 0.4}
+      pivot: {x: 0.4, y: 0.35}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 385748a4f9d6bf060800000000000000
-      internalID: 6988299777712878979
+      spriteID: 052966fbaf1fb07c0800000000000000
+      internalID: -4103920576162786736
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rbye_fallD-Sheet-export_1
+      name: run2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 33
-        width: 44
-        height: 33
+        x: 42
+        y: 74
+        width: 42
+        height: 37
       alignment: 9
-      pivot: {x: 0.35, y: 0.4}
+      pivot: {x: 0.4, y: 0.35}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9dce2524a044cf60800000000000000
-      internalID: 8053633107387927967
+      spriteID: cdf50ed0a6addf6a0800000000000000
+      internalID: -6413730145271521316
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rbye_fallD-Sheet-export_2
+      name: run3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 37
+        width: 42
+        height: 37
+      alignment: 9
+      pivot: {x: 0.4, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 164a06622c25f0b00800000000000000
+      internalID: 796946652888867937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run4
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 37
+        width: 42
+        height: 37
+      alignment: 9
+      pivot: {x: 0.4, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 088a29cb7c865bb50800000000000000
+      internalID: 6608303235307579520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run5
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 44
-        height: 33
+        width: 42
+        height: 37
       alignment: 9
-      pivot: {x: 0.35, y: 0.4}
+      pivot: {x: 0.4, y: 0.35}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81489a97ca8846b90800000000000000
-      internalID: -7249519225802750952
+      spriteID: 9a6de74c74fa98380800000000000000
+      internalID: -8968444460157446487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run6
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 0
+        width: 42
+        height: 37
+      alignment: 9
+      pivot: {x: 0.4, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83d953a9828763100800000000000000
+      internalID: 87389358561533240
       vertices: []
       indices: 
       edges: []

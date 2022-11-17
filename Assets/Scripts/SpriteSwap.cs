@@ -43,7 +43,8 @@ public class SpriteSwap : MonoBehaviour
 
         // Swap out the sprite to be rendered by its name
         // Important: The name of the sprite must be the same!
-        this.spriteRenderer.sprite = this.spriteSheet[this.spriteRenderer.sprite.name];
+        if (this.spriteSheet.ContainsKey(this.spriteRenderer.sprite.name))
+            this.spriteRenderer.sprite = this.spriteSheet[this.spriteRenderer.sprite.name];
     }
 
     // Loads the sprites from a sprite sheet

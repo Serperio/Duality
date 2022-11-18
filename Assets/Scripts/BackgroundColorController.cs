@@ -18,6 +18,7 @@ public class BackgroundColorController : MonoBehaviour
             {
                 //GameObject.Find("Player").GetComponent<PlayerAnimationController>().ToGray();
                 GameObject.Find("Player").GetComponent<SpriteSwap>().Folder = "D";
+                GameObject.Find("Player").GetComponent<SpriteRenderer>().material.SetColor("_GlowColor", new Color32(0, 0, 0, 0));
                 grid.gameObject.SetActive(false);
                 sun.gameObject.SetActive(false);
             }
@@ -27,6 +28,7 @@ public class BackgroundColorController : MonoBehaviour
                 {
                     //GameObject.Find("Player").GetComponent<PlayerAnimationController>().ToBlue();
                     GameObject.Find("Player").GetComponent<SpriteSwap>().Folder = "C";
+                    GameObject.Find("Player").GetComponent<SpriteRenderer>().material.SetColor("_GlowColor", new Color32(0, 64, 87, 0));
                     grid.gameObject.SetActive(true);
                     grid.material.SetColor("_Color", new Color(0f, 0f, 1f));
 
@@ -39,6 +41,7 @@ public class BackgroundColorController : MonoBehaviour
                 {
                     //GameObject.Find("Player").GetComponent<PlayerAnimationController>().ToRed();
                     GameObject.Find("Player").GetComponent<SpriteSwap>().Folder = "B";
+                    GameObject.Find("Player").GetComponent<SpriteRenderer>().material.SetColor("_GlowColor", new Color32(118, 13, 13, 0));
                     grid.gameObject.SetActive(true);
                     grid.material.SetColor("_Color", new Color(1f, 0f, 0f));
 
@@ -50,6 +53,7 @@ public class BackgroundColorController : MonoBehaviour
                 {
                     //GameObject.Find("Player").GetComponent<PlayerAnimationController>().ToPurple();
                     GameObject.Find("Player").GetComponent<SpriteSwap>().Folder = "A";
+                    GameObject.Find("Player").GetComponent<SpriteRenderer>().material.SetColor("_GlowColor", new Color32(103, 0, 97, 0));
                     grid.gameObject.SetActive(true);
                     grid.material.SetColor("_Color", new Color(1f, 0f, 1f));
 

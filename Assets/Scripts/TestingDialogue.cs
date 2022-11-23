@@ -60,15 +60,7 @@ public class TestingDialogue : MonoBehaviour
 
                     if (i > dialogos.Length - 1)
                     {
-                        isTalking = false;
-                        playerani.enabled = true;
-                        playermov.enabled = true;
-                        if (areEyes)
-                        {
-                            eyeder.enabled = true;
-                            eyeizq.enabled = true;
-                        }
-                        playerTextContianer.SetActive(false);
+                        FinishDialogue();
                     }
                     else
                     {
@@ -97,22 +89,25 @@ public class TestingDialogue : MonoBehaviour
         return isTalking;
     }
 
-    private IEnumerator _TextAnimation(string line, TMP_Text text)
+    private IEnumerator _TextAnimation(string line, TMP_Text dialogueText)
     {
         isTextAnimated = true;
-        foreach (char character in line)
+
+        for (int i = 0; i < line.Length + 1; i++)
         {
-            text.text += character;
-            yield return new WaitForSeconds(0.2f);
+            string sentence = line.Substring(0, i) + "<color=#0000>" + line.Substring(i) + "</color>";
+            dialogueText.text = sentence;
+            yield return new WaitForSeconds(0.05f);
         }
+
         isTextAnimated = false;
     }
 
     private void ChangeDialogueLine(string line)
     {
-        string speaker = line.Split(' ')[0];
-        string sprite = line.Split(' ')[1];
-        string dialogue = line.Split(' ')[2];
+        string speaker = line.Split(':')[0];
+        string sprite = line.Split(':')[1];
+        string dialogue = line.Split(':')[2];
         currentSpeaker = speaker;
 
         switch (sprite)
@@ -174,5 +169,10 @@ public class TestingDialogue : MonoBehaviour
         playerTextContianer.SetActive(false);
         npcTextContianer.SetActive(false);
         isTalking = false;
+        if (areEyes)
+        {
+            eyeder.enabled = true;
+            eyeizq.enabled = true;
+        }
     }
 }

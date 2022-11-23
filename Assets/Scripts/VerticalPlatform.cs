@@ -31,7 +31,5 @@ public class VerticalPlatform : MonoBehaviour
                 waitTime -= Time.deltaTime;
             }
         }
-     
-        
     }
 }

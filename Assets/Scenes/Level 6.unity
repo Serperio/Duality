@@ -1397,7 +1397,7 @@ Transform:
   m_LocalScale: {x: -14.173921, y: -12.521651, z: -19.602152}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1057819015
 GameObject:
@@ -1888,10 +1888,6 @@ PrefabInstance:
     - target: {fileID: 812643774521907728, guid: df97a622986063b46889eaeed0c923b5, type: 3}
       propertyPath: m_Name
       value: EyesController
-      objectReference: {fileID: 0}
-    - target: {fileID: 812643774521907728, guid: df97a622986063b46889eaeed0c923b5, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 812643774521907731, guid: df97a622986063b46889eaeed0c923b5, type: 3}
       propertyPath: m_RootOrder

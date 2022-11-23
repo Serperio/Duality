@@ -11,6 +11,7 @@ public class DoorController : MonoBehaviour
     [SerializeField] private bool enabled;
     [SerializeField] private Sprite closedDoor;
     [SerializeField] private Sprite openDoor;
+    [SerializeField] private GameObject explosionParticle;
     [SerializeField] private bool dialogue = false;
     public SpriteRenderer whiteNoise;
     public GameObject PP;
@@ -87,6 +88,8 @@ public class DoorController : MonoBehaviour
     }
     public void OpenDoor()
     {
+        explosionParticle.SetActive(true);
+        Destroy(explosionParticle, 1);
         enabled = true;
         GetComponent<SpriteRenderer>().sprite = openDoor;
     }

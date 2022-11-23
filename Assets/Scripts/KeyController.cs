@@ -4,18 +4,20 @@ using UnityEngine;
 
 public class KeyController : MonoBehaviour
 {
-    [SerializeField] private DoorController door;
+    
+    [SerializeField] private GameObject particle;
+    private bool isFirstTime = true;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player") && isFirstTime)
         {
-            if (AudioManager.Instance.gameObject != null)
-            {
-                print("audio");
-                AudioManager.Instance.Play(3);
-            }
-            door.OpenDoor();
-            Destroy(this.gameObject);
+            
+
+            isFirstTime = false;
+            particle.SetActive(true);
+            this.gameObject.GetComponent<RotateTittle>().enabled = false;
+            this.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            
         }
 
     }

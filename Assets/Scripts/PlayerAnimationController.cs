@@ -4,14 +4,18 @@ using UnityEngine;
 
 public class PlayerAnimationController : MonoBehaviour
 {
-    Animator anim;
-    SpriteRenderer sr;
+    public Animator anim;
+    public SpriteRenderer sr;
     Rigidbody2D rb;
     PlayerMovement pm;
     [SerializeField] private PlayerLadderMovement plm;
     [SerializeField] private LayerMask boxLayer;
     private string lastTrigger = "None";
     private int dir;
+    [Header("Particles")]
+    [SerializeField] private GameObject jumpParticle;
+    [SerializeField] private GameObject landParticle;
+    private bool fallCheck;
 
     [Header("Animator")]
     [SerializeField] private RuntimeAnimatorController purple;
@@ -20,8 +24,7 @@ public class PlayerAnimationController : MonoBehaviour
     [SerializeField] private RuntimeAnimatorController gray;
     private void Start()
     {
-        sr = GetComponent<SpriteRenderer>();
-        anim = GetComponent<Animator>();
+        fallCheck = false;
         rb = GetComponent<Rigidbody2D>();
         pm = GetComponent<PlayerMovement>();
         plm = GetComponent<PlayerLadderMovement>();
@@ -81,6 +84,8 @@ public class PlayerAnimationController : MonoBehaviour
             {
                 if (lastTrigger != "Ground")
                 {
+                    //var particle = Instantiate(landParticle, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y - 2.6f, this.gameObject.transform.position.z), this.gameObject.transform.rotation);
+                    //Destroy(particle, 1);
                     anim.SetTrigger("Ground");
                     lastTrigger = "Ground";
                 }
@@ -99,6 +104,8 @@ public class PlayerAnimationController : MonoBehaviour
                 {
                     if (lastTrigger != "Jump")
                     {
+                        var particle =  Instantiate(jumpParticle, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y-2.3f, this.gameObject.transform.position.z), this.gameObject.transform.rotation);
+                        Destroy(particle,1);
                         anim.SetTrigger("Jump");
                         lastTrigger = "Jump";
                     }

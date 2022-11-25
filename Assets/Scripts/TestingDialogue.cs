@@ -8,12 +8,12 @@ using DG.Tweening;
 public class TestingDialogue : MonoBehaviour
 {
     //public DialogueManager dialogueManager;
-    public TMP_Text playerText;
-    public GameObject playerTextContianer;
-    public Image playerImage;
-    public TMP_Text npcText;
-    public GameObject npcTextContianer;
-    public Image npcImage;
+    public TMP_Text leftText;
+    public GameObject leftTextContianer;
+    public Image leftrImage;
+    public TMP_Text rightText;
+    public GameObject rightTextContianer;
+    public Image rightImage;
     public string[] dialogos;
 
     public List<Sprite> playerImages;
@@ -48,13 +48,13 @@ public class TestingDialogue : MonoBehaviour
             {
                 if (!isTextAnimated)
                 {
-                    if (currentSpeaker == "Player")
+                    if (currentSpeaker == "L")
                     {
-                        playerText.text = "";
+                        leftText.text = "";
                     }
                     else
                     {
-                        npcText.text = "";
+                        rightText.text = "";
                     }
                     i += 1;
 
@@ -100,19 +100,19 @@ public class TestingDialogue : MonoBehaviour
 
         currentSpearkerImage = playerImages[i];
         
-        if (currentSpeaker == "Player")
+        if (currentSpeaker == "L")
         {
-            npcTextContianer.SetActive(false);
-            playerImage.sprite = currentSpearkerImage;
-            playerTextContianer.SetActive(true);
-            textAnimation = StartCoroutine(_TextAnimation(dialogue, playerText));
+            rightTextContianer.SetActive(false);
+            leftrImage.sprite = currentSpearkerImage;
+            leftTextContianer.SetActive(true);
+            textAnimation = StartCoroutine(_TextAnimation(dialogue, leftText));
         }
-        else
+        if (currentSpeaker == "R")
         {
-            playerTextContianer.SetActive(false);
-            npcImage.sprite = currentSpearkerImage;
-            npcTextContianer.SetActive(true);
-            textAnimation = StartCoroutine(_TextAnimation(dialogue, npcText));
+            leftTextContianer.SetActive(false);
+            rightImage.sprite = currentSpearkerImage;
+            rightTextContianer.SetActive(true);
+            textAnimation = StartCoroutine(_TextAnimation(dialogue, rightText));
         }
     }
 
@@ -138,8 +138,8 @@ public class TestingDialogue : MonoBehaviour
     {
         playerani.enabled = true;
         playermov.enabled = true;
-        playerTextContianer.SetActive(false);
-        npcTextContianer.SetActive(false);
+        leftTextContianer.SetActive(false);
+        rightTextContianer.SetActive(false);
         isTalking = false;
         if (areEyes)
         {

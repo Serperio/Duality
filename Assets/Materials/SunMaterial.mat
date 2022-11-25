@@ -20,7 +20,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - Texture2D_0ac6e3599af74325b7e8cfe11630fbd7:
-        m_Texture: {fileID: 2800000, guid: c458cbce9069fe041a2d72b3c42b70d2, type: 3}
+        m_Texture: {fileID: 2800000, guid: ca3e1147b21ecc84b95d07d4a9bbda82, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_539bc8408e534c61b41556c358838aad:
@@ -48,7 +48,7 @@ Material:
     m_Colors:
     - Color_ae53710077714b9ba460c7cad573cc53: {r: 1, g: 1, b: 1, a: 0}
     - Color_cfd7095f297f4dc79ce14a143f3f75a1: {r: 1, g: 1, b: 1, a: 0}
-    - Vector4_6d3c3527e3bf419c9fcef9fa8067e302: {r: 1, g: 1.5, b: 0, a: 0}
+    - Vector4_6d3c3527e3bf419c9fcef9fa8067e302: {r: 1, g: 1, b: 0, a: 0}
     - _ColorA: {r: 1, g: 1, b: 1, a: 0}
     - _ColorB: {r: 1, g: 1, b: 1, a: 0}
   m_BuildTextureStacks: []

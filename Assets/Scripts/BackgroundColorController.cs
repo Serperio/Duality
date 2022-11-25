@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BackgroundColorController : MonoBehaviour
 {
@@ -9,6 +10,14 @@ public class BackgroundColorController : MonoBehaviour
     [SerializeField] private MeshRenderer grid;
     [SerializeField] private SpriteRenderer sun;
     [SerializeField] private bool changeColor = false;
+
+    private void Start()
+    {
+        if (SceneManager.GetActiveScene().name != "Title Scene")
+        {
+            GameObject.Find("Player").GetComponent<SpriteRenderer>().material.SetColor("_GlowColor", new Color32(103, 0, 97, 0));
+        }
+    }
 
     void Update()
     {
@@ -63,7 +72,6 @@ public class BackgroundColorController : MonoBehaviour
                 }
 
             }
-
         }
     }
 }

@@ -44,7 +44,7 @@ public class TestingDialogue : MonoBehaviour
     {
         if (isTalking)
         {
-            if (Input.GetKeyDown("x"))
+            if (Input.GetKeyDown("x") || Input.GetKeyDown("z"))
             {
                 if (!isTextAnimated)
                 {
@@ -67,19 +67,6 @@ public class TestingDialogue : MonoBehaviour
                         ChangeDialogueLine(dialogos[i]);
                     }
                 }
-                else
-                {
-                    StopCoroutine(textAnimation);
-                    if (currentSpeaker == "Player")
-                    {
-                        playerText.text = dialogos[i].Split(' ')[2];
-                    }
-                    else
-                    {
-                        npcText.text = dialogos[i].Split(' ')[2];
-                    }
-                    isTextAnimated = false;
-                }
             }
         }
     }
@@ -97,9 +84,10 @@ public class TestingDialogue : MonoBehaviour
         {
             string sentence = line.Substring(0, i) + "<color=#0000>" + line.Substring(i) + "</color>";
             dialogueText.text = sentence;
-            yield return new WaitForSeconds(0.05f);
+            yield return new WaitForSeconds(0.025f);
         }
 
+        yield return new WaitForSeconds(0.1f);
         isTextAnimated = false;
     }
 
@@ -110,24 +98,8 @@ public class TestingDialogue : MonoBehaviour
         string dialogue = line.Split(':')[2];
         currentSpeaker = speaker;
 
-        switch (sprite)
-        {
-            case "Red":
-                currentSpearkerImage = playerImages[0];
-                break;
-            case "Blue":
-                currentSpearkerImage = playerImages[1];
-                break;
-            case "Pink":
-                currentSpearkerImage = playerImages[2];
-                break;
-            case "Grey":
-                currentSpearkerImage = playerImages[3];
-                break;
-            default:
-                break;
-        }
-
+        currentSpearkerImage = playerImages[i];
+        
         if (currentSpeaker == "Player")
         {
             npcTextContianer.SetActive(false);

@@ -43,7 +43,7 @@ Material:
     - Vector1_4361a8add2314f6e80ecc8ea69011bd8: 0.9
     - Vector1_696b706fb1464b85ae470c1c31702bbb: 1
     - Vector1_cb2cd7e07f8f44b9b32e423fe5b70b00: 0.7
-    - _GlowIntensity: 0.65
+    - _GlowIntensity: 1
     - _Height: 0.9
     - _Width: 0.8
     m_Colors:

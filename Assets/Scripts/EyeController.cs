@@ -7,7 +7,7 @@ public class EyeController : MonoBehaviour
     [SerializeField] private bool isLeft;
     [SerializeField] public GameObject openEye;
     [SerializeField] private bool isClosed = false;
-    
+    [SerializeField] private bool enableEye = true;
     private string buttonName = "Fire2";
     
 
@@ -22,22 +22,26 @@ public class EyeController : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetButton(buttonName))
+        if (enableEye)
         {
-            if (!IsClosed)
+            if (Input.GetButton(buttonName))
             {
-                IsClosed = true;
-                ObjectManager.instance.ManageObjects();
+                if (!IsClosed)
+                {
+                    IsClosed = true;
+                    ObjectManager.instance.ManageObjects();
+                }
+            }
+            else
+            {
+                if (IsClosed)
+                {
+                    IsClosed = false;
+                    ObjectManager.instance.ManageObjects();
+                }
             }
         }
-        else
-        {
-            if (IsClosed)
-            {
-                IsClosed = false;
-                ObjectManager.instance.ManageObjects();
-            }
-        }
+        
 
     }
 }

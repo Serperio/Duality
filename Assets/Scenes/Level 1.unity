@@ -245,7 +245,7 @@ PrefabInstance:
       objectReference: {fileID: 1835453500}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[0]
-      value: NPC:Blue:Hola  we
+      value: NPC:Blue:You can just leave and continue with your pathetic life
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[1]
@@ -253,11 +253,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[2]
-      value: Player:Red:Ya  me  voy  a  la  verga  we
+      value: Player:Red:Ya me voy a la verga we
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[3]
-      value: NPC:Blue:Yo  tambien  me  voy  a  la  verga
+      value: NPC:Blue:Yo tambien me voy a la verga
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: playerImages.Array.data[1]
@@ -2188,16 +2188,24 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7363804812946286601, guid: 93f552fff50b6c940895257aca20fa87, type: 3}
+      propertyPath: m_fontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7363804812946286601, guid: 93f552fff50b6c940895257aca20fa87, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 49b75892131cc434b916ea7392c42889, type: 2}
+      objectReference: {fileID: 11400000, guid: 0da21011666c6b34a87efdc098e09891, type: 2}
+    - target: {fileID: 7363804812946286601, guid: 93f552fff50b6c940895257aca20fa87, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 7363804812946286601, guid: 93f552fff50b6c940895257aca20fa87, type: 3}
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: 6804408936605655483, guid: 49b75892131cc434b916ea7392c42889, type: 2}
     - target: {fileID: 7363804812946286601, guid: 93f552fff50b6c940895257aca20fa87, type: 3}
       propertyPath: m_hasFontAssetChanged
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7363804812966450017, guid: 93f552fff50b6c940895257aca20fa87, type: 3}
       propertyPath: m_AnchorMax.x
@@ -2273,9 +2281,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 7692133518007664169, guid: b94ad5af286b06842bb916b1e1b0bf63, type: 3}
+      propertyPath: m_fontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7692133518007664169, guid: b94ad5af286b06842bb916b1e1b0bf63, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 49b75892131cc434b916ea7392c42889, type: 2}
+      objectReference: {fileID: 11400000, guid: 0da21011666c6b34a87efdc098e09891, type: 2}
+    - target: {fileID: 7692133518007664169, guid: b94ad5af286b06842bb916b1e1b0bf63, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 7692133518007664169, guid: b94ad5af286b06842bb916b1e1b0bf63, type: 3}
       propertyPath: m_sharedMaterial
       value: 

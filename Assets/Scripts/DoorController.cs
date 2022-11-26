@@ -5,6 +5,7 @@ using UnityEngine.Rendering.PostProcessing;
 using DG.Tweening;
 using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class DoorController : MonoBehaviour
 {
@@ -15,6 +16,8 @@ public class DoorController : MonoBehaviour
     [SerializeField] private bool dialogue = false;
     [SerializeField] private bool isMedusa = false;
     [SerializeField] private Medusa medusa;
+    [SerializeField] private bool isMessage = false;
+    [SerializeField] private TMP_Text message;
     public SpriteRenderer whiteNoise;
     public GameObject PP;
 
@@ -63,7 +66,19 @@ public class DoorController : MonoBehaviour
         whiteNoise.DOFade(1f, .5f).OnComplete(() =>
         {
             PP.SetActive(true);
-            DOTween.Sequence().AppendInterval(0.5f).Append(whiteNoise.DOFade(0, 1));
+            DOTween.Sequence().AppendInterval(0.5f).Append(whiteNoise.DOFade(0, 1).OnComplete(() => 
+            {
+                if (isMessage)
+                {
+                    DOTween.Sequence().AppendInterval(1f).AppendCallback(() =>
+                    {
+                        message.DOFade(1f, 0.5f).OnComplete(() =>
+                        {
+                            DOTween.Sequence().AppendInterval(2f).Append(message.DOFade(0f, 0.5f));
+                        });
+                    });
+                }
+            }));
         });
     }
 

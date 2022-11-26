@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class IntroController : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class IntroController : MonoBehaviour
     [SerializeField] private GameObject sun;
     [SerializeField] private GameObject logo;
     [SerializeField] private GameObject blackScreen;
+    [SerializeField] private TMP_Text message;
     private int counter = 0;
     private float originalVolume;
     private bool startGame;
@@ -32,7 +34,14 @@ public class IntroController : MonoBehaviour
             //AudioManager.Instance.PlayMusic("B");
             PP.SetActive(true);
         }));
-        
+
+        DOTween.Sequence().AppendInterval(1.5f).AppendCallback(() => 
+        {
+            message.DOFade(1f, 0.5f).OnComplete(() =>
+            {
+                DOTween.Sequence().AppendInterval(2f).Append(message.DOFade(0f, 0.5f));
+            });
+        });
     }
 
     private void Update()

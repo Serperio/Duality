@@ -50,7 +50,7 @@ public class IntroController : MonoBehaviour
     private void StartLevel()
     {
         PlayerPrefs.SetInt("Dead", 0);
-        
+
         whiteNoise.DOFade(1, 1).OnPlay(() => {
             PP.SetActive(false);
             if (AudioManager.Instance.gameObject != null)
@@ -59,7 +59,14 @@ public class IntroController : MonoBehaviour
                 AudioManager.Instance.Play(1);
             }
 
-        }).OnComplete(() => SceneManager.LoadScene("L1"));
+        }).OnComplete(() =>
+        {
+            if (PlayerPrefs.GetInt("FirstPlay") == 0)
+            {
+                PlayerPrefs.SetInt("FirstPlay", 1);
+                SceneManager.LoadScene("L 1");
+            }
+        });
     }
 
     private void ChangeChannel()
@@ -80,7 +87,7 @@ public class IntroController : MonoBehaviour
             sequence.AppendInterval(.8f).Append(DOTween.To(() => temp, x => temp = x, 1, 0.2f).OnPlay(() =>
             {
                 lockControl = false;
-                if (counter > 2)
+                if (counter > 2 && PlayerPrefs.GetInt("FirstPlay") == 0)
                 {
                     AudioManager.Instance.PlayMusic("A");
                     AudioManager.Instance.PlayMusic("B");

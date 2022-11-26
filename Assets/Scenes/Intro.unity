@@ -936,6 +936,9 @@ MonoBehaviour:
   rigthEye: {fileID: 0}
   leftEye: {fileID: 0}
   changeColor: 0
+  camera: {fileID: 519420031}
+  tv: {fileID: 1537156383}
+  background: {fileID: 0}
 --- !u!4 &1652472021
 Transform:
   m_ObjectHideFlags: 0

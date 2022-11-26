@@ -74,7 +74,7 @@ public class DoorController : MonoBehaviour
             if (enabled)
             {
                 PlayerPrefs.SetInt("Dead", 0);
-                if(isMedusa)medusa.KillMedusa();
+                if (isMedusa) medusa.KillMedusa();
                 PP.SetActive(false);
                 whiteNoise.DOFade(1f, 1f).OnPlay(()=> {
                     if (AudioManager.Instance.gameObject != null)

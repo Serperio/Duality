@@ -19,12 +19,6 @@ public class TestingDialogue : MonoBehaviour
     [SerializeField]
     private Image leftImage;
     [SerializeField]
-    private TMP_Text rightText;
-    [SerializeField]
-    private GameObject rightTextContianer;
-    [SerializeField]
-    private Image rightImage;
-    [SerializeField]
     private string[] dialogos;
 
     [SerializeField]
@@ -76,10 +70,6 @@ public class TestingDialogue : MonoBehaviour
                     {
                         leftText.text = "";
                     }
-                    else
-                    {
-                        rightText.text = "";
-                    }
                     i += 1;
 
                     if (i > dialogos.Length - 1)
@@ -130,14 +120,6 @@ public class TestingDialogue : MonoBehaviour
             leftImage.material.SetTexture("_MainTex", currentSpearkerImage.texture);
             leftTextContianer.SetActive(true);
             textAnimation = StartCoroutine(_TextAnimation(dialogue, leftText));
-        }
-        if (currentSpeaker == "R")
-        {
-            leftTextContianer.SetActive(false);
-            rightImage.sprite = currentSpearkerImage;
-            rightImage.material.SetTexture("_MainTex", currentSpearkerImage.texture);
-            rightTextContianer.SetActive(true);
-            textAnimation = StartCoroutine(_TextAnimation(dialogue, rightText));
         }
     }
 

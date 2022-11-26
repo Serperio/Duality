@@ -81,7 +81,8 @@ public class EnemieMovement : MonoBehaviour
         if (rb.velocity.x > 0) sr.flipX = true;
         else sr.flipX = false;
         speed = Mathf.Abs(speed) * director;
-        rb.velocity = new Vector2(speed * Time.fixedDeltaTime, rb.velocity.y);
+        if (respawn) rb.velocity = new Vector2(0 * Time.fixedDeltaTime, rb.velocity.y);
+        else rb.velocity = new Vector2(speed * Time.fixedDeltaTime, rb.velocity.y);
     }
     void OnCollisionEnter2D(Collision2D collision)
     {

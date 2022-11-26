@@ -13,6 +13,14 @@ public class CountDown : MonoBehaviour
     private void Start()
     {
         text = GetComponent<TextMeshProUGUI>();
+        if (seconds < 10)
+        {
+            text.text = min + "   0" + seconds;
+        }
+        else
+        {
+            text.text = min + "   " + seconds;
+        }
         Invoke("Tick", 1);
     }
 

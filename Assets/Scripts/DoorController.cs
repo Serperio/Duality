@@ -45,7 +45,7 @@ public class DoorController : MonoBehaviour
                 //AudioManager.Instance.PlayMusic("A");
                 //AudioManager.Instance.PlayMusic("B");
                 PP.SetActive(true);
-                if (dialogue && PlayerPrefs.GetInt("Dead") == 0)
+                if (dialogue /*&& PlayerPrefs.GetInt("Dead") == 0*/)
                 {
                     dialogueManager.StartDialogue();
                 }
@@ -89,8 +89,7 @@ public class DoorController : MonoBehaviour
                     }
                     else
                     {
-                        print("cambiar escena");
-                        SceneManager.LoadScene("L " + (int.Parse(index) + 1));
+                        SceneManager.LoadScene("Level " + (int.Parse(index) + 1));
                     }
                     
                 });

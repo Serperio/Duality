@@ -38,6 +38,7 @@ public class DoorController : MonoBehaviour
     {
         if (startGame)
         {
+            
             whiteNoise.DOFade(0, 1).OnPlay(() => startGame = false);
             Sequence sequence = DOTween.Sequence();
             sequence.AppendInterval(.3f).Append(DOTween.To(() => temp, x => temp = x, 1, 0.2f).OnPlay(() =>
@@ -89,7 +90,7 @@ public class DoorController : MonoBehaviour
                     }
                     else
                     {
-                        SceneManager.LoadScene("Level " + (int.Parse(index) + 1));
+                        SceneManager.LoadScene("L " + (int.Parse(index) + 1));
                     }
                     
                 });

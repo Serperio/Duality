@@ -15,7 +15,7 @@ public class FinalLevel : MonoBehaviour
     [SerializeField]
     private TestingDialogue dialogueManager;
 
-    void Start()
+    public void StartFinalLevel()
     {
         whiteNoise.DOFade(0, 1);
 

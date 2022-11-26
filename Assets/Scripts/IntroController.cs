@@ -72,7 +72,6 @@ public class IntroController : MonoBehaviour
         {
             if (PlayerPrefs.GetInt("FirstPlay") == 0)
             {
-                PlayerPrefs.SetInt("FirstPlay", 1);
                 SceneManager.LoadScene("L 1");
             }
         });

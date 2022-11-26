@@ -160,7 +160,7 @@ public class PlayerAnimationController : MonoBehaviour
     {
         if(collision.gameObject.tag == "Box")
         {
-            print(collision.gameObject.transform.position.y);
+            //print(collision.gameObject.transform.position.y);
 
             if (lastTrigger != "Ground")
             {

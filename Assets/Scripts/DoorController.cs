@@ -51,9 +51,13 @@ public class DoorController : MonoBehaviour
                 //AudioManager.Instance.PlayMusic("A");
                 //AudioManager.Instance.PlayMusic("B");
                 PP.SetActive(true);
-                if (dialogue /*&& PlayerPrefs.GetInt("Dead") == 0*/)
+                if (dialogue && PlayerPrefs.GetInt("Dead") == 0)
                 {
                     dialogueManager.StartDialogue();
+                }
+                else
+                {
+                    dialogueManager.ActiveEnemies();
                 }
             }));
         }
@@ -101,14 +105,8 @@ public class DoorController : MonoBehaviour
                 {
                     string levelName = SceneManager.GetActiveScene().name;
                     string index = levelName.Split(' ')[1];
-                    if(int.Parse(index) + 1 == 14)
-                    {
-                    }
-                    else
-                    {
-                        SceneManager.LoadScene("L " + (int.Parse(index) + 1));
-                    }
-                    
+                    Debug.Log(index);
+                    SceneManager.LoadScene("L " + (int.Parse(index) + 1));
                 });
             }
                 //print("pasaste");

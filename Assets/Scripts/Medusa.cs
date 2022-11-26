@@ -15,7 +15,7 @@ public class Medusa : MonoBehaviour
 
     private float counter = 0;
     private bool isPowerActived = false;
-    private bool isAlive = true;
+    private bool isAlive = false;
 
     void Start()
     {

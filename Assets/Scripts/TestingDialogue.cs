@@ -49,6 +49,8 @@ public class TestingDialogue : MonoBehaviour
     private bool isAccel;
     [SerializeField]
     private CountDown timer;
+    [SerializeField]
+    private FinalLevel finalLevel;
 
 
     private DoorController doorController;
@@ -62,7 +64,7 @@ public class TestingDialogue : MonoBehaviour
     {
         i = 1;
         leftImage.material = Instantiate(glowMaterial);
-        blackImage.color = new Color32(49, 60, 57, 255);
+        
         doorController = GetComponent<DoorController>();
     }
 
@@ -71,7 +73,7 @@ public class TestingDialogue : MonoBehaviour
     {
         if (isTalking)
         {
-            if (Input.GetKeyDown("x") || Input.GetKeyDown("z"))
+            if (Input.GetKeyDown("x") || Input.GetKeyDown("z") || Input.GetKeyDown("left") || Input.GetKeyDown("right"))
             {
                 if (!isTextAnimated)
                 {
@@ -131,6 +133,12 @@ public class TestingDialogue : MonoBehaviour
 
     public void StartDialogue()
     {
+        if (isFinalLevel)
+        {
+            finalLevel.gameObject.SetActive(false);
+        }
+
+        blackImage.color = new Color32(49, 60, 57, 255);
         blackImage.gameObject.SetActive(true);
         isTalking = true;
         if (areEyes)
@@ -138,18 +146,14 @@ public class TestingDialogue : MonoBehaviour
             eyeder.gameObject.SetActive(false);
             eyeizq.gameObject.SetActive(false);
         }
-        if (isMedusa)
-        {
-            doorController.Medusa.KillMedusa();
-        }
-        if (isFinalLevel)
-        {
-            rigidbody2D.velocity = new Vector2(0, 0);
-            playerani.enabled = false;
-            playermov.enabled = false;
-            anim.SetBool("Running", false);
-            anim.SetBool("Ground", true);
-        }
+
+        rigidbody2D.velocity = new Vector2(0, 0);
+        playerani.enabled = false;
+        playermov.enabled = false;
+
+        anim.SetBool("Running", false);
+        anim.SetBool("Ground", true);
+
         i = 0;
         ChangeDialogueLine(dialogos[0]);
         //text.text = dialogos[0];
@@ -157,8 +161,17 @@ public class TestingDialogue : MonoBehaviour
 
     public void FinishDialogue()
     {
+        if (isFinalLevel)
+        {
+            PlayerPrefs.SetFloat("FirstPlay", 1);
+            Application.Quit();
+        }
+
         blackImage.DOFade(0, 1f);
-        doorController.WhiteNoiseAnim();
+
+        if (doorController != null)
+            doorController.WhiteNoiseAnim();
+
         leftTextContianer.SetActive(false);
         isTalking = false;
         if (areEyes)
@@ -166,15 +179,23 @@ public class TestingDialogue : MonoBehaviour
             eyeder.gameObject.SetActive(true);
             eyeizq.gameObject.SetActive(true);
         }
+
+        playerani.enabled = true;
+        playermov.enabled = true;
+
+        if (finalLevel != null)
+        {
+            finalLevel.StartFinalLevel();
+        }
+
+        ActiveEnemies();
+    }
+
+    public void ActiveEnemies()
+    {
         if (isMedusa)
         {
             doorController.Medusa.ActiveMedusa();
-        }
-        if (isFinalLevel)
-        {
-            playerani.enabled = true;
-            playermov.enabled = true;
-            Application.Quit();
         }
         if (isAccel)
         {

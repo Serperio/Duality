@@ -106,4 +106,6 @@ public class DoorController : MonoBehaviour
         enabled = true;
         GetComponent<SpriteRenderer>().sprite = openDoor;
     }
+
+    public Medusa Medusa { get { return medusa; } }
 }

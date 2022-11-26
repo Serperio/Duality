@@ -75,6 +75,11 @@ public class Medusa : MonoBehaviour
 
     public void KillMedusa()
     {
+        isAlive = false;
+    }
+
+    public void ActiveMedusa()
+    {
         isAlive = true;
     }
 }

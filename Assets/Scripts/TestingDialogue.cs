@@ -26,8 +26,7 @@ public class TestingDialogue : MonoBehaviour
 
     bool isTalking;
     int i;
-    [SerializeField]
-    private bool isFinalLevel;
+
     [SerializeField]
     private PlayerAnimationController playerani;
     [SerializeField]
@@ -37,11 +36,16 @@ public class TestingDialogue : MonoBehaviour
     [SerializeField]
     private Animator anim;
     [SerializeField]
+    private bool isFinalLevel;
+    [SerializeField]
     private EyeController eyeder;
     [SerializeField]
     private EyeController eyeizq;
     [SerializeField]
     private bool areEyes;
+    [SerializeField]
+    private bool isMedusa;
+
 
     private DoorController doorController;
 
@@ -120,8 +124,12 @@ public class TestingDialogue : MonoBehaviour
         isTalking = true;
         if (areEyes)
         {
-            eyeder.enabled = false;
-            eyeizq.enabled = false;
+            eyeder.gameObject.SetActive(false);
+            eyeizq.gameObject.SetActive(false);
+        }
+        if (isMedusa)
+        {
+            doorController.Medusa.KillMedusa();
         }
         if (isFinalLevel)
         {
@@ -144,8 +152,12 @@ public class TestingDialogue : MonoBehaviour
         isTalking = false;
         if (areEyes)
         {
-            eyeder.enabled = true;
-            eyeizq.enabled = true;
+            eyeder.gameObject.SetActive(true);
+            eyeizq.gameObject.SetActive(true);
+        }
+        if (isMedusa)
+        {
+            doorController.Medusa.ActiveMedusa();
         }
         if (isFinalLevel)
         {

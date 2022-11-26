@@ -13,6 +13,7 @@ public class DoorController : MonoBehaviour
     [SerializeField] private Sprite openDoor;
     [SerializeField] private GameObject explosionParticle;
     [SerializeField] private bool dialogue = false;
+    [SerializeField] private Medusa medusa;
     public SpriteRenderer whiteNoise;
     public GameObject PP;
 
@@ -71,7 +72,7 @@ public class DoorController : MonoBehaviour
             if (enabled)
             {
                 PlayerPrefs.SetInt("Dead", 0);
-
+                medusa.KillMedusa();
                 PP.SetActive(false);
                 whiteNoise.DOFade(1f, 1f).OnPlay(()=> {
                     if (AudioManager.Instance.gameObject != null)
@@ -85,11 +86,10 @@ public class DoorController : MonoBehaviour
                     string index = levelName.Split(' ')[1];
                     if(int.Parse(index) + 1 == 14)
                     {
-                        SceneManager.LoadScene("Tittle Scene");
                     }
                     else
                     {
-                        SceneManager.LoadScene("Level " + (int.Parse(index) + 1));
+                        SceneManager.LoadScene("L " + (int.Parse(index) + 1));
                     }
                     
                 });

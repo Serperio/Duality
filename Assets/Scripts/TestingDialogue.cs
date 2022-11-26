@@ -54,6 +54,7 @@ public class TestingDialogue : MonoBehaviour
         i = 1;
         leftImage.material = Instantiate(glowMaterial);
         blackImage.color = new Color32(49, 60, 57, 255);
+        doorController = GetComponent<DoorController>();
     }
 
     // Update is called once per frame

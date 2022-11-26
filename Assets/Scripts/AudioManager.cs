@@ -6,7 +6,6 @@ using DG.Tweening;
 public class AudioManager : MonoBehaviour
 {
 	// Audio players components.
-	public AudioSource EffectsSource;
 	public AudioSource MusicSourceA;
 	public AudioSource MusicSourceB;
 
@@ -16,7 +15,7 @@ public class AudioManager : MonoBehaviour
 	public float LowPitchRange = .95f;
 	public float HighPitchRange = 1.05f;
 
-
+	[SerializeField] private AudioSource[] SFXAudioSources;
 	[SerializeField] private AudioClip[] SFXList;
 
 	// Singleton instance.
@@ -136,4 +135,27 @@ public class AudioManager : MonoBehaviour
 		EffectsSource.Play();
 	}
 
+
+	public void PlaySFX(int clipNumber)
+    {
+		bool played = false;
+
+		for (int i = 0; i < SFXAudioSources.Length; i++)
+		{
+			AudioSource soundAudioSource = SFXAudioSources[i];
+			if (!soundAudioSource.isPlaying)
+			{
+				soundAudioSource.Stop();
+				soundAudioSource.clip = SFXList[clipNumber]; ;
+				soundAudioSource.volume = 1f;
+				soundAudioSource.loop = false;
+				soundAudioSource.Play();
+				played = true;
+				break;
+			}
+		}
+
+		if (!played)
+			throw new System.Exception("Too many sounds");
+	}
 }

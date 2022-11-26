@@ -49,7 +49,7 @@ public class IntroController : MonoBehaviour
 
     private void StartLevel()
     {
-        PlayerPrefs.SetInt("Dead", 1);
+        PlayerPrefs.SetInt("Dead", 0);
         
         whiteNoise.DOFade(1, 1).OnPlay(() => {
             PP.SetActive(false);

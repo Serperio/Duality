@@ -10,7 +10,7 @@ public class CountDown : MonoBehaviour
     [SerializeField]private int min;
     [SerializeField]private int seconds;
     
-    private void Start()
+    public void StartTimer()
     {
         text = GetComponent<TextMeshProUGUI>();
         if (seconds < 10)
@@ -34,6 +34,7 @@ public class CountDown : MonoBehaviour
             if(min < 0)
             {
                 print("perdiste");
+                LevelManager.instance.ResetLevel();
             }
         }
         if(seconds < 10)

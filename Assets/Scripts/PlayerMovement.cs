@@ -177,7 +177,7 @@ public class PlayerMovement : MonoBehaviour
         #endregion
 
         #region Falling
-        if (transform.position.y <= -30)
+        if (transform.position.y <= -200)
         {
             LevelManager.instance.ResetLevel();
         }

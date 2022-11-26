@@ -221,6 +221,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 78651019}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: timer
+      value: 
+      objectReference: {fileID: 142870570}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: eyeder
       value: 
       objectReference: {fileID: 741433268}
@@ -230,6 +234,10 @@ PrefabInstance:
       objectReference: {fileID: 741433267}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: areEyes
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: isAccel
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}

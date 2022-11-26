@@ -45,6 +45,10 @@ public class TestingDialogue : MonoBehaviour
     private bool areEyes;
     [SerializeField]
     private bool isMedusa;
+    [SerializeField]
+    private bool isAccel;
+    [SerializeField]
+    private CountDown timer;
 
 
     private DoorController doorController;
@@ -113,7 +117,14 @@ public class TestingDialogue : MonoBehaviour
 
         leftImage.sprite = currentSpearkerImage;
         leftImage.material.SetTexture("_MainTex", currentSpearkerImage.texture);
-        leftImage.material.SetColor("_GlowColor", new Color(0, 0, 0, 0));
+
+        if (currentSpearkerImage.name.StartsWith("c"))
+            leftImage.material.SetColor("_GlowColor", new Color32(0, 110, 0, 0));
+        else if (currentSpearkerImage.name.StartsWith("m"))
+            leftImage.material.SetColor("_GlowColor", new Color32(255, 0, 0, 0));
+        else if (currentSpearkerImage.name.StartsWith("a"))
+            leftImage.material.SetColor("_GlowColor", new Color32(0, 0, 110, 0));
+
         leftTextContianer.SetActive(true);
         textAnimation = StartCoroutine(_TextAnimation(line, leftText));
     }
@@ -164,6 +175,10 @@ public class TestingDialogue : MonoBehaviour
             playerani.enabled = true;
             playermov.enabled = true;
             Application.Quit();
+        }
+        if (isAccel)
+        {
+            timer.StartTimer();
         }
     }
 }

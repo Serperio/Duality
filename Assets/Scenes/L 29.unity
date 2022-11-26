@@ -200,6 +200,251 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 156f9843dcd47e646b72492e559960dd, type: 3}
+--- !u!1001 &331746860
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: eyeder
+      value: 
+      objectReference: {fileID: 741433268}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: eyeizq
+      value: 
+      objectReference: {fileID: 741433267}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: areEyes
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: leftText
+      value: 
+      objectReference: {fileID: 1796549984}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: leftImage
+      value: 
+      objectReference: {fileID: 1796549985}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: blackImage
+      value: 
+      objectReference: {fileID: 1796549987}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: isFinalLevel
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: leftTextContianer
+      value: 
+      objectReference: {fileID: 1796549986}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: dialogos.Array.size
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: dialogos.Array.data[0]
+      value: You already realized right?
+      objectReference: {fileID: 0}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: dialogos.Array.data[1]
+      value: There is no end
+      objectReference: {fileID: 0}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: dialogos.Array.data[2]
+      value: Life is often disappointing
+      objectReference: {fileID: 0}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: dialogos.Array.data[3]
+      value: No matter how hard you try
+      objectReference: {fileID: 0}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: dialogos.Array.data[4]
+      value: You never get what you want
+      objectReference: {fileID: 0}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: dialogos.Array.data[5]
+      value: I wanna tell you something fun
+      objectReference: {fileID: 0}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: dialogos.Array.data[6]
+      value: Medusa was right
+      objectReference: {fileID: 0}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: dialogos.Array.data[7]
+      value: I'm a liar
+      objectReference: {fileID: 0}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: dialogos.Array.data[8]
+      value: You are really average
+      objectReference: {fileID: 0}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: dialogos.Array.data[9]
+      value: Just like the others
+      objectReference: {fileID: 0}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: dialogos.Array.data[10]
+      value: Always going on
+      objectReference: {fileID: 0}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: dialogos.Array.data[11]
+      value: But never reaching their dreams
+      objectReference: {fileID: 0}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: dialogos.Array.data[12]
+      value: Boring
+      objectReference: {fileID: 0}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: dialogos.Array.data[13]
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: dialogos.Array.data[14]
+      value: Just rest like the others
+      objectReference: {fileID: 0}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: dialogos.Array.data[15]
+      value: Good bye human
+      objectReference: {fileID: 0}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: dialogos.Array.data[16]
+      value: Your life is pointless
+      objectReference: {fileID: 0}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: dialogos.Array.data[17]
+      value: And it will always be like that
+      objectReference: {fileID: 0}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: playerImages.Array.size
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: playerImages.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: playerImages.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: playerImages.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: playerImages.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: playerImages.Array.data[4]
+      value: 
+      objectReference: {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: playerImages.Array.data[5]
+      value: 
+      objectReference: {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: playerImages.Array.data[6]
+      value: 
+      objectReference: {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: playerImages.Array.data[7]
+      value: 
+      objectReference: {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: playerImages.Array.data[8]
+      value: 
+      objectReference: {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: playerImages.Array.data[9]
+      value: 
+      objectReference: {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: playerImages.Array.data[10]
+      value: 
+      objectReference: {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: playerImages.Array.data[11]
+      value: 
+      objectReference: {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: playerImages.Array.data[12]
+      value: 
+      objectReference: {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: playerImages.Array.data[13]
+      value: 
+      objectReference: {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: playerImages.Array.data[14]
+      value: 
+      objectReference: {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: playerImages.Array.data[15]
+      value: 
+      objectReference: {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: playerImages.Array.data[16]
+      value: 
+      objectReference: {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: playerImages.Array.data[17]
+      value: 
+      objectReference: {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+    - target: {fileID: 7459498722855311397, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7459498722855311416, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: m_Name
+      value: door
+      objectReference: {fileID: 0}
+    - target: {fileID: 7459498722855311418, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 7459498722855311418, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -67.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7459498722855311418, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -6.548711
+      objectReference: {fileID: 0}
+    - target: {fileID: 7459498722855311418, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7459498722855311418, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7459498722855311418, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7459498722855311418, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7459498722855311418, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7459498722855311418, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7459498722855311418, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7459498722855311418, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
 --- !u!1 &440744423
 GameObject:
   m_ObjectHideFlags: 0
@@ -1279,19 +1524,64 @@ MonoBehaviour:
   leftTextContianer: {fileID: 1796549986}
   leftImage: {fileID: 1796549985}
   dialogos:
-  - JAJAJAJAJAJAJA
-  - JAJAJAJAJAJAJA
+  - So... you are not a loser after all...
+  - Ha ha
+  - Congratulations pal
+  - You leave me speechless
+  - ...
+  - You are here
+  - Sorry for my last words
+  - I'll be honest this time
+  - No more pranks
+  - No more empty words
+  - You are awesome
+  - No matter how hard was the problem
+  - You never give up
+  - This maybe is a bad time
+  - And probably wont get better soon
+  - But you proved yourself
+  - And you know that nothing will stop you
+  - So let me tell you
+  - From the bottom of my heart
+  - Believe in yourself
+  - and if you doubt again
+  - Feel free to come back
+  - We'll be waiting for you here
+  - In channel 301
   playerImages:
+  - {fileID: 21300000, guid: af38d8f00d7c6c84ab1acbfa1be74bee, type: 3}
+  - {fileID: 21300000, guid: c559ff54f4b41904da38d39605f5a466, type: 3}
+  - {fileID: 21300000, guid: c559ff54f4b41904da38d39605f5a466, type: 3}
+  - {fileID: 21300000, guid: c559ff54f4b41904da38d39605f5a466, type: 3}
   - {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
   - {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
-  isPlayer: 0
+  - {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+  - {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+  - {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+  - {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+  - {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+  - {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+  - {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+  - {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+  - {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+  - {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+  - {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+  - {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+  - {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+  - {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+  - {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+  - {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+  - {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+  - {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
   playerani: {fileID: 0}
   playermov: {fileID: 0}
   rigidbody2D: {fileID: 0}
   anim: {fileID: 0}
+  isFinalLevel: 1
   eyeder: {fileID: 741433268}
   eyeizq: {fileID: 741433267}
   areEyes: 1
+  isMedusa: 0
 --- !u!1001 &1891135299
 PrefabInstance:
   m_ObjectHideFlags: 0

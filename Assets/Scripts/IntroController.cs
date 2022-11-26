@@ -65,7 +65,7 @@ public class IntroController : MonoBehaviour
             if (AudioManager.Instance.gameObject != null)
             {
                 print("audio");
-                AudioManager.Instance.Play(1);
+                AudioManager.Instance.PlaySFX(1);
             }
 
         }).OnComplete(() =>
@@ -86,7 +86,7 @@ public class IntroController : MonoBehaviour
             if (AudioManager.Instance.gameObject != null)
             {
                 print("audio");
-                AudioManager.Instance.Play(1);
+                AudioManager.Instance.PlaySFX(1);
             }
         }).OnComplete(() =>
         {

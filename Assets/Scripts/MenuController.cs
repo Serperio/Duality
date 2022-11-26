@@ -19,7 +19,7 @@ public class MenuController : MonoBehaviour
             if (AudioManager.Instance.gameObject != null)
             {
                 print("audio");
-                AudioManager.Instance.Play(0);
+                AudioManager.Instance.PlaySFX(0);
             }
             index++;
             if (index > 3) index = 1;
@@ -29,7 +29,7 @@ public class MenuController : MonoBehaviour
         {
             if (AudioManager.Instance.gameObject != null) {
                 print("audio");
-                AudioManager.Instance.Play(0);
+                AudioManager.Instance.PlaySFX(0);
             }
             index--;
             if (index < 1) index = 3;
@@ -40,7 +40,7 @@ public class MenuController : MonoBehaviour
             if (AudioManager.Instance.gameObject != null)
             {
                 print("audio");
-                AudioManager.Instance.Play(0);
+                AudioManager.Instance.PlaySFX(0);
             }
             print(credits.activeSelf);
             if (credits.activeSelf)
@@ -58,7 +58,7 @@ public class MenuController : MonoBehaviour
                             if (AudioManager.Instance.gameObject != null)
                             {
                                 print("audio");
-                                AudioManager.Instance.Play(1);
+                                AudioManager.Instance.PlaySFX(1);
                             }
 
                         }).OnComplete(()=>SceneManager.LoadScene("Level 1"));

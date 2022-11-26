@@ -31,7 +31,7 @@ public class LevelManager : MonoBehaviour
             if (AudioManager.Instance.gameObject != null)
             {
                 print("audio");
-                AudioManager.Instance.Play(1);
+                AudioManager.Instance.PlaySFX(1);
             }
         }).OnComplete(() =>
         {

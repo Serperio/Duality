@@ -38,7 +38,7 @@ public class Medusa : MonoBehaviour
                     if (AudioManager.Instance.gameObject != null)
                     {
                         print("audio");
-                        AudioManager.Instance.Play(4);
+                        AudioManager.Instance.PlaySFX(4);
                     }
                     DOTween.To(() => medusaRightEye.pointLightOuterRadius, x => medusaRightEye.pointLightOuterRadius = x, 10f, 1f).OnComplete(() =>
                     {

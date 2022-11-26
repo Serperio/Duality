@@ -39,13 +39,6 @@ public class AudioManager : MonoBehaviour
 		DontDestroyOnLoad(gameObject);
 	}
 
-	// Play a single clip through the sound effects source.
-	public void Play(int clipNumber)
-	{
-		EffectsSource.clip = SFXList[clipNumber];
-		EffectsSource.Play();
-	}
-
 	public void MuteMusic(string type)
 	{
 		if (type == "A")
@@ -130,9 +123,9 @@ public class AudioManager : MonoBehaviour
 		int randomIndex = Random.Range(0, clips.Length);
 		float randomPitch = Random.Range(LowPitchRange, HighPitchRange);
 
-		EffectsSource.pitch = randomPitch;
-		EffectsSource.clip = clips[randomIndex];
-		EffectsSource.Play();
+		//EffectsSource.pitch = randomPitch;
+		//EffectsSource.clip = clips[randomIndex];
+		//EffectsSource.Play();
 	}
 
 

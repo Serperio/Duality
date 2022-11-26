@@ -245,7 +245,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (AudioManager.Instance.gameObject != null)
         {
-            AudioManager.Instance.Play(2);
+            AudioManager.Instance.PlaySFX(2);
         }
         float force = jumpForce;
         if (rb.velocity.y < 0)

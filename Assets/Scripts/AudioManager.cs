@@ -10,8 +10,7 @@ public class AudioManager : MonoBehaviour
 	public AudioSource MusicSourceA;
 	public AudioSource MusicSourceB;
 
-	[SerializeField] private AudioClip musicA;
-	[SerializeField] private AudioClip musicB;
+	[SerializeField] private List<AudioClip> musics;
 
 	// Random pitch adjustment range.
 	public float LowPitchRange = .95f;
@@ -79,12 +78,12 @@ public class AudioManager : MonoBehaviour
 	{
 		if (type == "A")
 		{
-			MusicSourceA.clip = musicA;
+			MusicSourceA.clip = musics[0];
 			MusicSourceA.Play();
         }
         else
         {
-			MusicSourceB.clip = musicB;
+			MusicSourceB.clip = musics[1];
 			MusicSourceB.Play();
 		}
 	}
@@ -98,6 +97,31 @@ public class AudioManager : MonoBehaviour
 		else
 		{
 			MusicSourceB.Stop();
+		}
+	}
+
+	private void ChangeAudioClip(AudioSource audioSource, int index)
+    {
+		DOTween.To(() => audioSource.volume, x => audioSource.volume = x, 0f, 0.5f).OnComplete(() => 
+		{
+			audioSource.Stop();
+			DOTween.To(() => audioSource.volume, x => audioSource.volume = x, 1f, 0.5f);
+			audioSource.clip = musics[index];
+			audioSource.Play();
+		});
+	}
+
+	public void ChangeMusic(int index)
+	{
+		if (index == 0)
+		{
+			ChangeAudioClip(MusicSourceA, 2);
+			ChangeAudioClip(MusicSourceB, 3);
+		}
+		else
+		{
+			ChangeAudioClip(MusicSourceA, 0);
+			ChangeAudioClip(MusicSourceB, 1);
 		}
 	}
 

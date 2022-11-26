@@ -337,8 +337,11 @@ MonoBehaviour:
   EffectsSource: {fileID: 3420283342697411651}
   MusicSourceA: {fileID: 3420283342697411662}
   MusicSourceB: {fileID: 3420283342697411661}
-  musicA: {fileID: 8300000, guid: 48499547e1d36724784489b61b6253a1, type: 3}
-  musicB: {fileID: 8300000, guid: 8312329e88e7ff1499155a02b777177c, type: 3}
+  musics:
+  - {fileID: 8300000, guid: 411eb8e4484f34242b12c4e9bfab728a, type: 3}
+  - {fileID: 8300000, guid: 1a0c788614dd31c4ab7d2fd209d6c415, type: 3}
+  - {fileID: 8300000, guid: 9723c8d9356728e48b2c817bff471d2a, type: 3}
+  - {fileID: 8300000, guid: d7a37b4296cc34d40b51792af9e8d8de, type: 3}
   LowPitchRange: 0.95
   HighPitchRange: 1.05
   SFXList:

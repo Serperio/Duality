@@ -52,6 +52,8 @@ public class TestingDialogue : MonoBehaviour
     [SerializeField]
     private FinalLevel finalLevel;
 
+    [SerializeField]
+    private AudioManager audioManager;
 
     private DoorController doorController;
 
@@ -77,19 +79,24 @@ public class TestingDialogue : MonoBehaviour
             {
                 if (!isTextAnimated)
                 {
-                    leftText.text = "";
-                    i += 1;
-
-                    if (i > dialogos.Length - 1)
-                    {
-                        FinishDialogue();
-                    }
-                    else
-                    {
-                        ChangeDialogueLine(dialogos[i]);
-                    }
+                    NextDialogueLine();
                 }
             }
+        }
+    }
+
+    private void NextDialogueLine()
+    {
+        leftText.text = "";
+        i += 1;
+
+        if (i > dialogos.Length - 1)
+        {
+            FinishDialogue();
+        }
+        else
+        {
+            ChangeDialogueLine(dialogos[i]);
         }
     }
 
@@ -115,20 +122,30 @@ public class TestingDialogue : MonoBehaviour
 
     private void ChangeDialogueLine(string line)
     {
-        currentSpearkerImage = playerImages[i];
+        if (line.StartsWith("command"))
+        {
+            string[] temp = line.Split(' ');
+            int index = int.Parse(temp[1]);
+            audioManager.ChangeMusic(index);
+            NextDialogueLine();
+        }
+        else
+        {
+            currentSpearkerImage = playerImages[i];
 
-        leftImage.sprite = currentSpearkerImage;
-        leftImage.material.SetTexture("_MainTex", currentSpearkerImage.texture);
+            leftImage.sprite = currentSpearkerImage;
+            leftImage.material.SetTexture("_MainTex", currentSpearkerImage.texture);
 
-        if (currentSpearkerImage.name.StartsWith("c"))
-            leftImage.material.SetColor("_GlowColor", new Color32(0, 110, 0, 0));
-        else if (currentSpearkerImage.name.StartsWith("m"))
-            leftImage.material.SetColor("_GlowColor", new Color32(255, 0, 0, 0));
-        else if (currentSpearkerImage.name.StartsWith("a"))
-            leftImage.material.SetColor("_GlowColor", new Color32(0, 0, 110, 0));
+            if (currentSpearkerImage.name.StartsWith("c"))
+                leftImage.material.SetColor("_GlowColor", new Color32(0, 110, 0, 0));
+            else if (currentSpearkerImage.name.StartsWith("m"))
+                leftImage.material.SetColor("_GlowColor", new Color32(255, 0, 0, 0));
+            else if (currentSpearkerImage.name.StartsWith("a"))
+                leftImage.material.SetColor("_GlowColor", new Color32(0, 0, 110, 0));
 
-        leftTextContianer.SetActive(true);
-        textAnimation = StartCoroutine(_TextAnimation(line, leftText));
+            leftTextContianer.SetActive(true);
+            textAnimation = StartCoroutine(_TextAnimation(line, leftText));
+        }
     }
 
     public void StartDialogue()

@@ -57,7 +57,7 @@ public class IntroController : MonoBehaviour
                 AudioManager.Instance.Play(1);
             }
 
-        }).OnComplete(() => SceneManager.LoadScene("Level 1"));
+        }).OnComplete(() => SceneManager.LoadScene("L1"));
     }
 
     private void ChangeChannel()

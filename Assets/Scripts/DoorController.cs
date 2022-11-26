@@ -76,7 +76,8 @@ public class DoorController : MonoBehaviour
                     }
                     else
                     {
-                        SceneManager.LoadScene("Level " + (int.Parse(index) + 1));
+                        print("cambiar escena");
+                        SceneManager.LoadScene("L " + (int.Parse(index) + 1));
                     }
                     
                 });

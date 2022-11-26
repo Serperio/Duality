@@ -29,6 +29,7 @@ public class PlayerAnimationController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         pm = GetComponent<PlayerMovement>();
         plm = GetComponent<PlayerLadderMovement>();
+        sr.material.SetColor("_GlowColor", new Color32(103, 0, 97, 0));
     }
     private void Update()
     {

@@ -25,13 +25,9 @@ public class DoorController : MonoBehaviour
         startGame = transform;
         dialogueManager = gameObject.GetComponent<TestingDialogue>();
         PP.SetActive(false);
-        if (dialogue)
-        {
-            dialogueManager.StratDialogue();
-        }
-        
+
         //print(enabled);
-        if(enabled == true)
+        if (enabled == true)
         {
             print("inicia encendido");
             GetComponent<SpriteRenderer>().sprite = openDoor;
@@ -40,17 +36,32 @@ public class DoorController : MonoBehaviour
 
     private void Update()
     {
-        if (!dialogueManager.GetIsTalking() && startGame)
+        if (startGame)
         {
             whiteNoise.DOFade(0, 1).OnPlay(() => startGame = false);
             Sequence sequence = DOTween.Sequence();
-            sequence.AppendInterval(.3f).Append(DOTween.To(() => temp, x => temp = x, 1, 0.2f).OnPlay(() => 
+            sequence.AppendInterval(.3f).Append(DOTween.To(() => temp, x => temp = x, 1, 0.2f).OnPlay(() =>
             {
                 //AudioManager.Instance.PlayMusic("A");
                 //AudioManager.Instance.PlayMusic("B");
-                PP.SetActive(true); 
+                PP.SetActive(true);
+                if (dialogue)
+                {
+                    dialogueManager.StartDialogue();
+                }
             }));
         }
+    }
+
+    public void WhiteNoiseAnim()
+    {
+        PP.SetActive(false);
+
+        whiteNoise.DOFade(1f, .5f).OnComplete(() =>
+        {
+             PP.SetActive(true);
+            DOTween.Sequence().AppendInterval(0.5f).Append(whiteNoise.DOFade(0, 1));
+        });
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

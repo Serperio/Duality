@@ -700,12 +700,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31419b622136eb243b89940e1ca9067d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerText: {fileID: 0}
-  playerTextContianer: {fileID: 0}
-  playerImage: {fileID: 0}
-  npcText: {fileID: 0}
-  npcTextContianer: {fileID: 0}
-  npcImage: {fileID: 0}
+  blackImage: {fileID: 0}
+  glowMaterial: {fileID: 2100000, guid: 6abbf11ad672d4543bcbbfd0b849f920, type: 2}
+  leftText: {fileID: 0}
+  leftTextContianer: {fileID: 0}
+  leftImage: {fileID: 0}
+  rightText: {fileID: 0}
+  rightTextContianer: {fileID: 0}
+  rightImage: {fileID: 0}
   dialogos:
   - NPC Blue adsdas
   - Player Red afdsfsd

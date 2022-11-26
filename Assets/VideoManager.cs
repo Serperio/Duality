@@ -18,7 +18,7 @@ public class VideoManager : MonoBehaviour
     {
         if (!videoPlayer.isPlaying)
         {
-            SceneManager.LoadScene("Tittle Scene");
+            SceneManager.LoadScene("Title Scene");
         }
     }
 }

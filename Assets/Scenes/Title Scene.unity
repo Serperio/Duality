@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &275280579 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2154438874100896912, guid: 46a81d7af602e04478acb6301705bb7e, type: 3}
+  m_PrefabInstance: {fileID: 735072835}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &332048425
 GameObject:
   m_ObjectHideFlags: 0
@@ -784,6 +789,18 @@ PrefabInstance:
       propertyPath: changeColor
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4508250873936569571, guid: 46a81d7af602e04478acb6301705bb7e, type: 3}
+      propertyPath: tv
+      value: 
+      objectReference: {fileID: 1566453415}
+    - target: {fileID: 4508250873936569571, guid: 46a81d7af602e04478acb6301705bb7e, type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 519420031}
+    - target: {fileID: 4508250873936569571, guid: 46a81d7af602e04478acb6301705bb7e, type: 3}
+      propertyPath: background
+      value: 
+      objectReference: {fileID: 275280579}
     - target: {fileID: 4508250873936569571, guid: 46a81d7af602e04478acb6301705bb7e, type: 3}
       propertyPath: changeColor
       value: 0

@@ -910,6 +910,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 702040510}
     - target: {fileID: 4508250873936569571, guid: 46a81d7af602e04478acb6301705bb7e, type: 3}
+      propertyPath: tv
+      value: 
+      objectReference: {fileID: 1537156383}
+    - target: {fileID: 4508250873936569571, guid: 46a81d7af602e04478acb6301705bb7e, type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 519420031}
+    - target: {fileID: 4508250873936569571, guid: 46a81d7af602e04478acb6301705bb7e, type: 3}
       propertyPath: leftEye
       value: 
       objectReference: {fileID: 443401381}
@@ -917,6 +925,10 @@ PrefabInstance:
       propertyPath: rigthEye
       value: 
       objectReference: {fileID: 702040510}
+    - target: {fileID: 4508250873936569571, guid: 46a81d7af602e04478acb6301705bb7e, type: 3}
+      propertyPath: background
+      value: 
+      objectReference: {fileID: 2015220617}
     - target: {fileID: 8061355423823255077, guid: 46a81d7af602e04478acb6301705bb7e, type: 3}
       propertyPath: m_Name
       value: Background

@@ -7,26 +7,48 @@ using DG.Tweening;
 
 public class TestingDialogue : MonoBehaviour
 {
-    //public DialogueManager dialogueManager;
-    public TMP_Text playerText;
-    public GameObject playerTextContianer;
-    public Image playerImage;
-    public TMP_Text npcText;
-    public GameObject npcTextContianer;
-    public Image npcImage;
-    public string[] dialogos;
+    //private DialogueManager dialogueManager;
+    [SerializeField]
+    private Image blackImage;
+    [SerializeField]
+    private Material glowMaterial;
+    [SerializeField]
+    private TMP_Text leftText;
+    [SerializeField]
+    private GameObject leftTextContianer;
+    [SerializeField]
+    private Image leftImage;
+    [SerializeField]
+    private TMP_Text rightText;
+    [SerializeField]
+    private GameObject rightTextContianer;
+    [SerializeField]
+    private Image rightImage;
+    [SerializeField]
+    private string[] dialogos;
 
-    public List<Sprite> playerImages;
+    [SerializeField]
+    private List<Sprite> playerImages;
 
     bool isTalking;
     int i;
-    public PlayerAnimationController playerani;
-    public PlayerMovement playermov;
-    public Rigidbody2D rigidbody2D;
-    public Animator anim;
-    public EyeController eyeder;
-    public EyeController eyeizq;
-    public bool areEyes;
+    [SerializeField]
+    private PlayerAnimationController playerani;
+    [SerializeField]
+    private PlayerMovement playermov;
+    [SerializeField]
+    private Rigidbody2D rigidbody2D;
+    [SerializeField]
+    private Animator anim;
+    [SerializeField]
+    private EyeController eyeder;
+    [SerializeField]
+    private EyeController eyeizq;
+    [SerializeField]
+    private bool areEyes;
+
+    [SerializeField]
+    private DoorController doorController;
 
     private bool isTextAnimated = false;
     private Coroutine textAnimation;
@@ -37,6 +59,8 @@ public class TestingDialogue : MonoBehaviour
     void Start()
     {
         i = 1;
+        leftImage.material = Instantiate(glowMaterial);
+        blackImage.color = new Color32(49, 60, 57, 255);
     }
 
     // Update is called once per frame
@@ -48,13 +72,13 @@ public class TestingDialogue : MonoBehaviour
             {
                 if (!isTextAnimated)
                 {
-                    if (currentSpeaker == "Player")
+                    if (currentSpeaker == "L")
                     {
-                        playerText.text = "";
+                        leftText.text = "";
                     }
                     else
                     {
-                        npcText.text = "";
+                        rightText.text = "";
                     }
                     i += 1;
 
@@ -94,30 +118,32 @@ public class TestingDialogue : MonoBehaviour
     private void ChangeDialogueLine(string line)
     {
         string speaker = line.Split(':')[0];
-        string sprite = line.Split(':')[1];
-        string dialogue = line.Split(':')[2];
+        string dialogue = line.Split(':')[1];
         currentSpeaker = speaker;
 
         currentSpearkerImage = playerImages[i];
         
-        if (currentSpeaker == "Player")
+        if (currentSpeaker == "L")
         {
-            npcTextContianer.SetActive(false);
-            playerImage.sprite = currentSpearkerImage;
-            playerTextContianer.SetActive(true);
-            textAnimation = StartCoroutine(_TextAnimation(dialogue, playerText));
+            //rightTextContianer.SetActive(false);
+            leftImage.sprite = currentSpearkerImage;
+            leftImage.material.SetTexture("_MainTex", currentSpearkerImage.texture);
+            leftTextContianer.SetActive(true);
+            textAnimation = StartCoroutine(_TextAnimation(dialogue, leftText));
         }
-        else
+        if (currentSpeaker == "R")
         {
-            playerTextContianer.SetActive(false);
-            npcImage.sprite = currentSpearkerImage;
-            npcTextContianer.SetActive(true);
-            textAnimation = StartCoroutine(_TextAnimation(dialogue, npcText));
+            leftTextContianer.SetActive(false);
+            rightImage.sprite = currentSpearkerImage;
+            rightImage.material.SetTexture("_MainTex", currentSpearkerImage.texture);
+            rightTextContianer.SetActive(true);
+            textAnimation = StartCoroutine(_TextAnimation(dialogue, rightText));
         }
     }
 
-    public void StratDialogue()
+    public void StartDialogue()
     {
+        blackImage.gameObject.SetActive(true);
         isTalking = true;
         if (areEyes)
         {
@@ -136,10 +162,12 @@ public class TestingDialogue : MonoBehaviour
     }
     public void FinishDialogue()
     {
+        blackImage.DOFade(0, 1f);
+        doorController.WhiteNoiseAnim();
         playerani.enabled = true;
         playermov.enabled = true;
-        playerTextContianer.SetActive(false);
-        npcTextContianer.SetActive(false);
+        leftTextContianer.SetActive(false);
+        //rightTextContianer.SetActive(false);
         isTalking = false;
         if (areEyes)
         {

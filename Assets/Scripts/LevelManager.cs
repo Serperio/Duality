@@ -25,6 +25,7 @@ public class LevelManager : MonoBehaviour
 
     public void ResetLevel()
     {
+        PlayerPrefs.SetInt("Dead", 1);
         PP.SetActive(false);
         whiteNoise.DOFade(1f, 1f).OnPlay(()=> {
             if (AudioManager.Instance.gameObject != null)

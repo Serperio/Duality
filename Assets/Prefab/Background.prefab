@@ -130,6 +130,9 @@ MonoBehaviour:
   rigthEye: {fileID: 0}
   leftEye: {fileID: 0}
   changeColor: 1
+  camera: {fileID: 0}
+  tv: {fileID: 0}
+  background: {fileID: 2154438874100896912}
 --- !u!1 &8061355423823255077
 GameObject:
   m_ObjectHideFlags: 0

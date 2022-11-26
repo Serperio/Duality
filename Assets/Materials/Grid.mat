@@ -55,6 +55,7 @@ Material:
     - Vector1_79f68854222544798d6f2739d46a00ed: 7
     - Vector1_b61219d8179c4251ae321164b598fefe: 0.2
     - Vector1_b95bc56106f741c2b2cce9f3f991541a: 0.66
+    - _Speed: 0.2
     m_Colors:
     - Color_46c8bb7d8cf544c1a6bc3c628348f795: {r: 1, g: 0, b: 0.92636013, a: 1}
     - Vector4_6d3c3527e3bf419c9fcef9fa8067e302: {r: 2, g: 1, b: 0, a: 0.88}

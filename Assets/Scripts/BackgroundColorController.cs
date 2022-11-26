@@ -11,14 +11,6 @@ public class BackgroundColorController : MonoBehaviour
     [SerializeField] private SpriteRenderer sun;
     [SerializeField] private bool changeColor = false;
 
-    private void Start()
-    {
-        if (SceneManager.GetActiveScene().name != "Title Scene")
-        {
-            GameObject.Find("Player").GetComponent<SpriteRenderer>().material.SetColor("_GlowColor", new Color32(103, 0, 97, 0));
-        }
-    }
-
     void Update()
     {
         if (changeColor)

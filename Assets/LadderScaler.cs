@@ -13,7 +13,10 @@ public class LadderScaler : MonoBehaviour
     {
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         spriteRenderer.material = Instantiate(material);
-        float scale = (gameObject.transform.localScale.y * 2f - 5f) / 10f;
+        float scaleY = gameObject.transform.localScale.y;
+        float scale = 1.5f;
+        if (scaleY > 10)
+            scale = (gameObject.transform.localScale.y * 2f - 5f) / 10f;
         spriteRenderer.material.SetFloat("_Scale", scale);
     }
 }

@@ -9,12 +9,21 @@ using UnityEngine.Rendering.Universal;
 public class FinalLevel : MonoBehaviour
 {
     [SerializeField]
+    private SpriteRenderer whiteNoise;
+    [SerializeField]
     private Image whiteScreen;
+    [SerializeField]
+    private TestingDialogue dialogueManager;
 
     void Start()
     {
+        whiteNoise.DOFade(0, 1);
+
         whiteScreen.color = new Color(1, 1, 1, 0);
 
-        DOTween.Sequence().AppendInterval(30f).Append(whiteScreen.DOFade(1, 30f));
+        DOTween.Sequence().AppendInterval(30f).Append(whiteScreen.DOFade(1, 30f).OnComplete(() => 
+        {
+            dialogueManager.StartDialogue();
+        }));
     }
 }

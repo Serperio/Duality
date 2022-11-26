@@ -27,6 +27,8 @@ public class TestingDialogue : MonoBehaviour
     bool isTalking;
     int i;
     [SerializeField]
+    private bool isFinalLevel;
+    [SerializeField]
     private PlayerAnimationController playerani;
     [SerializeField]
     private PlayerMovement playermov;
@@ -41,7 +43,6 @@ public class TestingDialogue : MonoBehaviour
     [SerializeField]
     private bool areEyes;
 
-    [SerializeField]
     private DoorController doorController;
 
     private bool isTextAnimated = false;
@@ -108,6 +109,7 @@ public class TestingDialogue : MonoBehaviour
 
         leftImage.sprite = currentSpearkerImage;
         leftImage.material.SetTexture("_MainTex", currentSpearkerImage.texture);
+        leftImage.material.SetColor("_GlowColor", new Color(0, 0, 0, 0));
         leftTextContianer.SetActive(true);
         textAnimation = StartCoroutine(_TextAnimation(line, leftText));
     }
@@ -121,28 +123,35 @@ public class TestingDialogue : MonoBehaviour
             eyeder.enabled = false;
             eyeizq.enabled = false;
         }
-        rigidbody2D.velocity = new Vector2(0,0);
-        playerani.enabled = false;
-        playermov.enabled = false;
-        anim.SetBool("Running", false);
-        anim.SetBool("Ground", true);
+        if (isFinalLevel)
+        {
+            rigidbody2D.velocity = new Vector2(0, 0);
+            playerani.enabled = false;
+            playermov.enabled = false;
+            anim.SetBool("Running", false);
+            anim.SetBool("Ground", true);
+        }
         i = 0;
         ChangeDialogueLine(dialogos[0]);
         //text.text = dialogos[0];
-
     }
+
     public void FinishDialogue()
     {
         blackImage.DOFade(0, 1f);
         doorController.WhiteNoiseAnim();
-        playerani.enabled = true;
-        playermov.enabled = true;
         leftTextContianer.SetActive(false);
         isTalking = false;
         if (areEyes)
         {
             eyeder.enabled = true;
             eyeizq.enabled = true;
+        }
+        if (isFinalLevel)
+        {
+            playerani.enabled = true;
+            playermov.enabled = true;
+            Application.Quit();
         }
     }
 }

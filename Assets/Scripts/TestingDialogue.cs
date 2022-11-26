@@ -60,7 +60,7 @@ public class TestingDialogue : MonoBehaviour
     {
         i = 1;
         leftImage.material = Instantiate(glowMaterial);
-        blackImage.color = new Color(0, 0, 0, 1);
+        blackImage.color = new Color32(49, 60, 57, 255);
     }
 
     // Update is called once per frame
@@ -125,7 +125,7 @@ public class TestingDialogue : MonoBehaviour
         
         if (currentSpeaker == "L")
         {
-            rightTextContianer.SetActive(false);
+            //rightTextContianer.SetActive(false);
             leftImage.sprite = currentSpearkerImage;
             leftImage.material.SetTexture("_MainTex", currentSpearkerImage.texture);
             leftTextContianer.SetActive(true);
@@ -167,7 +167,7 @@ public class TestingDialogue : MonoBehaviour
         playerani.enabled = true;
         playermov.enabled = true;
         leftTextContianer.SetActive(false);
-        rightTextContianer.SetActive(false);
+        //rightTextContianer.SetActive(false);
         isTalking = false;
         if (areEyes)
         {

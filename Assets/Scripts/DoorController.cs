@@ -45,7 +45,7 @@ public class DoorController : MonoBehaviour
                 //AudioManager.Instance.PlayMusic("A");
                 //AudioManager.Instance.PlayMusic("B");
                 PP.SetActive(true);
-                if (dialogue)
+                if (dialogue && PlayerPrefs.GetInt("Dead") == 0)
                 {
                     dialogueManager.StartDialogue();
                 }
@@ -59,7 +59,7 @@ public class DoorController : MonoBehaviour
 
         whiteNoise.DOFade(1f, .5f).OnComplete(() =>
         {
-             PP.SetActive(true);
+            PP.SetActive(true);
             DOTween.Sequence().AppendInterval(0.5f).Append(whiteNoise.DOFade(0, 1));
         });
     }
@@ -70,6 +70,8 @@ public class DoorController : MonoBehaviour
         {
             if (enabled)
             {
+                PlayerPrefs.SetInt("Dead", 0);
+
                 PP.SetActive(false);
                 whiteNoise.DOFade(1f, 1f).OnPlay(()=> {
                     if (AudioManager.Instance.gameObject != null)

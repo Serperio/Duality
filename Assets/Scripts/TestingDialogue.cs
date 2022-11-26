@@ -150,19 +150,25 @@ public class TestingDialogue : MonoBehaviour
 
     public void StartDialogue()
     {
+        if (areEyes)
+        {
+            eyeder.gameObject.SetActive(false);
+            eyeder.enabled = false;
+
+            eyeizq.gameObject.SetActive(false);
+            eyeizq.enabled = false;
+        }
+
         if (isFinalLevel)
         {
             finalLevel.gameObject.SetActive(false);
+            eyeder.IsClosed = false;
+            eyeizq.IsClosed = false;
         }
 
         blackImage.color = new Color32(49, 60, 57, 255);
         blackImage.gameObject.SetActive(true);
         isTalking = true;
-        if (areEyes)
-        {
-            eyeder.gameObject.SetActive(false);
-            eyeizq.gameObject.SetActive(false);
-        }
 
         rigidbody2D.velocity = new Vector2(0, 0);
         playerani.enabled = false;
@@ -194,7 +200,9 @@ public class TestingDialogue : MonoBehaviour
         if (areEyes)
         {
             eyeder.gameObject.SetActive(true);
+            eyeder.enabled = true;
             eyeizq.gameObject.SetActive(true);
+            eyeizq.enabled = true;
         }
 
         playerani.enabled = true;
@@ -202,6 +210,8 @@ public class TestingDialogue : MonoBehaviour
 
         if (finalLevel != null)
         {
+            eyeder.IsClosed = true;
+            eyeizq.IsClosed = true;
             finalLevel.StartFinalLevel();
         }
 

@@ -46,7 +46,6 @@ public class TestingDialogue : MonoBehaviour
 
     private bool isTextAnimated = false;
     private Coroutine textAnimation;
-    private string currentSpeaker;
     private Sprite currentSpearkerImage;
 
     // Start is called before the first frame update
@@ -66,10 +65,7 @@ public class TestingDialogue : MonoBehaviour
             {
                 if (!isTextAnimated)
                 {
-                    if (currentSpeaker == "L")
-                    {
-                        leftText.text = "";
-                    }
+                    leftText.text = "";
                     i += 1;
 
                     if (i > dialogos.Length - 1)
@@ -107,20 +103,12 @@ public class TestingDialogue : MonoBehaviour
 
     private void ChangeDialogueLine(string line)
     {
-        string speaker = line.Split(':')[0];
-        string dialogue = line.Split(':')[1];
-        currentSpeaker = speaker;
-
         currentSpearkerImage = playerImages[i];
-        
-        if (currentSpeaker == "L")
-        {
-            //rightTextContianer.SetActive(false);
-            leftImage.sprite = currentSpearkerImage;
-            leftImage.material.SetTexture("_MainTex", currentSpearkerImage.texture);
-            leftTextContianer.SetActive(true);
-            textAnimation = StartCoroutine(_TextAnimation(dialogue, leftText));
-        }
+
+        leftImage.sprite = currentSpearkerImage;
+        leftImage.material.SetTexture("_MainTex", currentSpearkerImage.texture);
+        leftTextContianer.SetActive(true);
+        textAnimation = StartCoroutine(_TextAnimation(line, leftText));
     }
 
     public void StartDialogue()
@@ -149,7 +137,6 @@ public class TestingDialogue : MonoBehaviour
         playerani.enabled = true;
         playermov.enabled = true;
         leftTextContianer.SetActive(false);
-        //rightTextContianer.SetActive(false);
         isTalking = false;
         if (areEyes)
         {

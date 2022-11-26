@@ -13,6 +13,7 @@ public class DoorController : MonoBehaviour
     [SerializeField] private Sprite openDoor;
     [SerializeField] private GameObject explosionParticle;
     [SerializeField] private bool dialogue = false;
+    [SerializeField] private bool isMedusa = false;
     [SerializeField] private Medusa medusa;
     public SpriteRenderer whiteNoise;
     public GameObject PP;
@@ -73,7 +74,7 @@ public class DoorController : MonoBehaviour
             if (enabled)
             {
                 PlayerPrefs.SetInt("Dead", 0);
-                medusa.KillMedusa();
+                if(isMedusa)medusa.KillMedusa();
                 PP.SetActive(false);
                 whiteNoise.DOFade(1f, 1f).OnPlay(()=> {
                     if (AudioManager.Instance.gameObject != null)

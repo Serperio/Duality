@@ -40,7 +40,7 @@ public class IntroController : MonoBehaviour
         {
             message.DOFade(1f, 0.5f).OnComplete(() =>
             {
-                //DOTween.Sequence().AppendInterval(2f).Append(message.DOFade(0f, 0.5f));
+                DOTween.Sequence().AppendInterval(2f).Append(message.DOFade(0f, 0.5f));
             });
         });
     }

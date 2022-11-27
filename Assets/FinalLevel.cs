@@ -24,6 +24,6 @@ public class FinalLevel : MonoBehaviour
         DOTween.Sequence().AppendInterval(30f).Append(whiteScreen.DOFade(1, 30f).OnComplete(() => 
         {
             dialogueManager.StartDialogue();
-        }));
+        }).SetEase(Ease.InExpo));
     }
 }

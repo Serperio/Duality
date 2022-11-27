@@ -91,6 +91,7 @@ public class DoorController : MonoBehaviour
         {
             if (enabled)
             {
+                collision.attachedRigidbody.constraints = RigidbodyConstraints2D.FreezePosition;
                 PlayerPrefs.SetInt("Dead", 0);
                 if (isMedusa) medusa.KillMedusa();
                 PP.SetActive(false);

@@ -42,8 +42,7 @@ public class DoorController : MonoBehaviour
     private void Update()
     {
         if (startGame)
-        {
-            
+        {           
             whiteNoise.DOFade(0, 1).OnPlay(() => startGame = false);
             Sequence sequence = DOTween.Sequence();
             sequence.AppendInterval(.3f).Append(DOTween.To(() => temp, x => temp = x, 1, 0.2f).OnPlay(() =>

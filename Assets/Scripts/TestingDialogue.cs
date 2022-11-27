@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using DG.Tweening;
+using UnityEngine.SceneManagement;
 
 public class TestingDialogue : MonoBehaviour
 {
@@ -184,7 +185,7 @@ public class TestingDialogue : MonoBehaviour
     {
         if (isFinalLevel)
         {
-            Application.Quit();
+            SceneManager.LoadScene("Credits");
         }
 
         blackImage.DOFade(0, 1f);

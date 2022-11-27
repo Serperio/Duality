@@ -17,7 +17,6 @@ public class ParticleCollision : MonoBehaviour
     {
         if (AudioManager.Instance.gameObject != null)
         {
-
             print("audio");
             AudioManager.Instance.PlaySFX(3);
         }

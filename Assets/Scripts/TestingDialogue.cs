@@ -52,8 +52,6 @@ public class TestingDialogue : MonoBehaviour
     [SerializeField]
     private FinalLevel finalLevel;
 
-    [SerializeField]
-    private AudioManager audioManager;
 
     private DoorController doorController;
 
@@ -109,7 +107,7 @@ public class TestingDialogue : MonoBehaviour
     {
         isTextAnimated = true;
 
-        for (int i = 0; i < line.Length + 1; i++)
+         for (int i = 0; i < line.Length + 1; i++)
         {
             string sentence = line.Substring(0, i) + "<color=#0000>" + line.Substring(i) + "</color>";
             dialogueText.text = sentence;
@@ -126,7 +124,7 @@ public class TestingDialogue : MonoBehaviour
         {
             string[] temp = line.Split(' ');
             int index = int.Parse(temp[1]);
-            audioManager.ChangeMusic(index);
+            AudioManager.Instance.ChangeMusic(index);
             NextDialogueLine();
         }
         else

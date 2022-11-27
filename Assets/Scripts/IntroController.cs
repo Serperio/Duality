@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
+using System.IO;
 
 public class IntroController : MonoBehaviour
 {
@@ -39,7 +40,7 @@ public class IntroController : MonoBehaviour
         {
             message.DOFade(1f, 0.5f).OnComplete(() =>
             {
-                DOTween.Sequence().AppendInterval(2f).Append(message.DOFade(0f, 0.5f));
+                //DOTween.Sequence().AppendInterval(2f).Append(message.DOFade(0f, 0.5f));
             });
         });
     }
@@ -53,6 +54,10 @@ public class IntroController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftArrow) && lockControl == false)
         {
             ChangeChannel();
+        }
+        if (Input.GetKeyDown("t"))
+        {
+            WriteString("true");
         }
     }
 
@@ -70,11 +75,26 @@ public class IntroController : MonoBehaviour
 
         }).OnComplete(() =>
         {
-            if (PlayerPrefs.GetInt("FirstPlay") == 0)
-            {
-                SceneManager.LoadScene("L 1");
-            }
+            WriteString("false");
+            SceneManager.LoadScene("L 1");
         });
+    }
+
+    static void WriteString(string text)
+    {
+        string path = Application.streamingAssetsPath + "/GameStats.txt";
+        StreamWriter writer = new StreamWriter(path, false);
+        writer.WriteLine(text);
+        writer.Close();
+    }
+
+    static string ReadString()
+    {
+        string path = Application.streamingAssetsPath + "/GameStats.txt";
+        StreamReader reader = new StreamReader(path);
+        string line = reader.ReadLine();
+        reader.Close();
+        return line;
     }
 
     private void ChangeChannel()
@@ -95,7 +115,7 @@ public class IntroController : MonoBehaviour
             sequence.AppendInterval(.8f).Append(DOTween.To(() => temp, x => temp = x, 1, 0.2f).OnPlay(() =>
             {
                 lockControl = false;
-                if (counter > 2 && PlayerPrefs.GetInt("FirstPlay") == 0)
+                if (counter > 2 && ReadString() == "true")
                 {
                     AudioManager.Instance.PlayMusic("A");
                     AudioManager.Instance.PlayMusic("B");

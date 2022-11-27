@@ -184,7 +184,6 @@ public class TestingDialogue : MonoBehaviour
     {
         if (isFinalLevel)
         {
-            PlayerPrefs.SetFloat("FirstPlay", 1);
             Application.Quit();
         }
 

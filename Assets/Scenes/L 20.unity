@@ -837,8 +837,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07f37bd8c7b3e7a4da0afba0e1c72463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  min: 1
-  seconds: 30
+  min: 0
+  seconds: 40
 --- !u!222 &142870571
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -1000,7 +1000,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   min: 0
-  seconds: 30
+  seconds: 20
 --- !u!222 &142870571
 CanvasRenderer:
   m_ObjectHideFlags: 0

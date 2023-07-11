@@ -17,9 +17,8 @@ public class ParticleCollision : MonoBehaviour
     {
         if (AudioManager.Instance.gameObject != null)
         {
-
             print("audio");
-            AudioManager.Instance.Play(3);
+            AudioManager.Instance.PlaySFX(3);
         }
 
         door.OpenDoor();

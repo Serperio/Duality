@@ -6,18 +6,16 @@ using DG.Tweening;
 public class AudioManager : MonoBehaviour
 {
 	// Audio players components.
-	public AudioSource EffectsSource;
 	public AudioSource MusicSourceA;
 	public AudioSource MusicSourceB;
 
-	[SerializeField] private AudioClip musicA;
-	[SerializeField] private AudioClip musicB;
+	[SerializeField] private List<AudioClip> musics;
 
 	// Random pitch adjustment range.
 	public float LowPitchRange = .95f;
 	public float HighPitchRange = 1.05f;
 
-
+	[SerializeField] private AudioSource[] SFXAudioSources;
 	[SerializeField] private AudioClip[] SFXList;
 
 	// Singleton instance.
@@ -39,13 +37,6 @@ public class AudioManager : MonoBehaviour
 
 		//Set SoundManager to DontDestroyOnLoad so that it won't be destroyed when reloading our scene.
 		DontDestroyOnLoad(gameObject);
-	}
-
-	// Play a single clip through the sound effects source.
-	public void Play(int clipNumber)
-	{
-		EffectsSource.clip = SFXList[clipNumber];
-		EffectsSource.Play();
 	}
 
 	public void MuteMusic(string type)
@@ -79,12 +70,12 @@ public class AudioManager : MonoBehaviour
 	{
 		if (type == "A")
 		{
-			MusicSourceA.clip = musicA;
+			MusicSourceA.clip = musics[0];
 			MusicSourceA.Play();
         }
         else
         {
-			MusicSourceB.clip = musicB;
+			MusicSourceB.clip = musics[1];
 			MusicSourceB.Play();
 		}
 	}
@@ -101,15 +92,63 @@ public class AudioManager : MonoBehaviour
 		}
 	}
 
+	private void ChangeAudioClip(AudioSource audioSource, int index)
+    {
+		DOTween.To(() => audioSource.volume, x => audioSource.volume = x, 0f, 0.5f).OnComplete(() => 
+		{
+			audioSource.Stop();
+			DOTween.To(() => audioSource.volume, x => audioSource.volume = x, 1f, 0.5f);
+			audioSource.clip = musics[index];
+			audioSource.Play();
+		});
+	}
+
+	public void ChangeMusic(int index)
+	{
+		if (index == 0)
+		{
+			ChangeAudioClip(MusicSourceA, 2);
+			ChangeAudioClip(MusicSourceB, 3);
+		}
+		else
+		{
+			ChangeAudioClip(MusicSourceA, 0);
+			ChangeAudioClip(MusicSourceB, 1);
+		}
+	}
+
 	// Play a random clip from an array, and randomize the pitch slightly.
 	public void RandomSoundEffect(params AudioClip[] clips)
 	{
 		int randomIndex = Random.Range(0, clips.Length);
 		float randomPitch = Random.Range(LowPitchRange, HighPitchRange);
 
-		EffectsSource.pitch = randomPitch;
-		EffectsSource.clip = clips[randomIndex];
-		EffectsSource.Play();
+		//EffectsSource.pitch = randomPitch;
+		//EffectsSource.clip = clips[randomIndex];
+		//EffectsSource.Play();
 	}
 
+
+	public void PlaySFX(int clipNumber)
+    {
+		bool played = false;
+
+		for (int i = 0; i < SFXAudioSources.Length; i++)
+		{
+			AudioSource soundAudioSource = SFXAudioSources[i];
+			if (!soundAudioSource.isPlaying)
+			{
+				soundAudioSource.Stop();
+				soundAudioSource.clip = SFXList[clipNumber]; ;
+				soundAudioSource.volume = 1f;
+				soundAudioSource.loop = false;
+				soundAudioSource.Play();
+				played = true;
+				break;
+			}
+		}
+
+		if (!played)
+			throw new System.Exception("Too many sounds");
+	}
 }

@@ -4,6 +4,7 @@ using UnityEngine;
 using DG.Tweening;
 using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
+using System;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -86,7 +87,7 @@ public class PlayerMovement : MonoBehaviour
         SetValues();
     }
 
-   
+
 
 
     private void Update()
@@ -108,6 +109,11 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonUp("Jump"))
         {
             OnJumpUp();
+        }
+
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            KillPlayer();
         }
         #endregion
 
@@ -177,7 +183,7 @@ public class PlayerMovement : MonoBehaviour
         #endregion
 
         #region Falling
-        if (transform.position.y <= -30)
+        if (transform.position.y <= -500)
         {
             LevelManager.instance.ResetLevel();
         }
@@ -192,6 +198,11 @@ public class PlayerMovement : MonoBehaviour
         #endregion
 
 
+    }
+
+    private void KillPlayer()
+    {
+        LevelManager.instance.ResetLevel();
     }
 
     private void FixedUpdate()
@@ -245,7 +256,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (AudioManager.Instance.gameObject != null)
         {
-            AudioManager.Instance.Play(2);
+            AudioManager.Instance.PlaySFX(2);
         }
         float force = jumpForce;
         if (rb.velocity.y < 0)

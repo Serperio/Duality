@@ -599,7 +599,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 5e87f6441d3ec094183c627c3a4d6a1d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -641,7 +641,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.004495345, y: -0.000512138}
@@ -700,12 +700,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31419b622136eb243b89940e1ca9067d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerText: {fileID: 0}
-  playerTextContianer: {fileID: 0}
-  playerImage: {fileID: 0}
-  npcText: {fileID: 0}
-  npcTextContianer: {fileID: 0}
-  npcImage: {fileID: 0}
+  blackImage: {fileID: 0}
+  glowMaterial: {fileID: 2100000, guid: 6abbf11ad672d4543bcbbfd0b849f920, type: 2}
+  leftText: {fileID: 0}
+  leftTextContianer: {fileID: 0}
+  leftImage: {fileID: 0}
+  rightText: {fileID: 0}
+  rightTextContianer: {fileID: 0}
+  rightImage: {fileID: 0}
   dialogos:
   - NPC Blue adsdas
   - Player Red afdsfsd

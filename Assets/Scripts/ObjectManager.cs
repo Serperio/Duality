@@ -54,12 +54,6 @@ public class ObjectManager : MonoBehaviour
                 TurnObjects(BothContainer, true);
             }
         }
-        
-
-        
-        
-
-
     }
 
     private void TurnObjects(GameObject container, bool state)

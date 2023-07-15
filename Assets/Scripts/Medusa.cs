@@ -16,6 +16,7 @@ public class Medusa : MonoBehaviour
     private float counter = 0;
     private bool isPowerActived = false;
     private bool isAlive = false;
+    private bool playerAlive = true;
 
     void Start()
     {
@@ -67,8 +68,9 @@ public class Medusa : MonoBehaviour
 
     private void CheckEyes()
     {      
-        if (!playerRightEye.IsClosed || !playerleftEye.IsClosed)
+        if ((!playerRightEye.IsClosed || !playerleftEye.IsClosed) && playerAlive)
         {
+            playerAlive = false;
             LevelManager.instance.ResetLevel();
         }
     }

@@ -160,7 +160,7 @@ public class TestingDialogue : MonoBehaviour
 
         if (isFinalLevel)
         {
-            finalLevel.gameObject.SetActive(false);
+            //finalLevel.gameObject.SetActive(false);
             eyeder.IsClosed = false;
             eyeizq.IsClosed = false;
         }
@@ -213,7 +213,8 @@ public class TestingDialogue : MonoBehaviour
             finalLevel.StartFinalLevel();
         }
 
-        ActiveEnemies();
+        if (!isFinalLevel)
+            ActiveEnemies();
     }
 
     public void ActiveEnemies()

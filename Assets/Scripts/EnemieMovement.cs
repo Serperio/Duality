@@ -93,6 +93,7 @@ public class EnemieMovement : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             print("moristes :c");
+            Destroy(collision.gameObject);
             LevelManager.instance.ResetLevel();
         }
     }

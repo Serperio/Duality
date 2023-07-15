@@ -297,7 +297,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[2]
-      value: You are smart
+      value: That proves how smart you really are
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[3]
@@ -305,19 +305,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[4]
-      value: You see...
+      value: "Yes, yes\u2026 You ARE ready"
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[5]
-      value: It's the perfect time to take off your training wheels
+      value: It's the perfect time to remove your training wheels
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[6]
-      value: Now you have the control
+      value: Now you have full control
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[7]
-      value: No more color buttons
+      value: No more buttons
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[8]

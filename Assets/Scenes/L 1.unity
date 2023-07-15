@@ -200,7 +200,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[2]
-      value: This is an special experience
+      value: "What you\u2019re about to go through is a special experience"
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[3]
@@ -208,47 +208,47 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[4]
-      value: My name is Chan
-      objectReference: {fileID: 0}
-    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
-      propertyPath: dialogos.Array.data[5]
-      value: And I will be your guidance across this test
-      objectReference: {fileID: 0}
-    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
-      propertyPath: dialogos.Array.data[6]
       value: To sum up
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
-      propertyPath: dialogos.Array.data[7]
-      value: You must beat some challenges
+      propertyPath: dialogos.Array.data[5]
+      value: You must face some challenges
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
-      propertyPath: dialogos.Array.data[8]
+      propertyPath: dialogos.Array.data[6]
       value: By completing the challenges
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: dialogos.Array.data[7]
+      value: A big reward will be waiting for you
+      objectReference: {fileID: 0}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: dialogos.Array.data[8]
+      value: Bigger than you could ever imagine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[9]
-      value: A big reward is at hand
+      value: You are able to withdraw at any time
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[10]
-      value: You are able to leave at any time
-      objectReference: {fileID: 0}
-    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
-      propertyPath: dialogos.Array.data[11]
       value: By turning off the TV (closing the game)
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: dialogos.Array.data[11]
+      value: "However, if you do that\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[12]
-      value: "However, you will face some\u2026 consequences."
+      value: "You will face some\u2026 consequences."
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[13]
-      value: Fun right?
+      value: Fun, right?
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[14]
-      value: Given all the information..
+      value: "Now that you received this information\u2026"
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[15]

@@ -200,7 +200,7 @@ PrefabInstance:
       objectReference: {fileID: 500289514}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.size
-      value: 32
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: playerTextContianer
@@ -224,15 +224,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[4]
-      value: That's amazing. You know?
+      value: Did you?
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[5]
-      value: ...
+      value: Either way, you made it this far!
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[6]
-      value: You leave me speechless
+      value: That's amazing, you know?
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[7]
@@ -240,7 +240,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[8]
-      value: You are reaching the end of this experience
+      value: You make me speechless
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[9]
@@ -248,95 +248,111 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[10]
-      value: I hope you keep doing great
+      value: You are reaching the end of this experience
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[11]
-      value: Please stop lying Chan
+      value: ...
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[12]
-      value: Medusa?
+      value: I hope you keep doing great
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[13]
-      value: What are you doing here?
+      value: Stop the lies, Chan
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[14]
-      value: Hear me human
+      value: Medusa?
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[15]
-      value: 'Chan is lying to you '
+      value: What are you doing here?
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[16]
-      value: You are not good or anything like that
+      value: Hear my words human
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[17]
-      value: You are really average
+      value: 'Chan is lying to you '
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[18]
-      value: Everyone was capable of reaching here
+      value: You are not better than the rest or anything like that
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[19]
-      value: I'm even surprised of how slow you are
+      value: You are really average
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[20]
-      value: Pathetic
+      value: Anyone could reach this point
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[21]
-      value: Stop Medusa
+      value: Why did it take you so long to reach this point anyway?
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[22]
-      value: Don't interrupt me Chan
+      value: Pathetic
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[23]
-      value: Listen pal
+      value: Stop Medusa
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[24]
-      value: Just turn off the TV
+      value: Don't interrupt me Chan
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[25]
-      value: This test doesn't really matters
+      value: Listen pal
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[26]
-      value: You can just leave and continue with your pathetic life
+      value: Just turn off the TV
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[27]
-      value: I will not accept you talking like that
+      value: This test doesn't really matters
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[28]
-      value: Who cares?
+      value: You can just leave, go and continue with your pathetic life
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[29]
-      value: command 0
+      value: You have nothing to prove here, no one to impress
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[30]
-      value: 'I''m charge now '
+      value: Stop wasting your time
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[31]
+      value: "Believe me, I\u2019m doing you a favor"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: dialogos.Array.data[32]
+      value: I will not accept you talking like that
+      objectReference: {fileID: 0}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: dialogos.Array.data[33]
+      value: Who cares?
+      objectReference: {fileID: 0}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: dialogos.Array.data[34]
+      value: I'm charge now
+      objectReference: {fileID: 0}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: dialogos.Array.data[35]
       value: The real test begins now
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: playerImages.Array.size
-      value: 32
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: playerImages.Array.data[0]
@@ -361,7 +377,7 @@ PrefabInstance:
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: playerImages.Array.data[5]
       value: 
-      objectReference: {fileID: 21300000, guid: af38d8f00d7c6c84ab1acbfa1be74bee, type: 3}
+      objectReference: {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: playerImages.Array.data[6]
       value: 
@@ -393,19 +409,19 @@ PrefabInstance:
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: playerImages.Array.data[13]
       value: 
-      objectReference: {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+      objectReference: {fileID: 21300000, guid: af38d8f00d7c6c84ab1acbfa1be74bee, type: 3}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: playerImages.Array.data[14]
       value: 
-      objectReference: {fileID: 21300000, guid: af38d8f00d7c6c84ab1acbfa1be74bee, type: 3}
+      objectReference: {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: playerImages.Array.data[15]
       value: 
-      objectReference: {fileID: 21300000, guid: af38d8f00d7c6c84ab1acbfa1be74bee, type: 3}
+      objectReference: {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: playerImages.Array.data[16]
       value: 
-      objectReference: {fileID: 21300000, guid: c6d31da371b37f74398c036284df93ad, type: 3}
+      objectReference: {fileID: 21300000, guid: af38d8f00d7c6c84ab1acbfa1be74bee, type: 3}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: playerImages.Array.data[17]
       value: 
@@ -417,7 +433,7 @@ PrefabInstance:
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: playerImages.Array.data[19]
       value: 
-      objectReference: {fileID: 21300000, guid: c6d31da371b37f74398c036284df93ad, type: 3}
+      objectReference: {fileID: 21300000, guid: af38d8f00d7c6c84ab1acbfa1be74bee, type: 3}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: playerImages.Array.data[20]
       value: 
@@ -425,15 +441,15 @@ PrefabInstance:
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: playerImages.Array.data[21]
       value: 
-      objectReference: {fileID: 21300000, guid: 373fd604abe991047931023370365a0c, type: 3}
+      objectReference: {fileID: 21300000, guid: c6d31da371b37f74398c036284df93ad, type: 3}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: playerImages.Array.data[22]
       value: 
-      objectReference: {fileID: 21300000, guid: af38d8f00d7c6c84ab1acbfa1be74bee, type: 3}
+      objectReference: {fileID: 21300000, guid: c6d31da371b37f74398c036284df93ad, type: 3}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: playerImages.Array.data[23]
       value: 
-      objectReference: {fileID: 21300000, guid: c6d31da371b37f74398c036284df93ad, type: 3}
+      objectReference: {fileID: 21300000, guid: 373fd604abe991047931023370365a0c, type: 3}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: playerImages.Array.data[24]
       value: 
@@ -441,29 +457,45 @@ PrefabInstance:
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: playerImages.Array.data[25]
       value: 
-      objectReference: {fileID: 21300000, guid: af38d8f00d7c6c84ab1acbfa1be74bee, type: 3}
+      objectReference: {fileID: 21300000, guid: c6d31da371b37f74398c036284df93ad, type: 3}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: playerImages.Array.data[26]
       value: 
-      objectReference: {fileID: 21300000, guid: c6d31da371b37f74398c036284df93ad, type: 3}
+      objectReference: {fileID: 21300000, guid: af38d8f00d7c6c84ab1acbfa1be74bee, type: 3}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: playerImages.Array.data[27]
       value: 
-      objectReference: {fileID: 21300000, guid: 373fd604abe991047931023370365a0c, type: 3}
+      objectReference: {fileID: 21300000, guid: af38d8f00d7c6c84ab1acbfa1be74bee, type: 3}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: playerImages.Array.data[28]
       value: 
-      objectReference: {fileID: 21300000, guid: af38d8f00d7c6c84ab1acbfa1be74bee, type: 3}
+      objectReference: {fileID: 21300000, guid: c6d31da371b37f74398c036284df93ad, type: 3}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: playerImages.Array.data[29]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 21300000, guid: af38d8f00d7c6c84ab1acbfa1be74bee, type: 3}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: playerImages.Array.data[30]
       value: 
-      objectReference: {fileID: 21300000, guid: c6d31da371b37f74398c036284df93ad, type: 3}
+      objectReference: {fileID: 21300000, guid: af38d8f00d7c6c84ab1acbfa1be74bee, type: 3}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: playerImages.Array.data[31]
+      value: 
+      objectReference: {fileID: 21300000, guid: af38d8f00d7c6c84ab1acbfa1be74bee, type: 3}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: playerImages.Array.data[32]
+      value: 
+      objectReference: {fileID: 21300000, guid: 373fd604abe991047931023370365a0c, type: 3}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: playerImages.Array.data[33]
+      value: 
+      objectReference: {fileID: 21300000, guid: c6d31da371b37f74398c036284df93ad, type: 3}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: playerImages.Array.data[34]
+      value: 
+      objectReference: {fileID: 21300000, guid: c6d31da371b37f74398c036284df93ad, type: 3}
+    - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: playerImages.Array.data[35]
       value: 
       objectReference: {fileID: 21300000, guid: c6d31da371b37f74398c036284df93ad, type: 3}
     - target: {fileID: 7459498722855311397, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}

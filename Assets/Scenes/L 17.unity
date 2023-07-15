@@ -289,7 +289,7 @@ PrefabInstance:
       objectReference: {fileID: 500289514}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.size
-      value: 11
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: playerTextContianer
@@ -305,7 +305,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[2]
-      value: You will receive an award or it will change your life
+      value: You will receive a reward of some kind that will change your life
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[3]
@@ -317,39 +317,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[5]
-      value: Hope
+      value: "An annoying, parasitic, infuriating little fly called\u2026"
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[6]
-      value: But real world is a cruel place
+      value: Hope
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[7]
-      value: The truth is that in the end there is nothing
+      value: But real world is a cruel place
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[8]
-      value: Chan like to test monkeys like you
+      value: The truth is that in the end there is nothing
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[9]
-      value: So just give up
+      value: "Oh, I\u2019m sorry, did I spoiled the challenge for you?"
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[10]
-      value: Nothing will change in your life
+      value: Too bad, there is no reward
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[11]
-      value: Please stop lying Chan
+      value: Chan likes to test monkeys like you so it can fell better about itself
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[12]
-      value: Medusa?
+      value: So just give up
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[13]
-      value: What are you doing here?
+      value: Nothing will change in your life
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[14]
@@ -425,7 +425,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: playerImages.Array.size
-      value: 11
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: playerImages.Array.data[0]
@@ -450,11 +450,11 @@ PrefabInstance:
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: playerImages.Array.data[5]
       value: 
-      objectReference: {fileID: 21300000, guid: af38d8f00d7c6c84ab1acbfa1be74bee, type: 3}
+      objectReference: {fileID: 21300000, guid: c6d31da371b37f74398c036284df93ad, type: 3}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: playerImages.Array.data[6]
       value: 
-      objectReference: {fileID: 21300000, guid: c6d31da371b37f74398c036284df93ad, type: 3}
+      objectReference: {fileID: 21300000, guid: af38d8f00d7c6c84ab1acbfa1be74bee, type: 3}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: playerImages.Array.data[7]
       value: 
@@ -466,7 +466,7 @@ PrefabInstance:
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: playerImages.Array.data[9]
       value: 
-      objectReference: {fileID: 21300000, guid: af38d8f00d7c6c84ab1acbfa1be74bee, type: 3}
+      objectReference: {fileID: 21300000, guid: c6d31da371b37f74398c036284df93ad, type: 3}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: playerImages.Array.data[10]
       value: 
@@ -478,11 +478,11 @@ PrefabInstance:
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: playerImages.Array.data[12]
       value: 
-      objectReference: {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+      objectReference: {fileID: 21300000, guid: af38d8f00d7c6c84ab1acbfa1be74bee, type: 3}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: playerImages.Array.data[13]
       value: 
-      objectReference: {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+      objectReference: {fileID: 21300000, guid: c6d31da371b37f74398c036284df93ad, type: 3}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: playerImages.Array.data[14]
       value: 

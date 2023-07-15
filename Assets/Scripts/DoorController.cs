@@ -18,6 +18,7 @@ public class DoorController : MonoBehaviour
     [SerializeField] private Medusa medusa;
     [SerializeField] private bool isMessage = false;
     [SerializeField] private TMP_Text message;
+    [SerializeField] private TestingDialogue finalDialogue;
     public SpriteRenderer whiteNoise;
     public GameObject PP;
 
@@ -89,7 +90,7 @@ public class DoorController : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            if (enabled)
+            if (enabled && SceneManager.GetActiveScene().name != "L 29")
             {
                 PlayerPrefs.SetInt("Dead", 0);
                 if (isMedusa) medusa.KillMedusa();
@@ -107,6 +108,15 @@ public class DoorController : MonoBehaviour
                     Debug.Log(index);
                     SceneManager.LoadScene("L " + (int.Parse(index) + 1));
                 });
+            }
+            else
+            {
+                PlayerPrefs.SetInt("Dead", 0);
+                if (isMedusa) medusa.KillMedusa();
+                if (SceneManager.GetActiveScene().name == "L 29")
+                {
+                    finalDialogue.StartDialogue();
+                }
             }
                 //print("pasaste");
             

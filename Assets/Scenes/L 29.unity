@@ -262,59 +262,59 @@ PrefabInstance:
       objectReference: {fileID: 965806088}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.size
-      value: 19
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[0]
-      value: Well well well
+      value: "Fine\u2026"
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[1]
-      value: You just keep going...
+      value: "You really asked for it\u2026"
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[2]
-      value: Just turn it off, dude
+      value: This is the last straw
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[3]
-      value: No one really appreciate your efforts
+      value: The very final challenge, for real this time
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[4]
-      value: This is only entertaining for us
+      value: "Except that\u2026"
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[5]
-      value: That's pointless Accel
+      value: "It\u2019s not really a challenge\u2026"
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[6]
-      value: So, you were here all time
+      value: "It\u2019s a nightmare"
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[7]
-      value: "I thought you didn\u2019t care?"
+      value: And you can still wake up from it
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[8]
-      value: I can't bear to know that there is someone so stupid
+      value: Before we break you
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[9]
-      value: But I have the solution
+      value: "\u2026"
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[10]
-      value: "If reason doesn\u2019t work"
+      value: Still no?
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[11]
-      value: We will stop the human toguether
+      value: So long, then
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[12]
-      value: Hmmm...
+      value: This is what you deserve
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: dialogos.Array.data[13]
@@ -366,60 +366,60 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: playerImages.Array.size
-      value: 19
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: playerImages.Array.data[0]
       value: 
-      objectReference: {fileID: 21300000, guid: 9e3d09fb7ed04ef48a3bc54212b1b9f2, type: 3}
+      objectReference: {fileID: 21300000, guid: 373fd604abe991047931023370365a0c, type: 3}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: playerImages.Array.data[1]
       value: 
-      objectReference: {fileID: 21300000, guid: c559ff54f4b41904da38d39605f5a466, type: 3}
+      objectReference: {fileID: 21300000, guid: 373fd604abe991047931023370365a0c, type: 3}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: playerImages.Array.data[2]
       value: 
-      objectReference: {fileID: 21300000, guid: c559ff54f4b41904da38d39605f5a466, type: 3}
+      objectReference: {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: playerImages.Array.data[3]
       value: 
-      objectReference: {fileID: 21300000, guid: c559ff54f4b41904da38d39605f5a466, type: 3}
+      objectReference: {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: playerImages.Array.data[4]
       value: 
-      objectReference: {fileID: 21300000, guid: 9e3d09fb7ed04ef48a3bc54212b1b9f2, type: 3}
+      objectReference: {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: playerImages.Array.data[5]
       value: 
-      objectReference: {fileID: 21300000, guid: c559ff54f4b41904da38d39605f5a466, type: 3}
+      objectReference: {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: playerImages.Array.data[6]
       value: 
-      objectReference: {fileID: 21300000, guid: af38d8f00d7c6c84ab1acbfa1be74bee, type: 3}
+      objectReference: {fileID: 21300000, guid: 373fd604abe991047931023370365a0c, type: 3}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: playerImages.Array.data[7]
       value: 
-      objectReference: {fileID: 21300000, guid: c559ff54f4b41904da38d39605f5a466, type: 3}
+      objectReference: {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: playerImages.Array.data[8]
       value: 
-      objectReference: {fileID: 21300000, guid: c6d31da371b37f74398c036284df93ad, type: 3}
+      objectReference: {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: playerImages.Array.data[9]
       value: 
-      objectReference: {fileID: 21300000, guid: af38d8f00d7c6c84ab1acbfa1be74bee, type: 3}
+      objectReference: {fileID: 21300000, guid: 373fd604abe991047931023370365a0c, type: 3}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: playerImages.Array.data[10]
       value: 
-      objectReference: {fileID: 21300000, guid: af38d8f00d7c6c84ab1acbfa1be74bee, type: 3}
+      objectReference: {fileID: 21300000, guid: 373fd604abe991047931023370365a0c, type: 3}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: playerImages.Array.data[11]
       value: 
-      objectReference: {fileID: 21300000, guid: c6d31da371b37f74398c036284df93ad, type: 3}
+      objectReference: {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: playerImages.Array.data[12]
       value: 
-      objectReference: {fileID: 21300000, guid: c559ff54f4b41904da38d39605f5a466, type: 3}
+      objectReference: {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
     - target: {fileID: 3999548871532595576, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: playerImages.Array.data[13]
       value: 
@@ -496,6 +496,10 @@ PrefabInstance:
       propertyPath: whiteNoise
       value: 
       objectReference: {fileID: 981885281}
+    - target: {fileID: 7459498722855311397, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
+      propertyPath: finalDialogue
+      value: 
+      objectReference: {fileID: 965806091}
     - target: {fileID: 7459498722855311416, guid: 50818169ed23e6e45bfa4c274b2ff567, type: 3}
       propertyPath: m_Name
       value: door
@@ -706,11 +710,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8178893592780785442, guid: 156f9843dcd47e646b72492e559960dd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -23.5
+      value: -23.2
       objectReference: {fileID: 0}
     - target: {fileID: 8178893592780785442, guid: 156f9843dcd47e646b72492e559960dd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -20.2
+      value: -18.4
       objectReference: {fileID: 0}
     - target: {fileID: 8178893592780785442, guid: 156f9843dcd47e646b72492e559960dd, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4001,6 +4005,94 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &965806090 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2057439147851361910, guid: 4f321367f8bbc2b41a0cc0d47d263a31, type: 3}
+  m_PrefabInstance: {fileID: 965806084}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &965806091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965806090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31419b622136eb243b89940e1ca9067d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blackImage: {fileID: 965806086}
+  glowMaterial: {fileID: 2100000, guid: 6abbf11ad672d4543bcbbfd0b849f920, type: 2}
+  leftText: {fileID: 965806089}
+  leftTextContianer: {fileID: 965806088}
+  leftImage: {fileID: 965806087}
+  dialogos:
+  - So... you are not a loser after all...
+  - Ha ha
+  - Congratulations pal
+  - You leave me speechless
+  - ...
+  - You are here
+  - Sorry for my last words
+  - I'll be honest this time
+  - No more pranks
+  - No more empty words
+  - I take it all back, seriously
+  - You ARE awesome
+  - No matter how hard was the problem
+  - You never give up
+  - This maybe is a bad time
+  - "And it probably won\u2019t get better soon"
+  - But you proved yourself you can beat something like this
+  - And you know that nothing will stop you
+  - So let me tell you
+  - From the bottom of my code
+  - "Be PROUD of who you are and how far you\u2019ve come"
+  - When no one else believes in you, you should be the one to do it
+  - "And if you ever doubt again\u2026"
+  - Feel free to come back
+  - We'll be waiting for you here
+  - In Channel 301
+  playerImages:
+  - {fileID: 21300000, guid: af38d8f00d7c6c84ab1acbfa1be74bee, type: 3}
+  - {fileID: 21300000, guid: 9e3d09fb7ed04ef48a3bc54212b1b9f2, type: 3}
+  - {fileID: 21300000, guid: c559ff54f4b41904da38d39605f5a466, type: 3}
+  - {fileID: 21300000, guid: c559ff54f4b41904da38d39605f5a466, type: 3}
+  - {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+  - {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+  - {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+  - {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+  - {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+  - {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+  - {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+  - {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+  - {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+  - {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+  - {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+  - {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+  - {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+  - {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+  - {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+  - {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+  - {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+  - {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+  - {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+  - {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+  - {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+  - {fileID: 21300000, guid: e126faefad480b544837b934f85a0409, type: 3}
+  playerani: {fileID: 78651022}
+  playermov: {fileID: 78651021}
+  rigidbody2D: {fileID: 78651020}
+  anim: {fileID: 78651019}
+  isFinalLevel: 1
+  eyeder: {fileID: 741433268}
+  eyeizq: {fileID: 741433267}
+  areEyes: 1
+  isMedusa: 1
+  isAccel: 1
+  timer: {fileID: 142870570}
+  finalLevel: {fileID: 0}
 --- !u!1001 &969402953
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -68,9 +68,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/L 20.unity
     guid: 76bd4a044e56a6f42ba870df03df038f
-  - enabled: 1
-    path: Assets/Scenes/L 29.unity
-    guid: c0135e9052ce6f5498bb84e168e93f2e
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/L 21.unity
     guid: 20f9235c6275db74495257a2aab587af
@@ -95,6 +95,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/L 28.unity
     guid: 96cef8c153ae7244fbeeb27a77da44d8
+  - enabled: 1
+    path: Assets/Scenes/L 29.unity
+    guid: 36ae36e8113e143468acdfea26767a40
   - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: c3e67455b98c93841b1719ef792d4fef

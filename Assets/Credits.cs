@@ -15,7 +15,7 @@ public class Credits : MonoBehaviour
     {
         whiteNoise.DOFade(0f, 1f).OnComplete(() =>
         {
-            DOTween.To(() => creditsContainer.anchoredPosition, x => creditsContainer.anchoredPosition = x, new Vector2(0, 430), 40f).OnComplete(() => 
+            DOTween.To(() => creditsContainer.anchoredPosition, x => creditsContainer.anchoredPosition = x, new Vector2(0, 500), 40f).OnComplete(() => 
             {
                 DOTween.Sequence().AppendInterval(5f).AppendCallback(() => 
                 {

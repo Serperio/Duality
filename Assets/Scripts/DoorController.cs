@@ -90,36 +90,35 @@ public class DoorController : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            if (enabled && SceneManager.GetActiveScene().name != "L 29")
+            if (enabled)
             {
                 PlayerPrefs.SetInt("Dead", 0);
                 if (isMedusa) medusa.KillMedusa();
-                PP.SetActive(false);
-                whiteNoise.DOFade(1f, 1f).OnPlay(()=> {
-                    if (AudioManager.Instance.gameObject != null)
-                    {
-                        print("audio");
-                        AudioManager.Instance.PlaySFX(1);
-                    }
-                }).OnComplete(() =>
+                if (SceneManager.GetActiveScene().name != "L 29")
                 {
-                    string levelName = SceneManager.GetActiveScene().name;
-                    string index = levelName.Split(' ')[1];
-                    Debug.Log(index);
-                    SceneManager.LoadScene("L " + (int.Parse(index) + 1));
-                });
-            }
-            else
-            {
-                PlayerPrefs.SetInt("Dead", 0);
-                if (isMedusa) medusa.KillMedusa();
-                if (SceneManager.GetActiveScene().name == "L 29")
+                    PP.SetActive(false);
+                    whiteNoise.DOFade(1f, 1f).OnPlay(() =>
+                    {
+                        if (AudioManager.Instance.gameObject != null)
+                        {
+                            print("audio");
+                            AudioManager.Instance.PlaySFX(1);
+                        }
+                    }).OnComplete(() =>
+                    {
+                        string levelName = SceneManager.GetActiveScene().name;
+                        string index = levelName.Split(' ')[1];
+                        Debug.Log(index);
+                        SceneManager.LoadScene("L " + (int.Parse(index) + 1));
+                    });
+                }
+                else
                 {
                     finalDialogue.StartDialogue();
                 }
             }
-                //print("pasaste");
-            
+
+                //print("pasaste");          
         }
             
     }

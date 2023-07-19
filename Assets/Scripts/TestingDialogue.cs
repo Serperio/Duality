@@ -115,14 +115,14 @@ public class TestingDialogue : MonoBehaviour
             dialogueText.text = sentence;
             yield return new WaitForSeconds(0.05f);
 
-            if (i < line.Length)
-            {
-                if (line[i] == ' ')
-                {
-                    //AudioManager.Instance.TypingSound.Stop();
-                    //yield return new WaitForSeconds(0.2f);
-                }
-            }
+            //if (i < line.Length)
+            //{
+            //    if (line[i] == ' ')
+            //    {
+            //        AudioManager.Instance.TypingSound.Stop();
+            //        yield return new WaitForSeconds(0.2f);
+            //    }
+            //}
         }
 
         yield return new WaitForSeconds(0.1f);

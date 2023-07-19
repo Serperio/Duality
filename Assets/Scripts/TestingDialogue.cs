@@ -108,47 +108,66 @@ public class TestingDialogue : MonoBehaviour
     {
         isTextAnimated = true;
 
-         for (int i = 0; i < line.Length + 1; i++)
+        for (int i = 0; i < line.Length + 1; i++)
         {
+            AudioManager.Instance.TypingSound.Play();
             string sentence = line.Substring(0, i) + "<color=#0000>" + line.Substring(i) + "</color>";
             dialogueText.text = sentence;
-            yield return new WaitForSeconds(0.025f);
+            yield return new WaitForSeconds(0.05f);
+
+            if (i < line.Length)
+            {
+                if (line[i] == ' ')
+                {
+                    //AudioManager.Instance.TypingSound.Stop();
+                    //yield return new WaitForSeconds(0.2f);
+                }
+            }
         }
 
         yield return new WaitForSeconds(0.1f);
+        AudioManager.Instance.TypingSound.Stop();
         isTextAnimated = false;
     }
 
     private void ChangeDialogueLine(string line)
     {
-        if (line.StartsWith("command"))
+        currentSpearkerImage = playerImages[i];
+
+        leftImage.sprite = currentSpearkerImage;
+        leftImage.material.SetTexture("_MainTex", currentSpearkerImage.texture);
+
+        if (currentSpearkerImage.name.StartsWith("c"))
         {
-            string[] temp = line.Split(' ');
-            int index = int.Parse(temp[1]);
-            AudioManager.Instance.ChangeMusic(index);
-            NextDialogueLine();
+            AudioManager.Instance.TypingSound.pitch = 1.5f;
+            leftImage.material.SetColor("_GlowColor", new Color32(0, 110, 0, 0));
         }
-        else
+        else if (currentSpearkerImage.name.StartsWith("m"))
         {
-            currentSpearkerImage = playerImages[i];
-
-            leftImage.sprite = currentSpearkerImage;
-            leftImage.material.SetTexture("_MainTex", currentSpearkerImage.texture);
-
-            if (currentSpearkerImage.name.StartsWith("c"))
-                leftImage.material.SetColor("_GlowColor", new Color32(0, 110, 0, 0));
-            else if (currentSpearkerImage.name.StartsWith("m"))
-                leftImage.material.SetColor("_GlowColor", new Color32(255, 0, 0, 0));
-            else if (currentSpearkerImage.name.StartsWith("a"))
-                leftImage.material.SetColor("_GlowColor", new Color32(0, 0, 110, 0));
-
-            leftTextContianer.SetActive(true);
-            textAnimation = StartCoroutine(_TextAnimation(line, leftText));
+            AudioManager.Instance.TypingSound.pitch = 2.0f;
+            leftImage.material.SetColor("_GlowColor", new Color32(255, 0, 0, 0));
         }
+        else if (currentSpearkerImage.name.StartsWith("a"))
+        {
+            AudioManager.Instance.TypingSound.pitch = 2.5f;
+            leftImage.material.SetColor("_GlowColor", new Color32(0, 0, 110, 0));
+        }
+
+        leftTextContianer.SetActive(true);
+        textAnimation = StartCoroutine(_TextAnimation(line, leftText));
     }
 
     public void StartDialogue()
     {
+        if (isMedusa || isAccel)
+        {
+            AudioManager.Instance.ChangeMusic(0);
+        }
+        else
+        {
+            AudioManager.Instance.ChangeMusic(1);
+        }
+
         if (areEyes)
         {
             eyeder.gameObject.SetActive(false);

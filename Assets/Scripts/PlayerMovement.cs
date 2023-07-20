@@ -111,7 +111,7 @@ public class PlayerMovement : MonoBehaviour
             OnJumpUp();
         }
 
-        if (Input.GetKeyDown(KeyCode.M))
+        if (Input.GetButtonDown("Reset"))
         {
             KillPlayer();
         }

@@ -61,6 +61,27 @@ public class DoorController : MonoBehaviour
                 }
             }));
         }
+
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            ChangeLevelAnim(5);
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            ChangeLevelAnim(9);
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            ChangeLevelAnim(15);
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            ChangeLevelAnim(18);
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            ChangeLevelAnim(29);
+        }
     }
 
     public void WhiteNoiseAnim()
@@ -86,6 +107,25 @@ public class DoorController : MonoBehaviour
         });
     }
 
+    private void ChangeLevelAnim(int newLevel)
+    {
+        PP.SetActive(false);
+        whiteNoise.DOFade(1f, 1f).OnPlay(() =>
+        {
+            if (AudioManager.Instance.gameObject != null)
+            {
+                print("audio");
+                AudioManager.Instance.PlaySFX(1);
+            }
+        }).OnComplete(() =>
+        {
+            string levelName = SceneManager.GetActiveScene().name;
+            string index = levelName.Split(' ')[1];
+            Debug.Log(index);
+            SceneManager.LoadScene("L " + newLevel);
+        });
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
@@ -96,21 +136,11 @@ public class DoorController : MonoBehaviour
                 if (isMedusa) medusa.KillMedusa();
                 if (SceneManager.GetActiveScene().name != "L 29")
                 {
-                    PP.SetActive(false);
-                    whiteNoise.DOFade(1f, 1f).OnPlay(() =>
-                    {
-                        if (AudioManager.Instance.gameObject != null)
-                        {
-                            print("audio");
-                            AudioManager.Instance.PlaySFX(1);
-                        }
-                    }).OnComplete(() =>
-                    {
-                        string levelName = SceneManager.GetActiveScene().name;
-                        string index = levelName.Split(' ')[1];
-                        Debug.Log(index);
-                        SceneManager.LoadScene("L " + (int.Parse(index) + 1));
-                    });
+                    string levelName = SceneManager.GetActiveScene().name;
+                    string index = levelName.Split(' ')[1];
+                    Debug.Log(index);
+
+                    ChangeLevelAnim(int.Parse(index) + 1);
                 }
                 else
                 {

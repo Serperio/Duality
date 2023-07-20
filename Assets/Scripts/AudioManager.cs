@@ -8,6 +8,7 @@ public class AudioManager : MonoBehaviour
 	// Audio players components.
 	public AudioSource MusicSourceA;
 	public AudioSource MusicSourceB;
+	public AudioSource TypingSound;
 
 	[SerializeField] private List<AudioClip> musics;
 
@@ -20,6 +21,8 @@ public class AudioManager : MonoBehaviour
 
 	// Singleton instance.
 	public static AudioManager Instance = null;
+
+	private int currentlyPlaying = 1;
 
 	// Initialize the singleton instance.
 	private void Awake()
@@ -105,15 +108,18 @@ public class AudioManager : MonoBehaviour
 
 	public void ChangeMusic(int index)
 	{
-		if (index == 0)
+		if (currentlyPlaying != index)
 		{
-			ChangeAudioClip(MusicSourceA, 2);
-			ChangeAudioClip(MusicSourceB, 3);
-		}
-		else
-		{
-			ChangeAudioClip(MusicSourceA, 0);
-			ChangeAudioClip(MusicSourceB, 1);
+			if (index == 0)
+			{
+				ChangeAudioClip(MusicSourceA, 2);
+				ChangeAudioClip(MusicSourceB, 3);
+			}
+			else
+			{
+				ChangeAudioClip(MusicSourceA, 0);
+				ChangeAudioClip(MusicSourceB, 1);
+			}
 		}
 	}
 

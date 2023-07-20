@@ -185,6 +185,7 @@ public class PlayerMovement : MonoBehaviour
         #region Falling
         if (transform.position.y <= -500)
         {
+            Destroy(gameObject);
             LevelManager.instance.ResetLevel();
         }
         #endregion

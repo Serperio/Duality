@@ -74,7 +74,7 @@ public class TestingDialogue : MonoBehaviour
     {
         if (isTalking)
         {
-            if (Input.GetKeyDown("x") || Input.GetKeyDown("z") || Input.GetKeyDown("left") || Input.GetKeyDown("right"))
+            if (Input.GetButtonDown("Fire1") || Input.GetButtonDown("Fire2"))
             {
                 if (!isTextAnimated)
                 {

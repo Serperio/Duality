@@ -133,6 +133,7 @@ public class DoorController : MonoBehaviour
             if (enabled)
             {
                 PlayerPrefs.SetInt("Dead", 0);
+                Destroy(collision.gameObject);
                 if (isMedusa) medusa.KillMedusa();
                 if (SceneManager.GetActiveScene().name != "L 29")
                 {

@@ -23,7 +23,7 @@ public class PlayerLadderMovement : MonoBehaviour
     private void Update()
     {
         vertical = Input.GetAxis("Vertical");
-        if(IsLadder && Input.GetButtonDown("Jump"))
+        if(IsLadder && (Input.GetButtonDown("Jump") || Input.GetAxis("Vertical") > 0))
         {
             transform.position = new Vector3(ladder.transform.position.x, transform.position.y, transform.position.z);
             IsClimbing = true;

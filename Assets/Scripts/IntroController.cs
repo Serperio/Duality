@@ -47,11 +47,11 @@ public class IntroController : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.RightArrow) && lockControl == false)
+        if ((Input.GetKeyDown(KeyCode.RightArrow) || Input.GetButtonDown("Fire1")) && lockControl == false)
         {
             ChangeChannel();
         }
-        if (Input.GetKeyDown(KeyCode.LeftArrow) && lockControl == false)
+        if ((Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetButtonDown("Fire2")) && lockControl == false)
         {
             ChangeChannel();
         }

@@ -184,7 +184,7 @@ public class TestingDialogue : MonoBehaviour
             eyeizq.IsClosed = false;
         }
 
-        blackImage.color = new Color32(49, 60, 57, 255);
+        //blackImage.color = new Color32(49, 60, 57, 255);
         blackImage.gameObject.SetActive(true);
         isTalking = true;
 

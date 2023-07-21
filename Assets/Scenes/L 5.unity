@@ -1756,7 +1756,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3395418869234202958, guid: d9d87e461390387498494396c260e104, type: 3}
       propertyPath: m_text
-      value: M key to restart level
+      value: Press Start to restart level
       objectReference: {fileID: 0}
     - target: {fileID: 3395418869234202959, guid: d9d87e461390387498494396c260e104, type: 3}
       propertyPath: m_Pivot.x
